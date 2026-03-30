@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>regenerative</title>
+
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/gsap.min.js"></script>
+    <script src="./js/ScrollTrigger.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./responsive-global.css" />
+    <link rel="stylesheet" href="./tissue.css" />
+    <link rel="stylesheet" href="nav.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-container">
+        <div class="nav-top">
+          <div class="logo1">
+            <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
+          </div>
+
+          <div class="hamburger" id="hamburger">?</div>
+        </div>
+
+        <ul class="nav-main-menu">
+          <div class="logo">
+            <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
+          </div>
+          <li><a href="./index.html">Highlights</a></li>
+
+          <!-- ================= Dental Implantology ================= -->
+          <li class="has-mega mega-dental">
+            Dental Implantology<i class="fa-solid fa-angle-down"></i>
+
+            <div class="mega-menu">
+              <!-- COLUMN 2 -->
+              <div class="mega-column column-2" id="col2">
+                <ul>
+                  <li data-img="heritage">
+                    <a href="https://b-and-b-india.netlify.app/heritage"
+                      >Heritage
+                    </a>
+                  </li>
+                  <li id="unique" data-img="unique">
+                    <a href="#col3"
+                      >Unique Design <i class="fa-solid fa-angle-right"></i
+                    ></a>
+                  </li>
+                  <li data-img="custom">
+                    <a href="https://b-and-b-india.netlify.app/subperiosteal"
+                      >Customized Implants</a
+                    >
+                  </li>
+                  <li data-img="custom">
+                    <a href="https://b-and-b-india.netlify.app/tissue"
+                      >Tissue Adhesive</a
+                    >
+                  </li>
+                  <li data-img="guided">
+                    <a
+                      href="https://b-and-b-india.netlify.app/digitalsurgicalguide"
+                      >Digital Guided Surgery</a
+                    >
+                  </li>
+                  <li data-img="kits">
+                    <a href="https://b-and-b-india.netlify.app/surgicalkit"
+                      >Surgical Kits</a
+                    >
+                  </li>
+                  <li data-img="kits">
+                    <a href="https://b-and-b-india.netlify.app/tissue"
+                      >Tissue Adhesive</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- COLUMN 3 -->
+              <div class="mega-column column-3" id="col3">
+                <h4>Implants</h4>
+                <ul>
+                  <li data-img="duravit-ev">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design1"
+                      >DURAVIT EV</a
+                    >
+                  </li>
+                  <li data-img="duravit-3p">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design2"
+                      >DURAVIT 3P</a
+                    >
+                  </li>
+                  <li data-img="duravit-wide">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design3"
+                      >DURAVIT Wide</a
+                    >
+                  </li>
+                  <li data-img="duravit-pterygo">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design4"
+                      >DURAVIT Pterygo</a
+                    >
+                  </li>
+                  <li data-img="duravit-slim">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design5"
+                      >DURAVIT Slim</a
+                    >
+                  </li>
+                  <li data-img="duravit-slim">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design6"
+                      >DURAVIT Mini</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- IMAGES -->
+              <div class="mega-images">
+                <img id="img1" src="./assets/imgs/di-1.webp" />
+                <img id="img2" src="./assets/imgs/di-2.jpg" />
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="https://b-and-b-india.netlify.app/conexaconnection"
+              >Prosthetics</a
+            >
+          </li>
+
+          <!-- ================= Regenerative ================= -->
+          <li class="has-mega mega-regenerative">
+            Regenerative Products<i class="fa-solid fa-angle-down"></i>
+            <div class="mega-menu">
+              <div class="mega-column">
+                <!-- <h4>Bonegraft</h4> -->
+                <ul>
+                  <li><a href="./allograft.html">Allograft</a></li>
+                  <li><a href="./xenograft.html">Xenograft</a></li>
+                  <li>
+                    <a href="./xenograft.html#collagen">Collagen Membrane</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mega-images">
+                <img src="./assets/imgs/g-1.jpg" />
+                <img src="./assets/imgs/g-2.jpg" />
+              </div>
+            </div>
+          </li>
+
+          <!-- ================= Robotic ================= -->
+          <li class="has-mega mega-robotic">
+            Robotic Navigation<i class="fa-solid fa-angle-down"></i>
+            <div class="mega-menu">
+              <div class="mega-images">
+                <img src="./assets/imgs/r-1.jpg" />
+                <img src="./assets/imgs/3.0.png" />
+              </div>
+              <div class="mega-column">
+                <h4>Navident</h4>
+                <ul>
+                  <li>
+                    <a href="https://marksbiotech.com/navident-3.0"
+                      >Navident 3.0</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://marksbiotech.com/navident-4.0/"
+                      >Navident 4.0 EVO</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="https://marksbiotech.com/micronmapper/">Photogrammetry</a>
+          </li>
+
+          <li class="has-mega mega-resources">
+            Resources<i class="fa-solid fa-angle-down"></i>
+            <div class="mega-menu">
+              <div class="mega-column">
+                <ul>
+                  <li><a href="./events.html">Education</a></li>
+                  <li><a href="./blog.html">Blogs</a></li>
+                  <li><a href="./careers.html">Careers</a></li>
+                  <li>
+                    <a href="./scientific-evidence.html">Scientific Evidence</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="./about.html">About Us</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <div class="hero-wrap">
+      <div class="hero-overlay"></div>
+
+      <img src="bgImage.jpg" class="hero-bg" />
+
+      <div class="hero-text">
+        <h1>TISSUE ADHESIVE - AMCRYLATE</h1>
+        <p>wonder care for wonud closure - A patient Molecule</p>
+      </div>
+    </div>
+
+    <!-- TEXT SECTION -->
+    <section class="info-sec">
+      <div class="wrap text-block">
+        <p>
+          <span class="mark">AMCRYLATE : </span> is developed by Concord Drugs
+          Ltd. in technical collaboration with IICT (Indian Institute of
+          Chemical Technology) and with assistance of TIFAC (The Technology
+          Information Forecasting and Assessment Council, New Delhi)
+        </p>
+        <p>
+          ISO amyl - 2 Cyanoacrylate undergoes an exothermic polymerization
+          catalysed by the presence of small quantities of weak base such as
+          water. This anionic polymerization provides bonding action. The
+          adhesiveness is maximised by spreading monomer in a very thin film.
+        </p>
+        <p>
+          <span class="mark">Amcrylate</span> → is a Bio-Adhesive which contains
+          Iso - Amyl 2 - Cyanoacrylate.
+        </p>
+        <p>
+          <span class="mark">AMCRYLATE</span> i.e. iso-Amyl 2 - Cyanoacrylate is
+          superior than N _ Butyl Cyanoacrylate since it does not brittle and
+          fracture on long lacerations.
+        </p>
+        <p>
+          <span class="mark">AMCRYLATE</span> is also superior than octyle
+          Cyanoacrylate as it has faster tissue bonding capacity and also cures
+          faster.
+        </p>
+        <p>
+          <span class="mark">AMCRYLATE</span> has longer molecular chain, the
+          toxicity is much reduced. So by increasing the size of the molecule it
+          is possible to lengthen the time taken to polymerize and thus it gives
+          ample time to the surgeon to close the incision after aligning the cut
+          edges very well.
+        </p>
+        <p>
+          <span class="mark">Amcrylate</span> → is a sterile, non - toxic,
+          haemostatic & bacteriostatic.
+        </p>
+        <p>
+          <span class="mark">Amcrylate</span> → is a monomer but when it gets
+          into contact with moisture it gets converted to Polymer.
+        </p>
+        <p>
+          <span class="mark">Amcrylate</span> → solidifies within 5 to 10
+          seconds and solidifies fast in alkaline and slowly in acidic media.
+        </p>
+        <p>
+          <span class="mark">Amcrylate</span> → does not get absorbed in the
+          blood and does not react to the tissue fluids.
+        </p>
+        <p>
+          <span class="mark">Amcrylate</span> → produces less oedema formation
+          and granuloma than sutures.
+        </p>
+        <p>
+          <span class="mark">Amcrylate</span> → is a free flowing liquid monomer
+          to spread easily in between the two skin Lesions of the wound to be
+          closed and holds tightly and permanently.
+        </p>
+        <p>
+          <span class="mark">Amcrylate</span> → reduces the risk of post
+          surgical infection & trauma - thus it is simple and safe to use.
+        </p>
+        <p>
+          <span class="mark">Amcrylate</span> → biodegradable and eliminates
+          from the body by urine and faeces.
+        </p>
+      </div>
+    </section>
+
+    <!-- USES SECTION -->
+    <section class="use-sec">
+      <div class="wrap">
+        <h3 class="head">Amcrylate is widely used in</h3>
+
+        <div class="two-col">
+          <img src="./assets/imgs/tissue-img1.jpeg" class="full-img" />
+          <ul class="list">
+            <li>ENT Surgery</li>
+            <li>Vascular Surgery</li>
+            <li>Cosmetic Surgery</li>
+            <li>Dental Surgery</li>
+            <li>Periodontal Surgery</li>
+            <li>Sterilization</li>
+          </ul>
+        </div>
+
+        <h3 class="head">Further Doctor, Amcrylate is Indicated in</h3>
+
+        <div class="two-col">
+          <img src="./assets/imgs/tissue-img2.jpg" class="full-img" />
+          <ul class="list">
+            <li>Appendectomy</li>
+            <li>Cholecystectomy</li>
+            <li>Gaastro - Jejunostomy</li>
+            <li>Episiotomy</li>
+            <li>Caesarian Section</li>
+            <li>Histerectomy</li>
+            <li>Oophorectomy</li>
+            <li>Laproscopy</li>
+            <li>Biopsy</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARDS SECTION -->
+    <section class="card-sec">
+      <div class="wrap card-grid">
+        <div class="box">
+          <img src="./assets/imgs/tissue-img3.jpeg" />
+          <div class="box-title">Caesarian</div>
+        </div>
+
+        <div class="box">
+          <img src="./assets/imgs/tissue-img4.jpeg" />
+          <div class="box-title">Appendectomy</div>
+        </div>
+
+        <div class="box">
+          <img src="./assets/imgs/tissue-img5.jpeg" />
+          <div class="box-title">Dental Surgery</div>
+        </div>
+
+        <div class="box">
+          <img src="./assets/imgs/tissue-img6.jpeg" />
+          <div class="box-title">Cosmetic Surgery</div>
+        </div>
+
+        <div class="box">
+          <img src="./assets/imgs/tissue-img7.jpeg" />
+          <div class="box-title">Biopsy</div>
+        </div>
+
+        <div class="box">
+          <img src="./assets/imgs/tissue-img8.jpeg" />
+          <div class="box-title">Laproscopy</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METHOD SECTION -->
+    <section class="method-sec">
+      <div class="wrap two-col">
+        <div class="para">
+          <h3 class="red-title">Method of Usage</h3>
+          <p>
+            Cut the Amcrylate glass ampoule with an ampoule cutter. Draw the
+            total Amcrylate solution into special applicators provided along
+            with the Amcrylate ampoule. Use the loaded syringe or dropper
+            applicator gently for application directly on the tissue edges with
+            correct position of wound surface to be joined by controlled
+            delivery and flow. (If necessary use the needle provided along with
+            the ampoule for thin application). Keep the wound surfaces as dry as
+            possible and hold the sides of the wound together for 60 seconds
+            after Amcrylate application. Always apply thin layer and remove the
+            excess with dry swab immediately (Refer the figures depicted right
+            side). Subcutaneous sutures may be applied wherever necessary.
+          </p>
+        </div>
+
+        <div>
+          <img src="./assets/imgs/tissue-img9.jpeg" class="full-img" />
+        </div>
+      </div>
+
+      <div class="wrap text-block">
+        <h3 class="red-title">Precautions</h3>
+        <p class="big-text">
+          Amcrylate is sterile tissue adhesive for single use only. Discard the
+          left over adhesive. Keep away the instruments from the adhesive. In
+          case of accidental adhesion Amcrylate tissue adhesive can be removed
+          with acetone or dimethyl formamide. (Make sure the condition of the
+          adhesive is in liquid form. Do not use viscous adhesive).
+        </p>
+
+        <h3 class="red-title">Side effects</h3>
+        <p class="big-text">
+          Avoid too thick application. The heat on polymerization may cause
+          injury to the adjacent tissue and reduces the healing due to slow
+          absorption.
+        </p>
+
+        <h3 class="red-title">Contraindications</h3>
+        <p class="big-text">
+          Amcrylate should not be used for the closure of the wound on the
+          surface of the brain or on the central peripheral nervous system.
+        </p>
+
+        <h3 class="red-title">Availability</h3>
+        <p class="big-text">
+          Amcrylate is available in 0.25 & 0.5 ml Ampoules containing ISO Pentyl
+          (Amyl) 2 Cyanoacrylate.
+        </p>
+      </div>
+    </section>
+
+    <!-- FINAL SECTION -->
+    <section class="final-sec">
+      <div class="wrap two-col">
+        <div>
+          <h2>Amcrylate – Liquid Tissue Bio-Adhesive</h2>
+          <p class="big-text">
+            <strong>Amcrylate</strong>,manufactured by Concord Drugs Limited, is
+            a sterile, medical-grade, liquid tissue bio-adhesive (cyanoacrylate)
+            designed for rapid, needle-free closure of surgical incisions and
+            wounds. It acts as a protective, flexible barrier that reduces
+            infection risks, minimizes scarring, and replaces stitches.
+          </p>
+          <p class="big-text">
+            <strong>Composition:</strong>Contains iso-amyl 2-cyanoacrylate.
+          </p>
+
+          <p class="big-text">
+            <strong>Composition:</strong>Contains iso-amyl 2-cyanoacrylate.
+          </p>
+          <p class="big-text">
+            <strong>Mechanism:</strong>It is a fast-acting adhesive that forms a
+            strong, flexible bond upon contact with moisture.
+          </p>
+          <p class="big-text">
+            <strong>Benefits: </strong>It acts as a bacteriostatic/bio-static
+            agent, minimizes scarring, provides a water-resistant seal, and is
+            generally painless to apply.
+          </p>
+          <p class="big-text">
+            <strong>Key Features:</strong>It is non-toxic, non-allergic, and
+            biodegradable, degrading slowly and safely within the body.
+          </p>
+          <p class="big-text">
+            It is typically available in 0.25ml or 0.5ml dose
+          </p>
+          <br />
+          <p class="big-text"><b>Manufacturer:</b></p>
+          <p class="big-text">
+            CONCORD DRUGS LIMITED. <br />
+            Survey No: 249, Brahmanapally(V), Abdullapurmet (M), R.R.District,
+            Telangana, INDIA – 501511
+          </p>
+        </div>
+
+        <div>
+          <img src="./assets/imgs/tissue-img10.jpeg" class="full-img" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="about-footer">
+      <!-- TOP -->
+      <div class="about-footer-top">
+        <div class="about-footer-title">
+          <p>We are here to support You</p>
+          <h2>Connect with us</h2>
+        </div>
+
+        <div class="about-subscribe-box">
+          <form action="" id="form1">
+            <input type="email" name="email" placeholder="Enter your mail id" />
+            <button class="subsc" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- BOTTOM -->
+      <div class="footer-content">
+        <!-- QUICK LINKS -->
+        <div class="footer-col">
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="./index.html">Highlights</a></li>
+            <li><a href="./about.html">About us</a></li>
+
+            <li>
+              <a href="https://marksbiotech.com/micronmapper/">MicronMapper</a>
+            </li>
+
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./events.html">Event</a></li>
+            <li><a href="./careers.html">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- PRODUCTS -->
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li>
+              <a href="https://b-and-b-india.netlify.app/uniqueimplant"
+                >Dental implants</a
+              >
+            </li>
+            <li>
+              <a href="https://b-and-b-india.netlify.app/surgicalkit"
+                >Free hand Surgical</a
+              >
+            </li>
+            <li>
+              <a href="https://b-and-b-india.netlify.app/digitalsurgicalguide"
+                >Computer Guided Surgery</a
+              >
+            </li>
+            <li><a href="./allograft.html">Allograft</a></li>
+            <li><a href="./xenograft.html">Xenograft</a></li>
+            <li>
+              <a href="https://marksbiotech.com/navident-3.0">Navident 3.0</a>
+            </li>
+            <li>
+              <a href="https://marksbiotech.com/navident-4.0/"
+                >Navident 4.0 EVO</a
+              >
+            </li>
+            <li>
+              <a href=".https://marksbiotech.com/micronmapper/"
+                >Photogrammetry</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- ADDRESS -->
+        <div class="footer-col address">
+          <h4>Address</h4>
+
+          <p class="he-red">Operation and Communication Address</p>
+          <p>
+            84, 1st floor, Thirupathy Nagar,<br />
+            Mainroad, 1st Cross street, <br />
+            Valasaravakkam, Chennai-600087.
+          </p>
+
+          <p class="he-red">Registered Office Address</p>
+          <p>
+            104/5, 6th street, s-1, 2nd floor, The Brown CLS Bulding, Ratha
+            Avenue, Valasaravakam, Chennai-600087.
+          </p>
+        </div>
+
+        <!-- LOGO + MAP -->
+        <div class="footer-col logo-map">
+          <img
+            src="assets/imgs/marks-biotech-logo 1.png"
+            alt="Marks Biotech Logo"
+            class="logo"
+          />
+          <p class="contact">+91 44 485 93250</p>
+          <p class="contact">+91 9819893250 ,+91 9840320250</p>
+          <p class="contact"><span> </span>info@marksbiotech.com</p>
+          <div class="map-box">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.861000188089!2d80.1749978!3d13.044518400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261bb26e13173%3A0x58681e3956ff7dbb!2sMarks%20Biotech%20Inc!5e0!3m2!1sen!2sin!4v1769035781529!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
