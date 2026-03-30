@@ -31,7 +31,7 @@ h1 {
 h2 {
   font-size: 3.2rem;
 }
-h4{
+h4 {
   font-family: var(--primary-font);
   font-size: 2rem;
   letter-spacing: 0.06cap;
@@ -164,7 +164,6 @@ a {
   background: red;
 }
 
-
 /* ---------------------------------- */
 /* ROOM SHOWCASE SLIDER */
 .room-slider-section {
@@ -184,8 +183,20 @@ a {
   padding: 0 12px;
   white-space: nowrap;
   overflow: hidden;
-  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 10%, #000 90%, transparent 100%);
-  mask-image: linear-gradient(to right, transparent 0, #000 10%, #000 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 10%,
+    #000 90%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 10%,
+    #000 90%,
+    transparent 100%
+  );
 }
 
 .room-slider-tab {
@@ -232,11 +243,8 @@ a {
   pointer-events: none;
   transform: translate3d(-50%, 42px, 0) scale(0.85);
   filter: blur(1px);
-  transition:
-    transform 0.78s cubic-bezier(0.22, 0.61, 0.36, 1),
-    opacity 0.55s ease,
-    filter 0.55s ease,
-    box-shadow 0.55s ease;
+  transition: transform 0.78s cubic-bezier(0.22, 0.61, 0.36, 1),
+    opacity 0.55s ease, filter 0.55s ease, box-shadow 0.55s ease;
 }
 
 .room-slide h3 {
@@ -442,7 +450,6 @@ a {
   background-color: #0a0a0a;
 }
 
-
 .about-partners-section2 {
   max-width: 1400px;
   margin: auto;
@@ -515,8 +522,6 @@ a {
   font-size: 22px;
   text-align: justify;
 }
-
-
 
 /* -------- */
 
@@ -659,8 +664,6 @@ a {
   border-radius: 8px;
 }
 
-
-
 /* ------------ */
 
 .device-section {
@@ -779,7 +782,7 @@ a {
 /* FOOT NOTE */
 .market-text1 h4 {
   width: 90%;
-   color: red;
+  color: red;
   margin-bottom: 25px;
   font-size: 3rem;
   font-family: var(--primary-font);
@@ -794,8 +797,6 @@ a {
   font-family: var(--secondary-font);
   line-height: 1.6;
 }
-
-
 
 /* -------------- */
 
@@ -822,7 +823,6 @@ a {
   font-weight: 700;
   font-style: bold;
   color: red;
-  
 }
 
 .story-text ul {
@@ -874,7 +874,6 @@ a {
   text-transform: uppercase;
   font-size: 20px;
   text-align: justify;
-  
 }
 
 .founder-text h4 {
@@ -911,8 +910,6 @@ a {
   border-radius: 16px;
 }
 
-
-
 /* ------------- */
 
 /* MAIN */
@@ -929,7 +926,6 @@ a {
   color: #ff0000;
   font-size: 3.52rem;
   font-family: var(--primary-font);
-
 }
 
 .team-cards {
@@ -989,7 +985,6 @@ a {
   color: #c81616;
   font-size: 30px;
   font-family: var(--secondary-font);
- 
 }
 
 .team-card-front span {
@@ -1143,7 +1138,6 @@ a {
     margin-top: 15px;
   }
 }
-
 
 /* responsive */
 /* ================= TABLET FIX ================= */
@@ -1370,11 +1364,10 @@ a {
   }
 
   .team-card-back p {
-    font-size: 10px ;
+    font-size: 10px;
     line-height: 0.9;
     font-family: var(--secondary-font);
     padding: 0;
-    
   }
 }
 
@@ -1431,8 +1424,8 @@ a {
   }
 
   .founder-image img {
-    width: 100%;
-    max-width: 320px;
+    width: 50%;
+    /* max-width: 320px; */
     margin: auto;
     border-radius: 14px;
   }
@@ -1647,7 +1640,6 @@ a {
     font-size: 15px;
     line-height: 1.65;
   }
-  
 
   .learning-text ul,
   .device-left ul,
@@ -1753,6 +1745,4 @@ a {
   .card {
     padding: 18px;
   }
-
-  
 }
