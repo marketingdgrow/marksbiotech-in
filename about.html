@@ -1,639 +1,755 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Center Slider</title>
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="./nav.css" />
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/gsap.min.js"></script>
+    <script src="./js/ScrollTrigger.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./responsive-global.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Center Slider</title>
-  <link rel="stylesheet" href="about.css" />
-  <link rel="stylesheet" href="./nav.css">
-  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-  <script src="./js/gsap.min.js"></script>
-  <script src="./js/ScrollTrigger.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./responsive-global.css" />
-</head>
+  <body>
+    <header class="site-header">
+      <div class="nav-container">
+        <div class="nav-top">
+          <div class="logo1">
+            <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
+          </div>
 
-<body>
-
-   
- <header class="site-header">
-    <div class="nav-container">
-
-      <div class="nav-top">
-
-        <div class="logo1">
-          <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
+          <div class="hamburger" id="hamburger">?</div>
         </div>
 
-        <div class="hamburger" id="hamburger"> ?
-
-        </div>
-      </div>
-
-
-      <ul class="nav-main-menu">
-        <div class="logo">
-          <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
-        </div>
-        <li><a href="./index.html">Highlights</a></li>
-
-
-        <!-- ================= Dental Implantology ================= -->
-        <li class="has-mega mega-dental">
-          Dental Implantology<i class="fa-solid fa-angle-down"></i>
-
-          <div class="mega-menu">
-
-
-            <!-- COLUMN 2 -->
-            <div class="mega-column column-2" id="col2">
-              <ul>
-                <li data-img="heritage"><a href="https://b-and-b-india.netlify.app/heritage">Heritage </a></li>
-                <li id="unique" data-img="unique"><a href="#col3">Unique Design <i class="fa-solid fa-angle-right"></i></a></li>
-                <li data-img="custom"><a href="https://b-and-b-india.netlify.app/subperiosteal">Customized
-                    Implants</a></li>
-                <li data-img="custom"><a href="https://b-and-b-india.netlify.app/tissue">Tissue Adhesive</a></li>
-                <li data-img="guided"><a href="https://b-and-b-india.netlify.app/digitalsurgicalguide">Digital Guided
-                    Surgery</a></li>
-                <li data-img="kits"><a href="https://b-and-b-india.netlify.app/surgicalkit">Surgical Kits</a></li>
-                <li data-img="kits"><a href="https://b-and-b-india.netlify.app/tissue">Tissue Adhesive</a></li>
-              </ul>
-            </div>
-
-            <!-- COLUMN 3 -->
-            <div class="mega-column column-3" id="col3">
-              <h4>Implants</h4>
-              <ul>
-                <li data-img="duravit-ev"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design1">DURAVIT
-                    EV</a></li>
-                <li data-img="duravit-3p"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design2">DURAVIT
-                    3P</a></li>
-                <li data-img="duravit-wide"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design3">DURAVIT
-                    Wide</a></li>
-                <li data-img="duravit-pterygo"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design4">DURAVIT
-                    Pterygo</a></li>
-                <li data-img="duravit-slim"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design5">DURAVIT
-                    Slim</a></li>
-                <li data-img="duravit-slim"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design6">DURAVIT
-                    Mini</a></li>
-              </ul>
-            </div>
-
-            <!-- IMAGES -->
-            <div class="mega-images">
-              <img id="img1" src="./assets/imgs/di-1.webp" />
-              <img id="img2" src="./assets/imgs/di-2.jpg" />
-            </div>
+        <ul class="nav-main-menu">
+          <div class="logo">
+            <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
           </div>
-        </li>
+          <li><a href="./index.html">Highlights</a></li>
 
-        <li><a href="https://b-and-b-india.netlify.app/conexaconnection">Prosthetics</a></li>
+          <!-- ================= Dental Implantology ================= -->
+          <li class="has-mega mega-dental">
+            Dental Implantology<i class="fa-solid fa-angle-down"></i>
 
-        <!-- ================= Regenerative ================= -->
-        <li class="has-mega mega-regenerative">
-          Regenerative Products<i class="fa-solid fa-angle-down"></i>
-          <div class="mega-menu">
-            <div class="mega-column">
-              <!-- <h4>Bonegraft</h4> -->
-              <ul>
-                <li><a href="./allograft.html">Allograft</a></li>
-                <li><a href="./xenograft.html">Xenograft</a></li>
-                <li><a href="./xenograft.html#collagen">Collagen Membrane</a></li>
-              </ul>
+            <div class="mega-menu">
+              <!-- COLUMN 2 -->
+              <div class="mega-column column-2" id="col2">
+                <ul>
+                  <li data-img="heritage">
+                    <a href="https://b-and-b-india.netlify.app/heritage"
+                      >Heritage
+                    </a>
+                  </li>
+                  <li id="unique" data-img="unique">
+                    <a href="#col3"
+                      >Unique Design <i class="fa-solid fa-angle-right"></i
+                    ></a>
+                  </li>
+                  <li data-img="custom">
+                    <a href="https://b-and-b-india.netlify.app/subperiosteal"
+                      >Customized Implants</a
+                    >
+                  </li>
+                  <li data-img="custom">
+                    <a href="https://b-and-b-india.netlify.app/tissue"
+                      >Tissue Adhesive</a
+                    >
+                  </li>
+                  <li data-img="guided">
+                    <a
+                      href="https://b-and-b-india.netlify.app/digitalsurgicalguide"
+                      >Digital Guided Surgery</a
+                    >
+                  </li>
+                  <li data-img="kits">
+                    <a href="https://b-and-b-india.netlify.app/surgicalkit"
+                      >Surgical Kits</a
+                    >
+                  </li>
+                  <li data-img="kits">
+                    <a href="https://b-and-b-india.netlify.app/tissue"
+                      >Tissue Adhesive</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- COLUMN 3 -->
+              <div class="mega-column column-3" id="col3">
+                <h4>Implants</h4>
+                <ul>
+                  <li data-img="duravit-ev">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design1"
+                      >DURAVIT EV</a
+                    >
+                  </li>
+                  <li data-img="duravit-3p">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design2"
+                      >DURAVIT 3P</a
+                    >
+                  </li>
+                  <li data-img="duravit-wide">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design3"
+                      >DURAVIT Wide</a
+                    >
+                  </li>
+                  <li data-img="duravit-pterygo">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design4"
+                      >DURAVIT Pterygo</a
+                    >
+                  </li>
+                  <li data-img="duravit-slim">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design5"
+                      >DURAVIT Slim</a
+                    >
+                  </li>
+                  <li data-img="duravit-slim">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design6"
+                      >DURAVIT Mini</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- IMAGES -->
+              <div class="mega-images">
+                <img id="img1" src="./assets/imgs/di-1.webp" />
+                <img id="img2" src="./assets/imgs/di-2.jpg" />
+              </div>
             </div>
-            <div class="mega-images">
-              <img src="./assets/imgs/g-1.jpg" />
-              <img src="./assets/imgs/g-2.jpg" />
+          </li>
+
+          <li>
+            <a href="https://b-and-b-india.netlify.app/conexaconnection"
+              >Prosthetics</a
+            >
+          </li>
+
+          <!-- ================= Regenerative ================= -->
+          <li class="has-mega mega-regenerative">
+            Regenerative Products<i class="fa-solid fa-angle-down"></i>
+            <div class="mega-menu">
+              <div class="mega-column">
+                <!-- <h4>Bonegraft</h4> -->
+                <ul>
+                  <li><a href="./allograft.html">Allograft</a></li>
+                  <li><a href="./xenograft.html">Xenograft</a></li>
+                  <li>
+                    <a href="./xenograft.html#collagen">Collagen Membrane</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mega-images">
+                <img src="./assets/imgs/g-1.jpg" />
+                <img src="./assets/imgs/g-2.jpg" />
+              </div>
             </div>
-          </div>
-        </li>
+          </li>
 
-        <!-- ================= Robotic ================= -->
-        <li class="has-mega mega-robotic">
-          Robotic Navigation<i class="fa-solid fa-angle-down"></i>
-          <div class="mega-menu">
-            <div class="mega-images">
-              <img src="./assets/imgs/r-1.jpg" />
-              <img src="./assets/imgs/3.0.png" />
+          <!-- ================= Robotic ================= -->
+          <li class="has-mega mega-robotic">
+            Robotic Navigation<i class="fa-solid fa-angle-down"></i>
+            <div class="mega-menu">
+              <div class="mega-images">
+                <img src="./assets/imgs/r-1.jpg" />
+                <img src="./assets/imgs/3.0.png" />
+              </div>
+              <div class="mega-column">
+                <h4>Navident</h4>
+                <ul>
+                  <li>
+                    <a href="https://marksbiotech.com/navident-3.0"
+                      >Navident 3.0</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://marksbiotech.com/navident-4.0/"
+                      >Navident 4.0 EVO</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="mega-column">
-              <h4>Navident</h4>
-              <ul>
-                <li><a href="https://marksbiotech.com/navident-3.0">Navident 3.0</a></li>
-                <li><a href="https://marksbiotech.com/navident-4.0/">Navident 4.0 EVO</a></li>
-              </ul>
+          </li>
+
+          <li>
+            <a href="https://marksbiotech.com/micronmapper/">Photogrammetry</a>
+          </li>
+
+          <li class="has-mega mega-resources">
+            Resources<i class="fa-solid fa-angle-down"></i>
+            <div class="mega-menu">
+              <div class="mega-column">
+                <ul>
+                  <li><a href="./events.html">Education</a></li>
+                  <li><a href="./blog.html">Blogs</a></li>
+                  <li><a href="./careers.html">Careers</a></li>
+                  <li>
+                    <a href="./scientific-evidence.html">Scientific Evidence</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </li>
-
-
-        <li><a href="https://marksbiotech.com/micronmapper/">Photogrammetry</a></li>
-
-
-        <li class="has-mega mega-resources">
-          Resources<i class="fa-solid fa-angle-down"></i>
-          <div class="mega-menu">
-            <div class="mega-column">
-              <ul>
-                <li><a href="./events.html">Education</a></li>
-                <li><a href="./blog.html">Blogs</a></li>
-                <li><a href="./careers.html">Careers</a></li>
-                <li><a href="./scientific-evidence.html">Scientific Evidence</a></li>
-                
-
-
-              </ul>
-            </div>
-
-          </div>
-        </li>
-        <li><a href="./about.html">About Us</a></li>
-      </ul>
-
-    </div>
-  </header>
-
-
-  
-
-
-  <section class="about-partners-section">
-    <div class="partners-top">
-      <div class="image-box">
-        <img src="assets/imgs/ai-driven-dental.png" alt="Doctor" />
-      </div>
-
-      <div class="text-box">
-        <h2><span>Partners of Choice in Dental Industry in India.</span></h2>
-        <p>We specialize in Dental Implantology & Advanced Speciality Products and solutions both consumables and
-          Navigation & Robotic Equipments help clinicians enhance Treatment outcome.
-          We have deep understanding of the industry and identify and exceed clinician expectations with around 3
-          Decades offering quality products and services at both Value for Money an Premium Products Transforming
-          Patient Life.</p>
-        <p>We collaborate with leading global manufacturers,      regulatory bodies, universities, and dental academies to
-          bring the latest innovations in dentistry to clinicians across the region.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="about-core-section">
-    <!-- CORE OFFERINGS -->
-    <div class="core-header">
-      <h2>CORE OFFERINGS</h2>
-      <p>
-        We bring cutting-edge innovations to dental practices with a strong
-        focus on
-      </p>
-    </div>
-
-    <div class="core-cards">
-      <div class="card">
-        <img src="assets/imgs/Group.png" alt="" />
-        <h4>Implantology</h4>
-        <p>
-          Comprehensive dental implant solutions, including advanced systems
-          and regenerative products.
-        </p>
-        <!-- <a href="#">Read more →</a> -->
-      </div>
-
-      <div class="card">
-        <img src="assets/imgs/Group (1).png" alt="" />
-        <h4>Robotic & Digital Navigation</h4>
-        <p>
-          Precision-driven robotic navigation systems designed for predictable
-          implant placement.
-        </p>
-        <!-- <a href="#">Read more →</a> -->
-      </div>
-
-      <div class="card">
-        <img src="assets/imgs/Group (2).png" alt="" />
-        <h4>Digital Dentistry & Clinical Support</h4>
-        <p>
-          Integrated digital workflows, training programs, and chairside
-          clinical support.
-        </p>
-        <!-- <a href="#">Read more →</a> -->
-      </div>
-
-      <div class="card">
-        <img src="assets/imgs/skin-regeneration_10938186 1.png" alt="" />
-        <h4>Bone Regeneration</h4>
-        <p>
-          Advanced biomaterials and regenerative techniques to enhance bone
-          healing and stability.
-        </p>
-        <!-- <a href="#">Read more →</a> -->
-      </div>
-    </div>
-  </section>
-
-  <section class="about-partners-section2">
-    <!-- BOTTOM PART -->
-    <div class="partners-bottom">
-      <div class="image-box1">
-        <img src="assets/imgs/Indiamapontransparentbackground_PremiumVector 1.png" alt="India Map" />
-      </div>
-
-      <div class="coverage-text">
-        <h3><span>100 + CITIES IN COVERAGE LIST</span></h3>
-        <p>
-          We deliver products and services to 100+ cities across India through
-          a robust networkof direct sales teams, channel partners, and trained
-          technical specialists — ensuring prompt support and fast delivery.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ---------------------------- -->
-
-  <section class="about-core-section1">
-    <!-- CONTINUOUS LEARNING -->
-
-    <div class="learning-section">
-      <div class="learning-text">
-   
-        <h3> <span>Learning for Life</span>
-        </h3>
-
-        <p>We upskill and enrich customer experience by providing education powered by KOLs, specialists, and through
-          education partnerships.
-        </p>
-
-        <h5>PROGRAMS INCLUDE:</h5>
-        <ul>
-          <li>Guided Surgery & Dynamic Navigation</li>
-          <li>Implantology Fundamentals to Advanced Techniques</li>
-          <li>Bone Regeneration & Biomaterial Protocols</li>
-          <li>Digital Dentistry Integration</li>
-          <li>Full-arch Implant Rehabilitation Training</li>
-          <li>Robotic-assisted Surgical Workflows</li>
+          </li>
+          <li><a href="./about.html">About Us</a></li>
         </ul>
       </div>
+    </header>
 
-      <div class="mega-images1">
-        <img src="./assets/imgs/Group 263.png" />
-       
-      </div>
-    </div>
-  </section>
-
-
-  <div class="container">
-    <div class="empower-section">
-      <div class="empower-content">
-        <div class="empower-image">
-          <img src="assets/imgs/Rectangle 31.png" alt="Our Story" />
-         
+    <section class="about-partners-section">
+      <div class="partners-top">
+        <div class="image-box">
+          <img src="assets/imgs/ai-driven-dental.png" alt="Doctor" />
         </div>
 
-        <div class="vision-mission">
-          <div class="vision-box">
-            <h4>Vision</h4>
-            <p>
-              To become a leading dental and healthcare solutions provider in
-              South Asia, connecting clinicians, hospitals, manufacturers, and
-              regulatory bodies—transforming patient outcomes through
-              innovation and collaboration.
-            </p>
+        <div class="text-box">
+          <h2><span>Partners of Choice in Dental Industry in India.</span></h2>
+          <p>
+            We specialize in Dental Implantology & Advanced Speciality Products
+            and solutions both consumables and Navigation & Robotic Equipments
+            help clinicians enhance Treatment outcome. We have deep
+            understanding of the industry and identify and exceed clinician
+            expectations with around 3 Decades offering quality products and
+            services at both Value for Money an Premium Products Transforming
+            Patient Life.
+          </p>
+          <p>
+            We collaborate with leading global manufacturers, regulatory bodies,
+            universities, and dental academies to bring the latest innovations
+            in dentistry to clinicians across the region.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-core-section">
+      <!-- CORE OFFERINGS -->
+      <div class="core-header">
+        <h2>CORE OFFERINGS</h2>
+        <p>
+          We bring cutting-edge innovations to dental practices with a strong
+          focus on
+        </p>
+      </div>
+
+      <div class="core-cards">
+        <div class="card">
+          <img src="assets/imgs/Group.png" alt="" />
+          <h4>Implantology</h4>
+          <p>
+            Comprehensive dental implant solutions, including advanced systems
+            and regenerative products.
+          </p>
+          <!-- <a href="#">Read more →</a> -->
+        </div>
+
+        <div class="card">
+          <img src="assets/imgs/Group (1).png" alt="" />
+          <h4>Robotic & Digital Navigation</h4>
+          <p>
+            Precision-driven robotic navigation systems designed for predictable
+            implant placement.
+          </p>
+          <!-- <a href="#">Read more →</a> -->
+        </div>
+
+        <div class="card">
+          <img src="assets/imgs/Group (2).png" alt="" />
+          <h4>Digital Dentistry & Clinical Support</h4>
+          <p>
+            Integrated digital workflows, training programs, and chairside
+            clinical support.
+          </p>
+          <!-- <a href="#">Read more →</a> -->
+        </div>
+
+        <div class="card">
+          <img src="assets/imgs/skin-regeneration_10938186 1.png" alt="" />
+          <h4>Bone Regeneration</h4>
+          <p>
+            Advanced biomaterials and regenerative techniques to enhance bone
+            healing and stability.
+          </p>
+          <!-- <a href="#">Read more →</a> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="about-partners-section2">
+      <!-- BOTTOM PART -->
+      <div class="partners-bottom">
+        <div class="image-box1">
+          <img
+            src="assets/imgs/Indiamapontransparentbackground_PremiumVector 1.png"
+            alt="India Map"
+          />
+        </div>
+
+        <div class="coverage-text">
+          <h3><span>100 + CITIES IN COVERAGE LIST</span></h3>
+          <p>
+            We deliver products and services to 100+ cities across India through
+            a robust networkof direct sales teams, channel partners, and trained
+            technical specialists — ensuring prompt support and fast delivery.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------- -->
+
+    <section class="about-core-section1">
+      <!-- CONTINUOUS LEARNING -->
+
+      <div class="learning-section">
+        <div class="learning-text">
+          <h3><span>Learning for Life</span></h3>
+
+          <p>
+            We upskill and enrich customer experience by providing education
+            powered by KOLs, specialists, and through education partnerships.
+          </p>
+
+          <h5>PROGRAMS INCLUDE:</h5>
+          <ul>
+            <li>Guided Surgery & Dynamic Navigation</li>
+            <li>Implantology Fundamentals to Advanced Techniques</li>
+            <li>Bone Regeneration & Biomaterial Protocols</li>
+            <li>Digital Dentistry Integration</li>
+            <li>Full-arch Implant Rehabilitation Training</li>
+            <li>Robotic-assisted Surgical Workflows</li>
+          </ul>
+        </div>
+
+        <div class="mega-images1">
+          <img src="./assets/imgs/Group 263.png" />
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="empower-section">
+        <div class="empower-content">
+          <div class="empower-image">
+            <img src="assets/imgs/Rectangle 31.png" alt="Our Story" />
           </div>
 
-          <div class="mission-box">
-            <h4>Mission</h4>
-            <p>
-              Deliver products that genuinely improve patient quality of life.
-              Support clinicians with advanced, reliable technologies
-              Continuously enhance our services, training, and customer
-              engagement. Build long-term growth partnerships with every
-              customer.
-            </p>
+          <div class="vision-mission">
+            <div class="vision-box">
+              <h4>Vision</h4>
+              <p>
+                To become a leading dental and healthcare solutions provider in
+                South Asia, connecting clinicians, hospitals, manufacturers, and
+                regulatory bodies—transforming patient outcomes through
+                innovation and collaboration.
+              </p>
+            </div>
+
+            <div class="mission-box">
+              <h4>Mission</h4>
+              <p>
+                Deliver products that genuinely improve patient quality of life.
+                Support clinicians with advanced, reliable technologies
+                Continuously enhance our services, training, and customer
+                engagement. Build long-term growth partnerships with every
+                customer.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
+    <section class="device-section1">
+      <div class="market-section">
+        <div class="market-image">
+          <img src="assets/imgs/Rectangle 237.png" alt="India Gate" />
+        </div>
 
-  <section class="device-section1">
-    <div class="market-section">
-      <div class="market-image">
-        <img src="assets/imgs/Rectangle 237.png" alt="India Gate" />
+        <div class="market-text">
+          <h3>New Market Entry Support Service</h3>
+          <ul>
+            <li>
+              Product Registration With Ministry of Health Authorities For
+              Licenses
+            </li>
+            <li>Imports & Registration Of Plant And Products</li>
+            <li>Create A Regulatory Strategy</li>
+            <li>Pre-Screening Of Documents</li>
+            <li>Timeline Management</li>
+            <li>Global Clinical Trials</li>
+            <li>FDC Approvals</li>
+            <li>CE Mark Approvals</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="market-text">
-        <h3>New Market Entry Support Service</h3>
+      <!-- FOOT NOTE -->
+      <div class="market-text1">
+        <img
+          src="assets/imgs/Distribution.png"
+          alt="Distribution Network"
+          class="market-distribution-image"
+        />
+        <h4>
+          Identification Of Right Channel Partners For Our Clients For South
+          Asia Markets
+        </h4>
         <ul>
           <li>
-            Product Registration With Ministry of Health Authorities For
-            Licenses
+            Work with Channel Partners in branding and marketing campaigns
+            including Clinical Training & Education of products and skill
+            enhancement
           </li>
-          <li>Imports & Registration Of Plant And Products</li>
-          <li>Create A Regulatory Strategy</li>
-          <li>Pre-Screening Of Documents</li>
-          <li>Timeline Management</li>
-          <li>Global Clinical Trials</li>
-          <li>FDC Approvals</li>
-          <li>CE Mark Approvals</li>
+          <li>Post Market Surveillance</li>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <!-- FOOT NOTE -->
-    <div class="market-text1">
-      <img
-        src="assets/imgs/Distribution.png"
-        alt="Distribution Network"
-        class="market-distribution-image"
-      />
-      <h4>
-        Identification Of Right Channel Partners For Our Clients For South
-        Asia Markets
-      </h4>
-      <ul>
-        <li>
-          Work with Channel Partners in branding and marketing campaigns
-          including Clinical Training & Education of products and skill
-          enhancement
-        </li>
-        <li>Post Market Surveillance</li>
-      </ul>
-    </div>
-  </section>
+    <section class="device-section">
+      <!-- TOP BOX -->
+      <div class="device-box">
+        <div class="device-left">
+          <h2>Device Registration & New market Entry</h2>
 
+          <h4>DEVICE REGISTRATION :</h4>
+          <ul>
+            <li>India CDSCO Medical Device Registration and Approvals</li>
+            <li>In Country Representation</li>
+          </ul>
 
-  <section class="device-section">
-    <!-- TOP BOX -->
-    <div class="device-box">
-      <div class="device-left">
-        <h2>Device Registration & New market Entry</h2>
+          <p>
+            Indian Market Entry for Medical Devices Requires to Obtain
+            Registration and Approvals from the Registration Agencies and in
+            India is the CDSCO (Central Drug Standard Control Organisations).
+          </p>
 
-        <h4>DEVICE REGISTRATION : </h4>
+          <p>
+            Based on the Product Classifications Registration Requirements and
+            Work Related May Vary to Make Permanent Technical and Clinical
+            Submission or Leveraging Existing Registration and Approvals for
+            Availing Faster Entry to New Markets Launches.
+          </p>
+        </div>
+
+        <div class="device-right">
+          <img src="assets/imgs/colored-logo (6) 1.png" alt="Ashoka Emblem" />
+        </div>
+      </div>
+    </section>
+
+    <section class="about-story-founder-section">
+      <!-- STORY SECTION -->
+      <div class="story-box">
+        <div class="story-text">
+          <h2>The Story of Marks Biotech</h2>
+
+          <p>
+            Incorporated in 2018, Marks Biotech Inc. has grown as a dedicated
+            provider of advanced dental products and solutions, with a focus on
+            supporting dental professionals across India.
+          </p>
+
+          <!-- Its engagement in technological education, innovation sharing, and community outreach reflects a broader commitment to elevating standards of dental care.  -->
+          <p>
+            Headquartered in Chennai, Tamil Nadu, with multiple warehouses and
+            offices across India. Marks Biotech Inc. specializes in dental
+            consumables, oral care products, rehabilitation solutions, and
+            digital technology-enabled systems spanning multiple dental
+            disciplines — including Maxillofacial Surgery, Periodontics,
+            Prosthodontics, Endodontics, Oral Radiology and works closely with
+            Dental Technicians.
+          </p>
+          <p>
+            Marks Biotech Inc. operates in the broader context of India’s
+            expanding MedTech and dental technology sector, where digital
+            innovations — including AI, digital diagnostics, and guided
+            workflows — play an increasingly important role in improving
+            clinical outcomes.
+          </p>
+        </div>
+
+        <div class="story-image">
+          <img src="assets/imgs/grup-Photo.png" alt="Leadership Team" />
+        </div>
+      </div>
+    </section>
+
+    <!-- FOUNDER PROFILE -->
+    <section class="about-founder-box">
+      <div class="founder-text">
+        <h3>FOUNDER PROFILE</h3>
+
+        <p class="intro">
+          With over 30 years of leadership experience across FMCG,
+          Pharmaceuticals, Medical Devices, and Dental Devices, Mr. Mani
+          Krishnan brings deep expertise in business development, clinical
+          partnerships, and product innovation.
+        </p>
+
+        <h4>CAREER HIGHLIGHTS:</h4>
+
         <ul>
-          <li>India CDSCO Medical Device Registration and Approvals</li>
-          <li>In Country Representation</li>
+          <li>20+ years dedicated to the dental industry</li>
+          <li>Former Director – Nobel Biocare India & South Asia</li>
+          <li>Senior leader at Dentsply India</li>
+          <li>Regional Head at Becton Dickinson (BD India)</li>
+          <li>
+            Proven track record of building scalable healthcare businesses
+          </li>
+          <li>Recognized for ethical leadership and long-term partnerships</li>
+          <li>
+            Master’s Degree in Commerce & Advanced PG Diploma in Marketing &
+            International Business
+          </li>
         </ul>
-
-        <p>
-          Indian Market Entry for Medical Devices Requires to Obtain
-          Registration and Approvals from the Registration Agencies and in
-          India is the CDSCO (Central Drug Standard Control Organisations).
-        </p>
-
-        <p>
-          Based on the Product Classifications Registration Requirements and
-          Work Related May Vary to Make Permanent Technical and Clinical
-          Submission or Leveraging Existing Registration and Approvals for
-          Availing Faster Entry to New Markets Launches.
-        </p>
       </div>
 
-      <div class="device-right">
-        <img src="assets/imgs/colored-logo (6) 1.png" alt="Ashoka Emblem" />
+      <div class="founder-image">
+        <img src="assets/imgs/Rectangle 244.png" alt="Founder" />
+        <p class="founder-name">FOUNDER, MARKS BIOTECH INC.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="about-story-founder-section">
-    <!-- STORY SECTION -->
-    <div class="story-box">
-      <div class="story-text">
-        <h2>The Story of Marks Biotech</h2>
+    <section class="team-vision-section">
+      <!-- OUR TEAM -->
+      <div class="team-section">
+        <h2>Non Executive Consultant</h2>
 
-        <p>
-         Incorporated in 2018, Marks Biotech Inc. has grown as a dedicated provider of advanced dental products and solutions, with a focus on supporting dental professionals across India.  </p>
-         
-         <!-- Its engagement in technological education, innovation sharing, and community outreach reflects a broader commitment to elevating standards of dental care.  -->
-<p>Headquartered in Chennai, Tamil Nadu, with multiple warehouses and offices across India.
- Marks Biotech Inc. specializes in dental consumables, oral care products, rehabilitation solutions, and digital technology-enabled systems spanning multiple dental disciplines — including Maxillofacial Surgery, Periodontics, Prosthodontics, Endodontics, Oral Radiology and works closely with Dental Technicians.</p>
-<p>Marks Biotech Inc. operates in the broader context of India’s expanding MedTech and dental technology sector, where digital innovations — including AI, digital diagnostics, and guided workflows — play an increasingly important role in improving clinical outcomes.</p>
- 
-
-
-
-       
-
-      </div>
-
-      <div class="story-image">
-        <img src="assets/imgs/about-group.jpeg" alt="Leadership Team" />
-      </div>
-    </div>
-  </section>
-
-  <!-- FOUNDER PROFILE -->
-  <section class="about-founder-box">
-    <div class="founder-text">
-      <h3>FOUNDER PROFILE</h3>
-
-      <p class="intro">
-        With over 30 years of leadership experience across FMCG,
-        Pharmaceuticals, Medical Devices, and Dental Devices, Mr. Mani
-        Krishnan brings deep expertise in business development, clinical
-        partnerships, and product innovation.
-      </p>
-
-      <h4>CAREER HIGHLIGHTS:</h4>
-
-      <ul>
-        <li>20+ years dedicated to the dental industry</li>
-        <li>Former Director – Nobel Biocare India & South Asia</li>
-        <li>Senior leader at Dentsply India</li>
-        <li>Regional Head at Becton Dickinson (BD India)</li>
-        <li>
-          Proven track record of building scalable healthcare businesses
-        </li>
-        <li>Recognized for ethical leadership and long-term partnerships</li>
-        <li>
-          Master’s Degree in Commerce & Advanced PG Diploma in Marketing &
-          International Business
-        </li>
-      </ul>
-    </div>
-
-    <div class="founder-image">
-      <img src="assets/imgs/Rectangle 244.png" alt="Founder" />
-      <p class="founder-name">FOUNDER, MARKS BIOTECH INC.</p>
-    </div>
-  </section>
-
-  <section class="team-vision-section">
-    <!-- OUR TEAM -->
-    <div class="team-section">
-      <h2>Non Executive Consultant</h2>
-
-      <div class="team-cards">
-
-        <div class="team-card">
-          <div class="team-card-inner">
-            <div class="team-card-face team-card-front">
-              <img src="assets/imgs/Prabhu 4.png" alt="Team Member" />
-              <h4>Dr. Prabhu Vinayagam</h4>
-              <span>Ex–Managing Director, JCI Asia Pacific Office At Singapore</span>
+        <div class="team-cards">
+          <div class="team-card">
+            <div class="team-card-inner">
+              <div class="team-card-face team-card-front">
+                <img src="assets/imgs/Prabhu 4.png" alt="Team Member" />
+                <h4>Dr. Prabhu Vinayagam</h4>
+                <span
+                  >Ex–Managing Director, JCI Asia Pacific Office At
+                  Singapore</span
+                >
+              </div>
+              <div class="team-card-face team-card-back">
+                <h4>Dr. Prabhu Vinayagam</h4>
+                <p>
+                  Dr. Prabhu Vinayagam is a distinguished C-level healthcare
+                  executive with extensive leadership experience across the Asia
+                  Pacific region. He holds a Bachelor of Medicine and Bachelor
+                  of Surgery (MBBS) from Maulana Azad Medical College (MAMC), a
+                  Diploma in Anesthesiology (DA), and an MBA in Marketing and
+                  Operations from SP Jain School of Global Management,
+                  Singapore. He served as the Managing Director of Joint
+                  Commission International (JCI) – Asia Pacific, where he played
+                  a pivotal role in guiding nearly 80 hospitals across the
+                  region toward international accreditation standards. His
+                  leadership significantly strengthened healthcare quality
+                  frameworks and operational excellence in multiple countries.
+                </p>
+              </div>
             </div>
-            <div class="team-card-face team-card-back">
-              <h4>Dr. Prabhu Vinayagam</h4>
-              <p>
-                Dr. Prabhu Vinayagam is a distinguished C-level healthcare executive with extensive leadership experience across the Asia Pacific region. He holds a Bachelor of Medicine and Bachelor of Surgery (MBBS) from Maulana Azad Medical College (MAMC), a Diploma in Anesthesiology (DA), and an MBA in Marketing and Operations from SP Jain School of Global Management, Singapore.
-He served as the Managing Director of Joint Commission International (JCI) – Asia Pacific, where he played a pivotal role in guiding nearly 80 hospitals across the region toward international accreditation standards. His leadership significantly strengthened healthcare quality frameworks and operational excellence in multiple countries.
-              </p>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card-inner">
+              <div class="team-card-face team-card-front">
+                <img src="assets/imgs/Mr V Sourirajan.jpeg" alt="Team Member" />
+                <h4>Mr. V. Sourirajan</h4>
+                <span
+                  >Healthcare Expert with 35 years over Pharma, Medical Devices,
+                  Medical Equipment & Diagnostic Industry.</span
+                >
+              </div>
+              <div class="team-card-face team-card-back">
+                <h4>Mr. V. Sourirajan</h4>
+                <p>
+                  Healthcare Expert with 38 years in Pharma, Medical Devices,
+                  Medical Equipment & Diagnostic Industry. Founder & Director :
+                  Olympus Therapeutics Pvt. Ltd. | 8 Years Built and led a
+                  specialty healthcare enterprise focused on Women’s Health and
+                  Infertility. Drove corporate strategy, market positioning, and
+                  operational scale-up in a regulated and competitive segment.
+                  Leadership Team Member & Business Director – Diagnostics
+                  Becton Dickinson India | 16 Years as Senior leadership roles
+                  with full P&L responsibility across Medical Devices and
+                  Diagnostics. Ranbaxy (now Sun Pharma) 14 Years Regional
+                  Business Development. Brings a balanced blend of
+                  entrepreneurial leadership and multinational corporate
+                  governance experience, with strong capabilities in strategy
+                  oversight, risk management, business transformation, and
+                  sustainable growth.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card-inner">
+              <div class="team-card-face team-card-front">
+                <img src="assets/imgs/Mahesh New.jpeg" alt="Team Member" />
+                <h4>Mr. N. Mahesh Kumar</h4>
+                <span
+                  >Entrepreneur | FMCG & Paper Industry Leader | Director</span
+                >
+              </div>
+              <div class="team-card-face team-card-back">
+                <h4>Mr. N. Mahesh Kumar</h4>
+                <p>
+                  N. Mahesh Kumar is a seasoned entrepreneur with over 30 years
+                  of leadership experience in the FMCG Products and Paper
+                  industries. With a strong academic foundation in Commerce and
+                  Economics, he brings deep expertise in financial management,
+                  cash flow optimization, risk mitigation, and sustainable
+                  business structuring. Mr. Mahesh Kumar’s strengths extend to
+                  global sourcing, strategic vendor partnerships, and supply
+                  chain optimization across diverse geographies. His core
+                  capabilities include logistics planning, channel management,
+                  and distribution network expansion, ensuring operational
+                  efficiency and market reach. An active industry contributor,
+                  he has held key positions including Treasurer and Board Member
+                  in Traders and Wholesalers associations, notably serving as
+                  Treasurer of the The Karur Amravathi Traders & Mercant
+                  Association. Currently, he serves as Director of VPM Paper &
+                  Board Pvt Ltd., leading business expansion across South Tamil
+                  Nadu.
+                </p>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="team-card">
-          <div class="team-card-inner">
-            <div class="team-card-face team-card-front">
-              <img src="assets/imgs/Mr V Sourirajan.jpeg" alt="Team Member" />
-              <h4>Mr. V. Sourirajan</h4>
-              <span>Healthcare Expert with 35 years over Pharma, Medical Devices, Medical Equipment & Diagnostic Industry.</span>
-            </div>
-            <div class="team-card-face team-card-back">
-              <h4>Mr. V. Sourirajan</h4>
-              <p>
-               
-Healthcare Expert with 38 years in Pharma, Medical Devices, Medical Equipment & Diagnostic Industry.
-Founder & Director : Olympus Therapeutics Pvt. Ltd. | 8 Years
-Built and led a specialty healthcare enterprise focused on Women’s Health and Infertility. Drove corporate strategy, market positioning, and operational scale-up in a regulated and competitive segment.
-Leadership Team Member & Business Director – Diagnostics
-Becton Dickinson India | 16 Years as Senior leadership roles with full P&L responsibility across Medical Devices and Diagnostics. 
-Ranbaxy (now Sun Pharma) 14 Years Regional Business Development.
-Brings a balanced blend of entrepreneurial leadership and multinational corporate governance experience, with strong capabilities in strategy oversight, risk management, business transformation, and sustainable growth.
-              </p>
-            </div>
-          </div>
+    <footer class="about-footer">
+      <!-- TOP -->
+      <div class="about-footer-top">
+        <div class="about-footer-title">
+          <p>We are here to support You</p>
+          <h2>Connect with us</h2>
         </div>
 
-        <div class="team-card">
-          <div class="team-card-inner">
-            <div class="team-card-face team-card-front">
-              <img src="assets/imgs/Mahesh New.jpeg" alt="Team Member" />
-              <h4>Mr. N. Mahesh Kumar</h4>
-              <span>Entrepreneur | FMCG & Paper Industry Leader | Director</span>
-            </div>
-            <div class="team-card-face team-card-back">
-              <h4>Mr. N. Mahesh Kumar</h4>
-              <p>
-               N. Mahesh Kumar is a seasoned entrepreneur with over 30 years of leadership experience in the FMCG Products and Paper industries. With a strong academic foundation in Commerce and Economics, he brings deep expertise in financial management, cash flow optimization, risk mitigation, and sustainable business structuring.
-Mr.  Mahesh Kumar’s strengths extend to global sourcing, strategic vendor partnerships, and supply chain optimization across diverse geographies. His core capabilities include logistics planning, channel management, and distribution network expansion, ensuring operational efficiency and market reach. An active industry contributor, he has held key positions including Treasurer and Board Member in Traders and Wholesalers associations, notably serving as Treasurer of the The Karur Amravathi Traders & Mercant Association.
-Currently, he serves as Director of VPM Paper & Board Pvt Ltd., leading business expansion across South Tamil Nadu.
-              </p>
-            </div>
-          </div>
+        <div class="about-subscribe-box">
+          <form action="" id="form1">
+            <input type="email" name="email" placeholder="Enter your mail id" />
+            <button class="subsc" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- BOTTOM -->
+      <div class="footer-content">
+        <!-- QUICK LINKS -->
+        <div class="footer-col">
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="./index.html">Highlights</a></li>
+            <li><a href="./about.html">About us</a></li>
+
+            <li>
+              <a href="https://marksbiotech.com/micronmapper/">MicronMapper</a>
+            </li>
+
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./events.html">Event</a></li>
+            <li><a href="./careers.html">Careers</a></li>
+          </ul>
         </div>
 
-        
+        <!-- PRODUCTS -->
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li>
+              <a href="https://b-and-b-india.netlify.app/uniqueimplant"
+                >Dental implants</a
+              >
+            </li>
+            <li>
+              <a href="https://b-and-b-india.netlify.app/surgicalkit"
+                >Free hand Surgical</a
+              >
+            </li>
+            <li>
+              <a href="https://b-and-b-india.netlify.app/digitalsurgicalguide"
+                >Computer Guided Surgery</a
+              >
+            </li>
+            <li><a href="./allograft.html">Allograft</a></li>
+            <li><a href="./xenograft.html">Xenograft</a></li>
+            <li>
+              <a href="https://marksbiotech.com/navident-3.0">Navident 3.0</a>
+            </li>
+            <li>
+              <a href="https://marksbiotech.com/navident-4.0/"
+                >Navident 4.0 EVO</a
+              >
+            </li>
+            <li>
+              <a href=".https://marksbiotech.com/micronmapper/"
+                >Photogrammetry</a
+              >
+            </li>
+          </ul>
+        </div>
 
+        <!-- ADDRESS -->
+        <div class="footer-col address">
+          <h4>Address</h4>
+
+          <p class="he-red">Operation and Communication Address</p>
+          <p>
+            84, 1st floor, Thirupathy Nagar,<br />
+            Mainroad, 1st Cross street, <br />
+            Valasaravakkam, Chennai-600087.
+          </p>
+
+          <p class="he-red">Registered Office Address</p>
+          <p>
+            104/5, 6th street, s-1, 2nd floor, The Brown CLS Bulding, Ratha
+            Avenue, Valasaravakam, Chennai-600087.
+          </p>
+        </div>
+
+        <!-- LOGO + MAP -->
+        <div class="footer-col logo-map">
+          <img
+            src="assets/imgs/marks-biotech-logo 1.png"
+            alt="Marks Biotech Logo"
+            class="logo"
+          />
+          <p class="contact">📞 +91 44 485 93250</p>
+          <p class="contact">📞 +91 9819893250 ,+91 9840320250</p>
+          <p class="contact"><span>✉ </span>info@marksbiotech.com</p>
+          <div class="map-box">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.861000188089!2d80.1749978!3d13.044518400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261bb26e13173%3A0x58681e3956ff7dbb!2sMarks%20Biotech%20Inc!5e0!3m2!1sen!2sin!4v1769035781529!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
       </div>
-    </div>
+    </footer>
 
-
-  </section>
-
-
-  
-
-
-
-  <footer class="about-footer">
-    <!-- TOP -->
-    <div class="about-footer-top">
-      <div class="about-footer-title">
-        <p>We are here to support You</p>
-        <h2>Connect with us</h2>
-      </div>
-
-      <div class="about-subscribe-box">
-        <form action="" id="form1">
-        <input type="email" name="email" placeholder="Enter your mail id" />
-        <button class="subsc" type="submit">Subscribe</button></form>
-      </div>
-    </div>
-
-    <hr />
-
-    <!-- BOTTOM -->
-    <div class="footer-content">
-      <!-- QUICK LINKS -->
-      <div class="footer-col">
-        <h4>Quick links</h4>
-        <ul>
-          <li><a href="./index.html">Highlights</a></li>
-          <li><a href="./about.html">About us</a></li>
-
-          <li><a href="https://marksbiotech.com/micronmapper/">MicronMapper</a></li>
-
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./events.html">Event</a></li>
-          <li><a href="./careers.html">Careers</a></li>
-
-        </ul>
-      </div>
-
-      <!-- PRODUCTS -->
-      <div class="footer-col">
-        <h4>Products</h4>
-        <ul>
-          <li><a href="https://b-and-b-india.netlify.app/uniqueimplant">Dental implants</a></li>
-          <li><a href="https://b-and-b-india.netlify.app/surgicalkit">Free hand Surgical</a></li>
-          <li><a href="https://b-and-b-india.netlify.app/digitalsurgicalguide">Computer Guided Surgery</a></li>
-          <li><a href="./allograft.html">Allograft</a></li>
-          <li><a href="./xenograft.html">Xenograft</a></li>
-          <li><a href="https://marksbiotech.com/navident-3.0">Navident 3.0</a></li>
-          <li><a href="https://marksbiotech.com/navident-4.0/">Navident 4.0 EVO</a></li>
-          <li><a href=".https://marksbiotech.com/micronmapper/">Photogrammetry</a></li>
-
-
-        </ul>
-      </div>
-
-      <!-- ADDRESS -->
-      <div class="footer-col address">
-        <h4>Address</h4>
-
-        <p class="he-red">Operation and Communication Address</p>
-        <p>
-          84, 1st floor, Thirupathy Nagar,<br />
-          Mainroad, 1st Cross street, <br />
-          Valasaravakkam, Chennai-600087.
-        </p>
-
-        <p class="he-red">Registered Office Address</p>
-        <p>
-          104/5, 6th street, s-1, 2nd floor, The Brown CLS Bulding, Ratha
-          Avenue, Valasaravakam, Chennai-600087.
-        </p>
-
-
-      </div>
-
-      <!-- LOGO + MAP -->
-      <div class="footer-col logo-map">
-
-        <img src="assets/imgs/marks-biotech-logo 1.png" alt="Marks Biotech Logo" class="logo" />
-        <p class="contact">📞 +91 44 485 93250</p>
-        <p class="contact">📞 +91 9819893250 ,+91 9840320250</p>
-        <p class="contact"><span>✉ </span>info@marksbiotech.com</p>
-        <div class="map-box"><iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.861000188089!2d80.1749978!3d13.044518400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261bb26e13173%3A0x58681e3956ff7dbb!2sMarks%20Biotech%20Inc!5e0!3m2!1sen!2sin!4v1769035781529!5m2!1sen!2sin"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-
-      </div>
-    </div>
-
-  </footer>
-
-
-
-  <script src="./script2.js"></script>
-</body>
-
+    <script src="./script2.js"></script>
+  </body>
 </html>
-
-
