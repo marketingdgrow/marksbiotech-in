@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inder&family=Instrument+Serif:ital@0;1&display=swap");
+@import url("https://fonts.cdnfonts.com/css/homizio");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* fonts */
+  --primary-font: "Homizio", sans-serif;
+  --secondary-font: "Inder", sans-serif;
+  /* color */
+  --primary-color: #0f0f0f;
+  --secondary-color: #ffffff;
+  --red-color: #ce2017;
+  --gray-color: #b2b2b2;
+}
+
+body {
+  background-color: var(--primary-color);
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: var(--primary-font);
+  font-size: 5rem;
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+h2 {
+  font-size: 3.2rem;
+}
+
+p {
+  font-family: var(--secondary-font);
+  /* color: #ffffff;
+  font-size: 18px; */
+}
+a{
+    text-decoration: none;
+}
+li{
+    color: #eeeeee;
+}
+/* img{
+    padding: 30px;
+} */
+
+
+
+.top-banner-careers {
+  width: 100%;
+  height:80vh;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.8) 40%,
+      rgba(19, 18, 18, 0.8) 100%
+    ),
+    url("./assets/imgs/scientific-banner");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: center;
+  overflow: hidden;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-banner-careers h1 {
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.05cap;
+}
+
+
+/* ============================= */
+/* SCIENTIFIC EVIDENCE SECTION  */
+/* ============================= */
+
+#faqs {
+  background: #000;
+  padding: 80px 20px;
+  color: #fff;
+}
+
+.regulatory-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Heading */
+.heading-3 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  text-align: start;
+  font-family: var(--primary-font);
+  color: #ce2017;
+  letter-spacing: 0.07cap;
+}
+
+.faq-text {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 50px;
+  text-align: start;
+}
+
+/* GRID */
+.div-block-27 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+/* CARD STRUCTURE */
+.evidence-link {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* IMAGE WRAPPER */
+.evidence-link img {
+  width: 85%;              /* reduced width */
+  border-radius: 14px;
+  transition: transform 0.5s ease;
+  display: block;
+}
+
+/* HOVER ZOOM */
+.evidence-link:hover img {
+  transform: scale(1.2);   /* 20% zoom */
+}
+
+/* TEXT BELOW IMAGE (outside look) */
+.evidence-text {
+  margin-top: 40px;
+  font-size: 20px;
+  line-height: 1.3;
+  max-width: 100%;
+  text-align: center;
+  color: #fa281c;
+}
+
+/* Reference long text */
+#faqs .faq-text:last-of-type {
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #ffffff;
+  max-width: 1000px;
+  margin: 0 auto 60px auto;
+}
+
+/* ============================= */
+/* SCIENTIFIC REFERENCES LIST */
+/* ============================= */
+
+#faqs .faq-text:last-of-type {
+  text-align: left;
+  font-size: 16px;      /* slightly increased */
+  line-height: 1.9;       /* better readability */
+  color: #ffffff;
+  max-width: 800px;
+  margin: 40px auto 80px auto;
+  padding-left: 10px;
+}
+
+/* Add spacing between each numbered reference */
+#faqs .faq-text:last-of-type br + br {
+  content: "";
+  display: block;
+  margin-bottom: 14px;
+}
+
+/* Improve DOI link visibility if any */
+#faqs .faq-text:last-of-type a {
+  color: #ffffff;
+  text-decoration: underline;
+  word-break: break-word;
+}
+
+.faq-group-title {
+    font-size: 50px;
+    color: var(--red-color);
+    text-align: start;
+}
+.faq-text1 {
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: start;
+    margin-bottom: 50px;
+    color: var(--gray-color);
+}
+.w-button{
+    background-color: #ce2017;
+    color: #000;
+    padding: 12px 32px;
+    border-radius: 15px;
+    text-align: start;
+    font-size: 20px;
+    font-weight: 600;
+}
+.w-button:hover{
+    background-color: #fff;
+}
+
+/* ===================================== */
+/* TABLET VIEW (992px ↓) */
+/* ===================================== */
+
+@media (max-width: 992px) {
+
+  /* Banner */
+  .top-banner-careers {
+    height: 60vh;
+    padding: 40px 20px;
+  }
+
+  .top-banner-careers h1 {
+    font-size: 36px;
+  }
+
+  /* Section Padding */
+  #faqs {
+    padding: 70px 25px;
+  }
+
+  /* Heading */
+  .heading-3 {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .faq-text {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  /* Grid */
+  .div-block-27 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  /* Image */
+  .evidence-link img {
+    width: 90%;
+  }
+
+  .evidence-text {
+    font-size: 16px;
+    margin-top: 25px;
+  }
+
+  /* References */
+  #faqs .faq-text:last-of-type {
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 1.8;
+    padding-left: 0;
+  }
+
+  /* Bottom text */
+  .faq-group-title {
+    font-size: 34px;
+  }
+
+  .faq-text1 {
+    font-size: 18px;
+  }
+}
+
+
+/* ===================================== */
+/* MOBILE VIEW (576px ↓) */
+/* ===================================== */
+
+@media (max-width: 576px) {
+
+  /* Banner */
+  .top-banner-careers {
+    height: 50vh;
+    padding: 30px 15px;
+  }
+
+  .top-banner-careers h1 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  /* Section */
+  #faqs {
+    padding: 60px 15px;
+  }
+
+  /* Heading */
+  .heading-3 {
+    font-size: 28px;
+    text-align: left;
+  }
+
+  .faq-text {
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  /* Grid -> Single column */
+  .div-block-27 {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  /* Image */
+  .evidence-link img {
+    width: 95%;
+  }
+
+  .evidence-text {
+    font-size: 14px;
+    margin-top: 18px;
+  }
+
+  /* Reference list */
+  #faqs .faq-text:last-of-type {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 30px 0 50px 0;
+  }
+
+  /* Bottom section */
+  .faq-group-title {
+    font-size: 24px;
+  }
+
+  .faq-text1 {
+    font-size: 16px;
+  }
+
+  .w-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}

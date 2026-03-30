@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events UI</title>
+  <link rel="stylesheet" href="./events.css" />
+  <link rel="stylesheet" href="./nav.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="./js/gsap.min.js"></script>
+  <script src="./js/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link rel="stylesheet" href="./responsive-global.css" />
+</head>
+
+<body class="events-list-page">
+  
+ <header class="site-header">
+    <div class="nav-container">
+
+      <div class="nav-top">
+
+        <div class="logo1">
+          <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
+        </div>
+
+        <div class="hamburger" id="hamburger"> ?
+
+        </div>
+      </div>
+
+
+      <ul class="nav-main-menu">
+        <div class="logo">
+          <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
+        </div>
+        <li><a href="./index.html">Highlights</a></li>
+
+
+        <!-- ================= Dental Implantology ================= -->
+        <li class="has-mega mega-dental">
+          Dental Implantology<i class="fa-solid fa-angle-down"></i>
+
+          <div class="mega-menu">
+
+
+            <!-- COLUMN 2 -->
+            <div class="mega-column column-2" id="col2">
+              <ul>
+                <li data-img="heritage"><a href="https://b-and-b-india.netlify.app/heritage">Heritage </a></li>
+                <li id="unique" data-img="unique"><a href="#col3">Unique Design <i class="fa-solid fa-angle-right"></i></a></li>
+                <li data-img="custom"><a href="https://b-and-b-india.netlify.app/subperiosteal">Customized
+                    Implants</a></li>
+                <li data-img="custom"><a href="https://b-and-b-india.netlify.app/tissue">Tissue Adhesive</a></li>
+                <li data-img="guided"><a href="https://b-and-b-india.netlify.app/digitalsurgicalguide">Digital Guided
+                    Surgery</a></li>
+                <li data-img="kits"><a href="https://b-and-b-india.netlify.app/surgicalkit">Surgical Kits</a></li>
+                <li data-img="kits"><a href="https://b-and-b-india.netlify.app/tissue">Tissue Adhesive</a></li>
+              </ul>
+            </div>
+
+            <!-- COLUMN 3 -->
+            <div class="mega-column column-3" id="col3">
+              <h4>Implants</h4>
+              <ul>
+                <li data-img="duravit-ev"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design1">DURAVIT
+                    EV</a></li>
+                <li data-img="duravit-3p"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design2">DURAVIT
+                    3P</a></li>
+                <li data-img="duravit-wide"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design3">DURAVIT
+                    Wide</a></li>
+                <li data-img="duravit-pterygo"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design4">DURAVIT
+                    Pterygo</a></li>
+                <li data-img="duravit-slim"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design5">DURAVIT
+                    Slim</a></li>
+                <li data-img="duravit-slim"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design6">DURAVIT
+                    Mini</a></li>
+              </ul>
+            </div>
+
+            <!-- IMAGES -->
+            <div class="mega-images">
+              <img id="img1" src="./assets/imgs/di-1.webp" />
+              <img id="img2" src="./assets/imgs/di-2.jpg" />
+            </div>
+          </div>
+        </li>
+
+        <li><a href="https://b-and-b-india.netlify.app/conexaconnection">Prosthetics</a></li>
+
+        <!-- ================= Regenerative ================= -->
+        <li class="has-mega mega-regenerative">
+          Regenerative Products<i class="fa-solid fa-angle-down"></i>
+          <div class="mega-menu">
+            <div class="mega-column">
+              <!-- <h4>Bonegraft</h4> -->
+              <ul>
+                <li><a href="./allograft.html">Allograft</a></li>
+                <li><a href="./xenograft.html">Xenograft</a></li>
+                <li><a href="./xenograft.html#collagen">Collagen Membrane</a></li>
+              </ul>
+            </div>
+            <div class="mega-images">
+              <img src="./assets/imgs/g-1.jpg" />
+              <img src="./assets/imgs/g-2.jpg" />
+            </div>
+          </div>
+        </li>
+
+        <!-- ================= Robotic ================= -->
+        <li class="has-mega mega-robotic">
+          Robotic Navigation<i class="fa-solid fa-angle-down"></i>
+          <div class="mega-menu">
+            <div class="mega-images">
+              <img src="./assets/imgs/r-1.jpg" />
+              <img src="./assets/imgs/3.0.png" />
+            </div>
+            <div class="mega-column">
+              <h4>Navident</h4>
+              <ul>
+                <li><a href="https://marksbiotech.com/navident-3.0">Navident 3.0</a></li>
+                <li><a href="https://marksbiotech.com/navident-4.0/">Navident 4.0 EVO</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+
+        <li><a href="https://marksbiotech.com/micronmapper/">Photogrammetry</a></li>
+
+
+        <li class="has-mega mega-resources">
+          Resources<i class="fa-solid fa-angle-down"></i>
+          <div class="mega-menu">
+            <div class="mega-column">
+              <ul>
+                <li><a href="./events.html">Education</a></li>
+                <li><a href="./blog.html">Blogs</a></li>
+                <li><a href="./careers.html">Careers</a></li>
+                <li><a href="./scientific-evidence.html">Scientific Evidence</a></li>
+                
+
+
+              </ul>
+            </div>
+
+          </div>
+        </li>
+        <li><a href="./about.html">About Us</a></li>
+      </ul>
+
+    </div>
+  </header>
+
+
+
+  <section class="top-banner-careers">
+    <h1>EVENTS</h1>
+  </section>
+
+  <!-- RADIO -->
+   <input type="radio" name="tab" id="year-2024"  >
+    <input type="radio" name="tab" id="year-2025" >
+    <input type="radio" name="tab" id="year-2026" checked>
+
+
+   <input type="radio" name="year-2024-type" id="y2024-workshop" >
+    <input type="radio" name="year-2024-type" id="y2024-conference">
+
+
+   <input type="radio" name="year-2025-type" id="y2025-workshop" >
+  <input type="radio" name="year-2025-type" id="y2025-conference">
+
+  <input type="radio" name="year-2026-type" id="y2026-workshop">
+  <input type="radio" name="year-2026-type" id="y2026-conference" checked>
+
+
+
+
+  <!-- SUB TABS (FIXED) -->
+
+
+
+
+  <!-- TABS -->
+  <div class="tabs">
+    <!-- <label for="year-2024">2024 Events</label> -->
+    <label for="year-2025">2025 Events</label>
+    <label for="year-2026">2026 Events</label>
+  </div>
+
+
+<!-- <div class="sub-tabs sub-2024">
+  <label for="y2024-workshop">Workshop</label>
+  <label for="y2024-conference">Conference</label>
+</div> -->
+
+<div class="sub-tabs sub-2025">
+  <label for="y2025-workshop">Workshop</label>
+  <label for="y2025-conference">Conference</label>
+</div>
+
+<div class="sub-tabs sub-2026">
+  <label for="y2026-workshop">Workshop</label>
+  <label for="y2026-conference">Conference</label>
+</div>
+
+  <!-- EVENTS -->
+  <div class="events-grid">
+
+
+    <!-- 2024 workshop events -->
+
+
+    <!-- ===== 2024 conference events ========= -->
+
+    <!-- <a href="./event23.html" class="event-card  conference  year-2024-event">
+      <img src="./assets/event/24.jpeg">
+      <div class="event-content">
+        <div class="event-title">B&B Dental - Italy </div>
+      </div>
+    </a> -->
+
+    <!-- <a href="./event13.html" class="event-card  conference year-2024-event">
+      <img src="./assets/event/15.png">
+      <div class="event-content">
+        <div class="event-title">1st National Implantology Conference In Bangalore</div>
+      </div>
+    </a> -->
+
+    
+    <!-- 2025 workshop events -->
+
+    <a href="./event8.html" class="event-card workshop year-2025-event">
+      <img src="./assets/event/11.png">
+      <div class="event-content">
+        <div class="event-title"> Navident Advanced Sugical & Prosthetic Workshop </div>
+      </div>
+    </a>
+
+     <a href="./event11.html" class="event-card   workshop year-2025-event">
+      <img src="./assets/event/14.png
+      ">
+      <div class="event-content">
+        <div class="event-title"> Future Of Dentistry One Day Navident Surgical Workshop </div>
+      </div>
+    </a>
+
+     <a href="./event24.html" class="event-card  workshop  year-2025-event">
+      <img src="./assets/event/24.jpg">
+      <div class="event-content">
+        <div class="event-title">New Navident Evo — Installation ( Manipal College)</div>
+      </div>
+    </a>
+
+    <a href="./event9.html" class="event-card  workshop year-2025-event">
+      <img src="./assets/event/12.png">
+      <div class="event-content">
+        <div class="event-title"> CLARONAV DENTAL - Navident Advanced Sugical & Prosthetic Workshop </div>
+      </div>
+    </a>
+
+    <a href="./event25.html" class="event-card  workshop year-2025-event">
+      <img src="./assets/event/25.jpg">
+      <div class="event-content">
+        <div class="event-title">Expodent Delhi</div>
+      </div>
+    </a>
+
+   
+
+
+
+    <!-- 2025 conference  -->
+
+    <a href="./event10.html" class="event-card  conference year-2025-event">
+      <img src="./assets/event/13.png">
+      <div class="event-content">
+        <div class="event-title"> Indian Society of Oral Implantologists Conference</div>
+      </div>
+    </a>
+
+    <a href="./event14.html" class="event-card conference year-2025-event">
+      <img src="./assets/event/16.png">
+      <div class="event-content">
+        <div class="event-title">2nd National Conference -
+          OSICON</div>
+      </div>
+    </a>
+
+     <a href="./event22.html" class="event-card  conference  year-2025-event">
+      <img src="./assets/event/23.jpg">
+      <div class="event-content">
+        <div class="event-title">IDS Cologne - 2025</div>
+      </div>
+    </a>
+
+
+
+    <!-- ==== 2026 Workshop - events ==== -->
+
+    <a href="./event1.html" class="event-card workshop year-2026-event">
+      <img src="./assets/event/1.jpg">
+      <div class="event-content">
+        <div class="event-title">IUXTA-Subperiosteal Implants </div>
+      </div>
+    </a>
+
+     <a href="./event4.html" class="event-card workshop year-2026-event">
+      <img src="./assets/event/4.jpg">
+      <div class="event-content">
+        <div class="event-title"> Maxillary Sinus Lift Using Lateral And Crestal techniques </div>
+      </div>
+    </a>
+
+    <a href="./event6.html" class="event-card workshop year-2026-event">
+      <img src="./assets/event/6.jpg">
+      <div class="event-content">
+        <div class="event-title">Management
+           Of An Implant Prosthesis - with a Morse-Cone Connection</div>
+      </div>
+    </a>
+
+    <a href="./event3.html" class="event-card workshop year-2026-event">
+      <img src="./assets/event/3.jpg">
+      <div class="event-content">
+        <div class="event-title">Severe Atrophy Of The Upper Jaw</div>
+      </div>
+    </a>
+
+    <a href="./event2.html" class="event-card workshop year-2026-event">
+      <img src="./assets/event/2.jpg">
+      <div class="event-content">
+        <div class="event-title"> Conometric Prosthesis Using Stackable Surgical Guides</div>
+      </div>
+    </a>
+
+     <a href="./event7.html" class="event-card workshop year-2026-event">
+      <img src="./assets/event/7.jpg">
+      <div class="event-content">
+        <div class="event-title">Diagnosis
+           And Treatment Of Peri-Implantitis
+         </div>
+      </div>
+    </a>
+
+    <a href="./event5.html" class="event-card workshop year-2026-event">
+      <img src="./assets/event/5.jpg">
+      <div class="event-content">
+        <div class="event-title">Digital Philosophy – Full-Arch Management With a Fully Digital Workflow</div>
+      </div>
+    </a>
+
+    <a href="./event12.html" class="event-card workshop year-2026-event">
+      <img src="./assets/event/8.jpg">
+      <div class="event-content">
+        <div class="event-title">Management
+          Of The Conometric
+          Prosthesis</div>
+      </div>
+    </a>
+
+    <a href="./event15.html" class="event-card workshop year-2026-event">
+      <img src="./assets/event/9.jpg">
+      <div class="event-content">
+        <div class="event-title">Guided System Software for Dentists and Dental Technicians</div>
+      </div>
+    </a>
+
+
+
+
+    <!-- 2026 conference -->
+    
+    <a href="./event18.html" class="event-card  conference  year-2026-event">
+      <img src="./assets/event/20.png">
+      <div class="event-content">
+        <div class="event-title">AEEDC Dubai - 30 Years of Inspiration, Progress & Global Impact</div>
+      </div>
+    </a>
+
+    <a href="./event21.html" class="event-card  conference  year-2026-event">
+      <img src="./assets/event/21.png">
+      <div class="event-content">
+        <div class="event-title">A Training Session</div>
+      </div>
+    </a>
+
+    <a href="./event20.html" class="event-card conference year-2026-event">
+      <img src="./assets/event/19.png">
+      <div class="event-content">
+        <div class="event-title">Indian Association of Oral Implantology Global Summit</div>
+      </div>
+    </a>
+
+    <a href="./event16.html" class="event-card conference year-2026-event">
+      <img src="./assets/event/10.jpg">
+      <div class="event-content">
+        <div class="event-title">On Patient - Basic and Advanced Surgery</div>
+      </div>
+    </a>
+
+    <a href="./event17.html" class="event-card conference year-2026-event">
+      <img src="./assets/event/17.png">
+      <div class="event-content">
+        <div class="event-title">India`s Largest International Digital Dentistry Congress</div>
+      </div>
+    </a>
+
+    <a href="./event19.html" class="event-card  conference  year-2026-event ">
+      <img src="./assets/event/18.png">
+      <div class="event-content">
+        <div class="event-title">NIDACON Nagpur -
+          Unity in Profession. Excellence in Practice.</div>
+      </div>
+    </a>
+
+
+
+
+
+
+   
+
+
+
+  </div>
+
+
+  <footer class="about-footer">
+    <!-- TOP -->
+    <div class="about-footer-top">
+      <div class="about-footer-title">
+        <p>We are here to support You</p>
+        <h2>Connect with us</h2>
+      </div>
+
+      <div class="about-subscribe-box">
+        <form action="" id="form1">
+        <input type="email" name="email" placeholder="Enter your mail id" />
+        <button class="subsc" type="submit">Subscribe</button></form>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- BOTTOM -->
+    <div class="footer-content">
+      <!-- QUICK LINKS -->
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="./index.html">Highlights</a></li>
+          <li><a href="./about.html">About us</a></li>
+
+          <li><a href="https://marksbiotech.com/micronmapper/">MicronMapper</a></li>
+
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./events.html">Event</a></li>
+          <li><a href="./careers.html">Careers</a></li>
+
+        </ul>
+      </div>
+
+      <!-- PRODUCTS -->
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="https://b-and-b-india.netlify.app/uniqueimplant">Dental implants</a></li>
+          <li><a href="https://b-and-b-india.netlify.app/surgicalkit">Free hand Surgical</a></li>
+          <li><a href="https://b-and-b-india.netlify.app/digitalsurgicalguide">Computer Guided Surgery</a></li>
+          <li><a href="./allograft.html">Allograft</a></li>
+          <li><a href="./xenograft.html">Xenograft</a></li>
+          <li><a href="https://marksbiotech.com/navident-3.0">Navident 3.0</a></li>
+          <li><a href="https://marksbiotech.com/navident-4.0/">Navident 4.0 EVO</a></li>
+          <li><a href=".https://marksbiotech.com/micronmapper/">Photogrammetry</a></li>
+
+
+        </ul>
+      </div>
+
+      <!-- ADDRESS -->
+      <div class="footer-col address">
+        <h4>Address</h4>
+
+        <p class="he-red">Operation and Communication Address</p>
+        <p>
+          84, 1st floor, Thirupathy Nagar,<br />
+          Mainroad, 1st Cross street, <br />
+          Valasaravakkam, Chennai-600087.
+        </p>
+
+        <p class="he-red">Registered Office Address</p>
+        <p>
+          104/5, 6th street, s-1, 2nd floor, The Brown CLS Bulding, Ratha
+          Avenue, Valasaravakam, Chennai-600087.
+        </p>
+
+
+      </div>
+
+      <!-- LOGO + MAP -->
+      <div class="footer-col logo-map">
+
+        <img src="assets/imgs/marks-biotech-logo 1.png" alt="Marks Biotech Logo" class="logo" />
+        <p class="contact">📞 +91 44 485 93250</p>
+        <p class="contact">📞 +91 9819893250 ,+91 9840320250</p>
+        <p class="contact"><span>✉ </span>info@marksbiotech.com</p>
+        <div class="map-box"><iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.861000188089!2d80.1749978!3d13.044518400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261bb26e13173%3A0x58681e3956ff7dbb!2sMarks%20Biotech%20Inc!5e0!3m2!1sen!2sin!4v1769035781529!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="./event-gallery.js"></script>
+  <script src="./script2.js"></script>
+</body>
+
+</html>
+
+
+

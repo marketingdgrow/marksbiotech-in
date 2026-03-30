@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./events.css"/>
+   <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="./js/gsap.min.js"></script>
+  <script src="./js/ScrollTrigger.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./responsive-global.css" />
+</head>
+<body class="events-enhanced-page">
+
+
+  <header class="site-header">
+    <div class="nav-container">
+
+      <div class="nav-top">
+
+        <div class="logo1">
+          <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
+        </div>
+
+        <div class="hamburger" id="hamburger"> ?
+
+        </div>
+      </div>
+
+
+      <ul class="nav-main-menu">
+        <div class="logo">
+          <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
+        </div>
+        <li><a href="./index.html">Highlights</a></li>
+
+
+        <!-- ================= Dental Implantology ================= -->
+        <li class="has-mega mega-dental">
+          Dental Implantology<i class="fa-solid fa-angle-down"></i>
+
+          <div class="mega-menu">
+
+
+            <!-- COLUMN 2 -->
+            <div class="mega-column column-2" id="col2">
+              <ul>
+                <li data-img="heritage"><a href="https://b-and-b-india.netlify.app/heritage">Heritage </a></li>
+                <li id="unique" data-img="unique"><a href="#col3">Unique Design <i class="fa-solid fa-angle-right"></i></a></li>
+                <li data-img="custom"><a href="https://b-and-b-india.netlify.app/subperiosteal">Customized
+                    Implants</a></li>
+                <li data-img="custom"><a href="https://b-and-b-india.netlify.app/tissue">Tissue Adhesive</a></li>
+                <li data-img="guided"><a href="https://b-and-b-india.netlify.app/digitalsurgicalguide">Digital Guided
+                    Surgery</a></li>
+                <li data-img="kits"><a href="https://b-and-b-india.netlify.app/surgicalkit">Surgical Kits</a></li>
+                <li data-img="kits"><a href="https://b-and-b-india.netlify.app/tissue">Tissue Adhesive</a></li>
+              </ul>
+            </div>
+
+            <!-- COLUMN 3 -->
+            <div class="mega-column column-3" id="col3">
+              <h4>Implants</h4>
+              <ul>
+                <li data-img="duravit-ev"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design1">DURAVIT
+                    EV</a></li>
+                <li data-img="duravit-3p"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design2">DURAVIT
+                    3P</a></li>
+                <li data-img="duravit-wide"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design3">DURAVIT
+                    Wide</a></li>
+                <li data-img="duravit-pterygo"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design4">DURAVIT
+                    Pterygo</a></li>
+                <li data-img="duravit-slim"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design5">DURAVIT
+                    Slim</a></li>
+                <li data-img="duravit-slim"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design6">DURAVIT
+                    Mini</a></li>
+              </ul>
+            </div>
+
+            <!-- IMAGES -->
+            <div class="mega-images">
+              <img id="img1" src="./assets/imgs/di-1.webp" />
+              <img id="img2" src="./assets/imgs/di-2.jpg" />
+            </div>
+          </div>
+        </li>
+
+        <li><a href="https://b-and-b-india.netlify.app/conexaconnection">Prosthetics</a></li>
+
+        <!-- ================= Regenerative ================= -->
+        <li class="has-mega mega-regenerative">
+          Regenerative Products<i class="fa-solid fa-angle-down"></i>
+          <div class="mega-menu">
+            <div class="mega-column">
+              <!-- <h4>Bonegraft</h4> -->
+              <ul>
+                <li><a href="./allograft.html">Allograft</a></li>
+                <li><a href="./xenograft.html">Xenograft</a></li>
+                <li><a href="./xenograft.html#collagen">Collagen Membrane</a></li>
+              </ul>
+            </div>
+            <div class="mega-images">
+              <img src="./assets/imgs/g-1.jpg" />
+              <img src="./assets/imgs/g-2.jpg" />
+            </div>
+          </div>
+        </li>
+
+        <!-- ================= Robotic ================= -->
+        <li class="has-mega mega-robotic">
+          Robotic Navigation<i class="fa-solid fa-angle-down"></i>
+          <div class="mega-menu">
+            <div class="mega-images">
+              <img src="./assets/imgs/r-1.jpg" />
+              <img src="./assets/imgs/3.0.png" />
+            </div>
+            <div class="mega-column">
+              <h4>Navident</h4>
+              <ul>
+                <li><a href="https://marksbiotech.com/navident-3.0">Navident 3.0</a></li>
+                <li><a href="https://marksbiotech.com/navident-4.0/">Navident 4.0 EVO</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+
+        <li><a href="https://marksbiotech.com/micronmapper/">Photogrammetry</a></li>
+
+
+        <li class="has-mega mega-resources">
+          Resources<i class="fa-solid fa-angle-down"></i>
+          <div class="mega-menu">
+            <div class="mega-column">
+              <ul>
+                <li><a href="./events.html">Education</a></li>
+                <li><a href="./blog.html">Blogs</a></li>
+                <li><a href="./careers.html">Careers</a></li>
+                <li><a href="./scientific-evidence.html">Scientific Evidence</a></li>
+                
+
+
+              </ul>
+            </div>
+
+          </div>
+        </li>
+        <li><a href="./about.html">About Us</a></li>
+      </ul>
+
+    </div>
+  </header>
+
+
+    <section class="course-hero">
+  <div class="course-container">
+
+    <!-- LEFT CONTENT -->
+    <div class="course-left">
+      <span class="course-tag">Workshop</span>
+
+      <h2>
+          Management of the Conometric Prosthesis
+      </h2>
+
+      <h3>Theoretical and Practical Course | 2026</h3>
+
+      <p>
+        <strong>Type:</strong> Online Session with Live Surgery<br>
+        <strong>Mode:</strong> On-Demand Online Session<br>
+        <strong>Location:</strong> Online Training Program
+      </p>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="course-right">
+      <img src="./assets/event/8.jpg" alt="Management of conometric prosthesis online course">
+    </div>
+
+  </div>
+    </section>
+
+    <!-- <section class="running-section">
+  <div class="running-text">
+    Meet Us Explore The Latest Technologies
+  </div>
+</section> -->
+    
+<section class="event-details">
+  <div class="event-wrapper">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="course-side">
+      <h4>TAGS</h4>
+      <ul class="left-tag">
+        <li><a href="./events.html">EVENTS</a></li>
+        <li><a href="./events.html">UPCOMING EVENTS</a></li>
+        <li><a href="./events.html">PAST EVENTS</a></li>
+      </ul>
+
+      <h4>Share</h4>
+      <div class="share">
+        <a href="https://www.facebook.com/profile.php?id=100057220428403#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#https://api.whatsapp.com/send?phone=%2B919819893250&fbclid=IwY2xjawPoEE5leHRuA2FlbQIxMABicmlkETF6RGc1bGQ4MkNKQWFJZk92c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHp2k4EqPl-RmwWcQOpyXPFBwZ3hiBsmaGeaDHKGKfc-xCPP1c-quzaeBwZvZ_aem_T58P-OzKvAzVUFaIDa5-NQ"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/marks.biotechinc/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCxWtOTeE4P1x1AaXL_Dlvpw"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <div class="event-content">
+      <h2>Course Overview</h2>
+      <p>
+        This course is an in-depth online training session focused on conometric prostheses in implantology.
+      </p>
+      <p>
+        The program explains the clinical and prosthetic procedures used in conometric prosthetic systems,
+        including their design, functionality, surgical protocols and advantages.
+      </p>
+      <p>
+        Participants will gain insights into how conometric prosthetic systems can be used for efficient
+        implant-supported restorations with immediate loading techniques.
+      </p>
+      <p>
+        The session includes the analysis of various clinical cases and a live surgery demonstration,
+        allowing participants to observe real clinical workflows and treatment procedures.
+      </p>
+      <p>
+        B&amp;B Dental live surgeries and clinical guidance are integrated throughout the training.
+      </p>
+
+      <h2>Course Structure</h2>
+      <p><strong>09:00 AM - 01:00 PM</strong></p>
+      <p>
+         Clinical case description and analysis<br>
+         Live surgery demonstration<br>
+         Explanation of conometric prostheses and their clinical applications<br>
+         Advantages of conometric prostheses with straight abutments<br>
+         Advantages of conometric prostheses with angled abutments<br>
+         Presentation and discussion of clinical cases
+      </p>
+
+      <h2>Course Objectives</h2>
+      <p>Participants will learn:</p>
+      <p>
+         Definition and functioning of conometric prosthetic systems<br>
+         Clinical indications for using conometric prostheses<br>
+         Instruments and components used in the conometric technique<br>
+         Surgical workflow and prosthetic procedures<br>
+         Advantages of this technique in implant-supported rehabilitation
+      </p>
+
+      <h2>Course Instructor</h2>
+      <p>
+        <strong>Dr. Andrea Massaiu</strong>
+      </p>
+      <p>
+        He is an experienced clinician specializing in implant surgery and prosthetic rehabilitation
+        using conometric implant systems.
+      </p>
+
+      <h2>Additional Information</h2>
+      <p>
+        For further details, participants are advised to contact their local B&amp;B Dental distributor.
+      </p>
+      <p>
+        The session is provided as an on-demand online training course, allowing dentists to access
+        the program remotely.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+ 
+
+
+
+     <footer class="about-footer">
+    <!-- TOP -->
+    <div class="about-footer-top">
+      <div class="about-footer-title">
+        <p>We are here to support You</p>
+        <h2>Connect with us</h2>
+      </div>
+
+      <div class="about-subscribe-box">
+        <form action="" id="form1">
+        <input type="email" name="email" placeholder="Enter your mail id" />
+        <button class="subsc" type="submit">Subscribe</button></form>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- BOTTOM -->
+    <div class="footer-content">
+      <!-- QUICK LINKS -->
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="./index.html">Highlights</a></li>
+          <li><a href="./about.html">About us</a></li>
+          
+          <li><a href="https://marksbiotech.com/micronmapper/">MicronMapper</a></li>
+          
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./events.html">Event</a></li>
+          <li><a href="./careers.html">Careers</a></li>
+          
+        </ul>
+      </div>
+
+      <!-- PRODUCTS -->
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="https://b-and-b-india.netlify.app/uniqueimplant">Dental implants</a></li>
+          <li><a href="https://b-and-b-india.netlify.app/surgicalkit">Free hand Surgical</a></li>
+          <li><a href="https://b-and-b-india.netlify.app/digitalsurgicalguide">Computer Guided Surgery</a></li>
+          <li><a href="./allograft.html">Allograft</a></li>
+          <li><a href="./xenograft.html">Xenograft</a></li>
+          <li><a href="https://marksbiotech.com/navident-3.0">Navident 3.0</a></li>
+          <li><a href="https://marksbiotech.com/navident-4.0/">Navident 4.0 EVO</a></li>
+          <li><a href=".https://marksbiotech.com/micronmapper/">Photogrammetry</a></li>
+          
+          
+        </ul>
+      </div>
+
+      <!-- ADDRESS -->
+      <div class="footer-col address">
+        <h4>Address</h4>
+
+        <p class="he-red">Operation and Communication Address</p>
+        <p>
+          84, 1st floor, Thirupathy Nagar,<br />
+          Mainroad, 1st Cross street, <br />
+          Valasaravakkam, Chennai-600087.
+        </p>
+
+        <p class="he-red">Registered Office Address</p>
+        <p>
+          104/5, 6th street, s-1, 2nd floor, The Brown CLS Bulding, Ratha
+          Avenue, Valasaravakam, Chennai-600087.
+        </p>
+
+
+      </div>
+
+      <!-- LOGO + MAP -->
+      <div class="footer-col logo-map">
+
+        <img src="assets/imgs/marks-biotech-logo 1.png" alt="Marks Biotech Logo" class="logo" />
+        <p class="contact">📞 +91 44 485 93250</p>
+        <p class="contact">📞 +91 9819893250 ,+91 9840320250</p>
+        <p class="contact"><span>✉ </span>info@marksbiotech.com</p>
+        <div class="map-box"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.861000188089!2d80.1749978!3d13.044518400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261bb26e13173%3A0x58681e3956ff7dbb!2sMarks%20Biotech%20Inc!5e0!3m2!1sen!2sin!4v1769035781529!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+      </div>
+    </div>
+     </footer>
+
+    <script src="./script2.js"></script>
+  </body>
+</html>
+
+
+
+

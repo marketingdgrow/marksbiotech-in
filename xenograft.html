@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regenerative</title>
+    <link rel="stylesheet" href="nav.css"/>
+    <link rel="stylesheet" href="xenograft.css"/>
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="./js/gsap.min.js"></script>
+  <script src="./js/ScrollTrigger.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./responsive-global.css" />
+</head>
+
+<body>
+   
+  
+ <header class="site-header">
+    <div class="nav-container">
+
+      <div class="nav-top">
+
+        <div class="logo1">
+          <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
+        </div>
+
+        <div class="hamburger" id="hamburger"> ?
+
+        </div>
+      </div>
+
+
+      <ul class="nav-main-menu">
+        <div class="logo">
+          <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
+        </div>
+        <li><a href="./index.html">Highlights</a></li>
+
+
+        <!-- ================= Dental Implantology ================= -->
+        <li class="has-mega mega-dental">
+          Dental Implantology<i class="fa-solid fa-angle-down"></i>
+
+          <div class="mega-menu">
+
+
+            <!-- COLUMN 2 -->
+            <div class="mega-column column-2" id="col2">
+              <ul>
+                <li data-img="heritage"><a href="https://b-and-b-india.netlify.app/heritage">Heritage </a></li>
+                <li id="unique" data-img="unique"><a href="#col3">Unique Design <i class="fa-solid fa-angle-right"></i></a></li>
+                <li data-img="custom"><a href="https://b-and-b-india.netlify.app/subperiosteal">Customized
+                    Implants</a></li>
+                <li data-img="custom"><a href="https://b-and-b-india.netlify.app/tissue">Tissue Adhesive</a></li>
+                <li data-img="guided"><a href="https://b-and-b-india.netlify.app/digitalsurgicalguide">Digital Guided
+                    Surgery</a></li>
+                <li data-img="kits"><a href="https://b-and-b-india.netlify.app/surgicalkit">Surgical Kits</a></li>
+                <li data-img="kits"><a href="https://b-and-b-india.netlify.app/tissue">Tissue Adhesive</a></li>
+              </ul>
+            </div>
+
+            <!-- COLUMN 3 -->
+            <div class="mega-column column-3" id="col3">
+              <h4>Implants</h4>
+              <ul>
+                <li data-img="duravit-ev"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design1">DURAVIT
+                    EV</a></li>
+                <li data-img="duravit-3p"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design2">DURAVIT
+                    3P</a></li>
+                <li data-img="duravit-wide"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design3">DURAVIT
+                    Wide</a></li>
+                <li data-img="duravit-pterygo"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design4">DURAVIT
+                    Pterygo</a></li>
+                <li data-img="duravit-slim"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design5">DURAVIT
+                    Slim</a></li>
+                <li data-img="duravit-slim"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design6">DURAVIT
+                    Mini</a></li>
+              </ul>
+            </div>
+
+            <!-- IMAGES -->
+            <div class="mega-images">
+              <img id="img1" src="./assets/imgs/di-1.webp" />
+              <img id="img2" src="./assets/imgs/di-2.jpg" />
+            </div>
+          </div>
+        </li>
+
+        <li><a href="https://b-and-b-india.netlify.app/conexaconnection">Prosthetics</a></li>
+
+        <!-- ================= Regenerative ================= -->
+        <li class="has-mega mega-regenerative">
+          Regenerative Products<i class="fa-solid fa-angle-down"></i>
+          <div class="mega-menu">
+            <div class="mega-column">
+              <!-- <h4>Bonegraft</h4> -->
+              <ul>
+                <li><a href="./allograft.html">Allograft</a></li>
+                <li><a href="./xenograft.html">Xenograft</a></li>
+                <li><a href="./xenograft.html#collagen">Collagen Membrane</a></li>
+              </ul>
+            </div>
+            <div class="mega-images">
+              <img src="./assets/imgs/g-1.jpg" />
+              <img src="./assets/imgs/g-2.jpg" />
+            </div>
+          </div>
+        </li>
+
+        <!-- ================= Robotic ================= -->
+        <li class="has-mega mega-robotic">
+          Robotic Navigation<i class="fa-solid fa-angle-down"></i>
+          <div class="mega-menu">
+            <div class="mega-images">
+              <img src="./assets/imgs/r-1.jpg" />
+              <img src="./assets/imgs/3.0.png" />
+            </div>
+            <div class="mega-column">
+              <h4>Navident</h4>
+              <ul>
+                <li><a href="https://marksbiotech.com/navident-3.0">Navident 3.0</a></li>
+                <li><a href="https://marksbiotech.com/navident-4.0/">Navident 4.0 EVO</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+
+        <li><a href="https://marksbiotech.com/micronmapper/">Photogrammetry</a></li>
+
+
+        <li class="has-mega mega-resources">
+          Resources<i class="fa-solid fa-angle-down"></i>
+          <div class="mega-menu">
+            <div class="mega-column">
+              <ul>
+                <li><a href="./events.html">Education</a></li>
+                <li><a href="./blog.html">Blogs</a></li>
+                <li><a href="./careers.html">Careers</a></li>
+                <li><a href="./scientific-evidence.html">Scientific Evidence</a></li>
+                
+
+
+              </ul>
+            </div>
+
+          </div>
+        </li>
+        <li><a href="./about.html">About Us</a></li>
+      </ul>
+
+    </div>
+  </header>
+
+
+
+    <section class="topic">
+        <div>
+            <h1 class="top-head">XENOGRAFT</h1>
+        </div>
+    </section>
+
+    <section class="re-sec-section">
+
+
+        <div class="image-box">
+            <img src="assets/imgs/image 101.png" alt="box img">
+        </div>
+
+        <div class="re-top">
+        <div class="re-text-box">
+            <h2> <span>USE AND CHARACTERISTICS :</span></h2>
+            <ul>
+                <li>Sinus lift </li>
+                <li>Crestal volume augmentation</li>
+                <li>Periodontal regeneration</li>
+                <li>Alveolar regeneration</li>
+                <li>Post-extraction regeneration </li>
+            </ul>
+        </div>
+
+        <div class="re-text-box2">
+            <h2><span>FEATURES:</span></h2>
+            <ul>
+                <li>Compliant with the Regulation (EU) 2017/745 (MDR) </li>
+                <li>Treated at low temperature for the removal of the protein component</li>
+                <li>100% resorbable</li>
+            </ul>
+            <p>The production and sales chain are entirely Italian.</p>
+        </div>
+        </div>
+
+    </section>
+
+    <section class="re-sec-section1">
+        <!-- BOTTOM PART -->
+            
+            <div class="re-coverage-text">
+                <h3><span>Novobone is available in the following formats (GRANULES, 1 vial):</span></h3>
+                <ul>
+                    <li>0.5 g, granules diameter: 0.2-0.6mm VOL: 1cc</li>
+                    <li>1 g, granules diameter: 0.2-0.6mm VOL: 2cc</li>
+                    <li>2 g, granules diameter: 0.2-0.6mm VOL: 4cc</li>
+                    <li>3 g, granules diameter: 0.2-0.6mm VOL: 6cc</li>
+                    <li>5 g, granules diameter: 0.2-0.6mm VOL: 10cc </li>
+                </ul>
+            </div>
+        
+            <div class="image-box1">
+                <img src="assets/imgs/image 102.png" alt="products">
+            </div>
+
+        
+    </section>
+
+    <section class="re-sec-section2" id="collagen">
+        <div class="image-box-sec2">
+            <img src="assets/imgs/Collagen13.jpeg" alt="box img">
+        </div>
+
+        <div class="re-top-sec2">
+        <div class="re-text-box-sec2">
+            <h2> <span>T-Barrier Collagen resorbable equine collagen</span></h2>
+            <ul>
+                <li>Perfect biocompatibility </li>
+                <li>Complete resorption after 6-8 weeks</li>
+                <li>Easy to apply</li>
+            </ul>
+        </div>
+
+        <div class="re-text-box2-sec2">
+            <h2><span>Membrane Sizes :</span></h2>
+            <ul>
+                <li>23 x 23x0.25*mm </li>
+                <li>10 x 10x1*mm</li>
+                <li>10 x 20x0.25*mm</li>
+                <li>15 x 20x0.25*mm</li>
+                <li>20 x 30x0.25*mm</li>
+                <li>30 x 40x0.25*mm</li>
+            </ul>
+        </div>
+        </div>
+
+    </section>
+
+   <section class="re-sec-section1 animate-section">
+
+    <div class="re-coverage-text-sec3">
+        <h3><span>T-Barrier Titanium is a titanium safety barrier for GBR materials</span></h3>
+        <ul>
+            <li>Easy to model</li>
+            <li>Biocompatible and safe</li>
+            <li>Easy to cut</li>
+            <li>Easy to apply and fix onto the defected site</li>
+        </ul>
+        <h4>Membrane Sizes</h4>
+        <ul><li>24×29×0.13mm</li></ul>
+    </div>
+
+    <!-- Image Slider -->
+    <div class="slider">
+        <div class="slides">
+            <img src="assets/imgs/titanium-membrane-1.jpg">
+            <img src="assets/imgs/titanium-membrane-2.jpg">
+            <img src="assets/imgs/titanium-membrane-3.jpg">
+            <img src="assets/imgs/titanium-membrane-4.jpg">
+            <img src="assets/imgs/titanium-membrane-5.jpg">
+            
+            
+        </div>
+    </div>
+
+</section>
+
+
+
+  
+    
+  <footer class="about-footer">
+    <!-- TOP -->
+    <div class="about-footer-top">
+      <div class="about-footer-title">
+        <p>We are here to support You</p>
+        <h2>Connect with us</h2>
+      </div>
+
+      <div class="about-subscribe-box">
+        <form action="" id="form1">
+        <input type="email" name="email" placeholder="Enter your mail id" />
+        <button class="subsc" type="submit">Subscribe</button></form>
+      </div>
+    </div>
+    <hr />
+
+    <!-- BOTTOM -->
+    <div class="footer-content">
+      <!-- QUICK LINKS -->
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="./index.html">Highlights</a></li>
+          <li><a href="./about.html">About us</a></li>
+          
+          <li><a href="https://marksbiotech.com/micronmapper/">MicronMapper</a></li>
+          
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./events.html">Event</a></li>
+          <li><a href="./careers.html">Careers</a></li>
+          
+        </ul>
+      </div>
+
+      <!-- PRODUCTS -->
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="https://b-and-b-india.netlify.app/uniqueimplant">Dental implants</a></li>
+          <li><a href="https://b-and-b-india.netlify.app/surgicalkit">Free hand Surgical</a></li>
+          <li><a href="https://b-and-b-india.netlify.app/digitalsurgicalguide">Computer Guided Surgery</a></li>
+          <li><a href="./allograft.html">Allograft</a></li>
+          <li><a href="./xenograft.html">Xenograft</a></li>
+          <li><a href="https://marksbiotech.com/navident-3.0">Navident 3.0</a></li>
+          <li><a href="https://marksbiotech.com/navident-4.0/">Navident 4.0 EVO</a></li>
+          <li><a href=".https://marksbiotech.com/micronmapper/">Photogrammetry</a></li>
+          
+          
+        </ul>
+      </div>
+
+      <!-- ADDRESS -->
+      <div class="footer-col address">
+        <h4>Address</h4>
+
+        <p class="he-red">Operation and Communication Address</p>
+        <p>
+          84, 1st floor, Thirupathy Nagar,<br />
+          Mainroad, 1st Cross street, <br />
+          Valasaravakkam, Chennai-600087.
+        </p>
+
+        <p class="he-red">Registered Office Address</p>
+        <p>
+          104/5, 6th street, s-1, 2nd floor, The Brown CLS Bulding, Ratha
+          Avenue, Valasaravakam, Chennai-600087.
+        </p>
+
+
+      </div>
+
+      <!-- LOGO + MAP -->
+      <div class="footer-col logo-map">
+
+        <img src="assets/imgs/marks-biotech-logo 1.png" alt="Marks Biotech Logo" class="logo" />
+        <p class="contact">📞 +91 44 485 93250</p>
+        <p class="contact">📞 +91 9819893250 ,+91 9840320250</p>
+        <p class="contact"><span>✉ </span>info@marksbiotech.com</p>
+        <div class="map-box"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.861000188089!2d80.1749978!3d13.044518400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261bb26e13173%3A0x58681e3956ff7dbb!2sMarks%20Biotech%20Inc!5e0!3m2!1sen!2sin!4v1769035781529!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+      </div>
+    </div>
+  </footer>
+
+<script>
+  const section = document.querySelector('.animate-section');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            section.classList.add('show');
+        }
+    });
+}, { threshold: 0.3 });
+
+observer.observe(section);
+</script>
+<script src="./script2.js"></script>
+
+
+
+
+</body>
+
+</html>
+
