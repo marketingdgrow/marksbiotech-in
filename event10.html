@@ -1,317 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./events.css"/>
-   <link rel="stylesheet" href="./nav.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./events.css" />
+    <link rel="stylesheet" href="./nav.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-  <script src="./js/gsap.min.js"></script>
-  <script src="./js/ScrollTrigger.min.js"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./responsive-global.css" />
-</head>
-<body class="events-enhanced-page event8-layout-match">
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/gsap.min.js"></script>
+    <script src="./js/ScrollTrigger.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./responsive-global.css" />
+  </head>
+  <body class="events-enhanced-page event8-layout-match">
+    <header class="site-header">
+      <div class="nav-container">
+        <div class="nav-top">
+          <div class="logo1">
+            <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
+          </div>
 
- 
-  <header class="site-header">
-    <div class="nav-container">
-
-      <div class="nav-top">
-
-        <div class="logo1">
-          <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
+          <div class="hamburger" id="hamburger">?</div>
         </div>
 
-        <div class="hamburger" id="hamburger"> ?
-
-        </div>
-      </div>
-
-
-      <ul class="nav-main-menu">
-        <div class="logo">
-          <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
-        </div>
-        <li><a href="./index.html">Highlights</a></li>
-
-
-        <!-- ================= Dental Implantology ================= -->
-        <li class="has-mega mega-dental">
-          Dental Implantology<i class="fa-solid fa-angle-down"></i>
-
-          <div class="mega-menu">
-
-
-            <!-- COLUMN 2 -->
-            <div class="mega-column column-2" id="col2">
-              <ul>
-                <li data-img="heritage"><a href="https://b-and-b-india.netlify.app/heritage">Heritage </a></li>
-                <li id="unique" data-img="unique"><a href="#col3">Unique Design <i class="fa-solid fa-angle-right"></i></a></li>
-                <li data-img="custom"><a href="https://b-and-b-india.netlify.app/subperiosteal">Customized
-                    Implants</a></li>
-                <li data-img="custom"><a href="https://b-and-b-india.netlify.app/tissue">Tissue Adhesive</a></li>
-                <li data-img="guided"><a href="https://b-and-b-india.netlify.app/digitalsurgicalguide">Digital Guided
-                    Surgery</a></li>
-                <li data-img="kits"><a href="https://b-and-b-india.netlify.app/surgicalkit">Surgical Kits</a></li>
-                <li data-img="kits"><a href="https://b-and-b-india.netlify.app/tissue">Tissue Adhesive</a></li>
-              </ul>
-            </div>
-
-            <!-- COLUMN 3 -->
-            <div class="mega-column column-3" id="col3">
-              <h4>Implants</h4>
-              <ul>
-                <li data-img="duravit-ev"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design1">DURAVIT
-                    EV</a></li>
-                <li data-img="duravit-3p"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design2">DURAVIT
-                    3P</a></li>
-                <li data-img="duravit-wide"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design3">DURAVIT
-                    Wide</a></li>
-                <li data-img="duravit-pterygo"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design4">DURAVIT
-                    Pterygo</a></li>
-                <li data-img="duravit-slim"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design5">DURAVIT
-                    Slim</a></li>
-                <li data-img="duravit-slim"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design6">DURAVIT
-                    Mini</a></li>
-              </ul>
-            </div>
-
-            <!-- IMAGES -->
-            <div class="mega-images">
-              <img id="img1" src="./assets/imgs/di-1.webp" />
-              <img id="img2" src="./assets/imgs/di-2.jpg" />
-            </div>
+        <ul class="nav-main-menu">
+          <div class="logo">
+            <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
           </div>
-        </li>
+          <li><a href="./index.html">Highlights</a></li>
 
-        <li><a href="https://b-and-b-india.netlify.app/conexaconnection">Prosthetics</a></li>
+          <!-- ================= Dental Implantology ================= -->
+          <li class="has-mega mega-dental">
+            Dental Implantology<i class="fa-solid fa-angle-down"></i>
 
-        <!-- ================= Regenerative ================= -->
-        <li class="has-mega mega-regenerative">
-          Regenerative Products<i class="fa-solid fa-angle-down"></i>
-          <div class="mega-menu">
-            <div class="mega-column">
-              <!-- <h4>Bonegraft</h4> -->
-              <ul>
-                <li><a href="./allograft.html">Allograft</a></li>
-                <li><a href="./xenograft.html">Xenograft</a></li>
-                <li><a href="./xenograft.html#collagen">Collagen Membrane</a></li>
-              </ul>
+            <div class="mega-menu">
+              <!-- COLUMN 2 -->
+              <div class="mega-column column-2" id="col2">
+                <ul>
+                  <li data-img="heritage">
+                    <a href="https://b-and-b-india.netlify.app/heritage"
+                      >Heritage
+                    </a>
+                  </li>
+                  <li id="unique" data-img="unique">
+                    <a href="#col3"
+                      >Unique Design <i class="fa-solid fa-angle-right"></i
+                    ></a>
+                  </li>
+                  <li data-img="custom">
+                    <a href="https://b-and-b-india.netlify.app/subperiosteal"
+                      >Customized Implants</a
+                    >
+                  </li>
+                  <!-- <li data-img="custom">
+                    <a href="https://b-and-b-india.netlify.app/tissue"
+                      >Tissue Adhesive</a
+                    >
+                  </li> -->
+                  <li data-img="guided">
+                    <a
+                      href="https://b-and-b-india.netlify.app/digitalsurgicalguide"
+                      >Digital Guided Surgery</a
+                    >
+                  </li>
+                  <li data-img="kits">
+                    <a href="https://b-and-b-india.netlify.app/surgicalkit"
+                      >Surgical Kits</a
+                    >
+                  </li>
+                  <!-- <li data-img="kits"><a href="https://b-and-b-india.netlify.app/tissue">Tissue Adhesive</a></li> -->
+                </ul>
+              </div>
+
+              <!-- COLUMN 3 -->
+              <div class="mega-column column-3" id="col3">
+                <h4>Implants</h4>
+                <ul>
+                  <li data-img="duravit-ev">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design1"
+                      >DURAVIT EV</a
+                    >
+                  </li>
+                  <li data-img="duravit-3p">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design2"
+                      >DURAVIT 3P</a
+                    >
+                  </li>
+                  <li data-img="duravit-wide">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design3"
+                      >DURAVIT Wide</a
+                    >
+                  </li>
+                  <li data-img="duravit-pterygo">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design4"
+                      >DURAVIT Pterygo</a
+                    >
+                  </li>
+                  <li data-img="duravit-slim">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design5"
+                      >DURAVIT Slim</a
+                    >
+                  </li>
+                  <li data-img="duravit-slim">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design6"
+                      >DURAVIT Mini</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- IMAGES -->
+              <div class="mega-images">
+                <img id="img1" src="./assets/imgs/di-1.webp" />
+                <img id="img2" src="./assets/imgs/di-2.jpg" />
+              </div>
             </div>
-            <div class="mega-images">
-              <img src="./assets/imgs/g-1.jpg" />
-              <img src="./assets/imgs/g-2.jpg" />
+          </li>
+
+          <li>
+            <a href="https://b-and-b-india.netlify.app/conexaconnection"
+              >Prosthetics</a
+            >
+          </li>
+
+          <!-- ================= Regenerative ================= -->
+          <li class="has-mega mega-regenerative">
+            Regenerative Products<i class="fa-solid fa-angle-down"></i>
+            <div class="mega-menu">
+              <div class="mega-column">
+                <!-- <h4>Bonegraft</h4> -->
+                <ul>
+                  <li>
+                    <a href="./allograft.html">Allograft-Rocky Mountain</a>
+                  </li>
+                  <li><a href="./xenograft.html">Xenograft-NovoBone</a></li>
+                  <li>
+                    <a href="./xenograft.html#collagen"
+                      >Collagen Membrane-Equine</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./tissue.html">Tissue Adhesive</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mega-images">
+                <img src="./assets/imgs/g-1.jpg" />
+                <img src="./assets/imgs/g-2.jpg" />
+              </div>
             </div>
-          </div>
-        </li>
+          </li>
 
-        <!-- ================= Robotic ================= -->
-        <li class="has-mega mega-robotic">
-          Robotic Navigation<i class="fa-solid fa-angle-down"></i>
-          <div class="mega-menu">
-            <div class="mega-images">
-              <img src="./assets/imgs/r-1.jpg" />
-              <img src="./assets/imgs/3.0.png" />
+          <!-- ================= Robotic ================= -->
+          <li class="has-mega mega-robotic">
+            Robotic Navigation<i class="fa-solid fa-angle-down"></i>
+            <div class="mega-menu">
+              <div class="mega-images">
+                <img src="./assets/imgs/r-1.jpg" />
+                <img src="./assets/imgs/3.0.png" />
+              </div>
+              <div class="mega-column">
+                <h4>Navident</h4>
+                <ul>
+                  <li>
+                    <a href="https://marksbiotech.com/navident-3.0"
+                      >Navident 3.0</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://marksbiotech.com/navident-4.0/"
+                      >Navident 4.0 EVO</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="mega-column">
-              <h4>Navident</h4>
-              <ul>
-                <li><a href="https://marksbiotech.com/navident-3.0">Navident 3.0</a></li>
-                <li><a href="https://marksbiotech.com/navident-4.0/">Navident 4.0 EVO</a></li>
-              </ul>
+          </li>
+
+          <li>
+            <a href="https://marksbiotech.com/micronmapper/">Photogrammetry</a>
+          </li>
+
+          <li class="has-mega mega-resources">
+            Resources<i class="fa-solid fa-angle-down"></i>
+            <div class="mega-menu">
+              <div class="mega-column">
+                <ul>
+                  <li><a href="./events.html">Education</a></li>
+                  <li><a href="./blog.html">Blogs</a></li>
+                  <li><a href="./careers.html">Careers</a></li>
+                  <li>
+                    <a href="./scientific-evidence.html">Scientific Evidence</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </li>
-
-
-        <li><a href="https://marksbiotech.com/micronmapper/">Photogrammetry</a></li>
-
-
-        <li class="has-mega mega-resources">
-          Resources<i class="fa-solid fa-angle-down"></i>
-          <div class="mega-menu">
-            <div class="mega-column">
-              <ul>
-                <li><a href="./events.html">Education</a></li>
-                <li><a href="./blog.html">Blogs</a></li>
-                <li><a href="./careers.html">Careers</a></li>
-                <li><a href="./scientific-evidence.html">Scientific Evidence</a></li>
-                
-
-
-              </ul>
-            </div>
-
-          </div>
-        </li>
-        <li><a href="./about.html">About Us</a></li>
-      </ul>
-
-    </div>
-  </header>
-
-<section class="event-section">
-
-  <!-- HERO -->
-  <div class="event-hero">
-    <div class="event-container hero-grid">
-
-      <!-- LEFT CONTENT -->
-      <div class="event-left">
-        <span class="event-tag">CONFERENCE 2025</span>
-
-        <h1>
-          Indian Society of Oral Implantologists (ISOI) Conference – Mumbai
-        </h1>
-
-        <h3>
-          Future Technology Today – Precision, Navigation & Digital Excellence
-        </h3>
-
-      
-
-        
-      </div>
-
-      <!-- RIGHT IMAGE -->
-      <div class="event-right">
-        <img src="./assets/event/13.png" alt="ISOI Conference Mumbai 2025">
-      </div>
-
-    </div>
-  </div>
-
-
-  <section class="event-gallery-section event-gallery-section--slider">
-  <div class="event-gallery-container">
-    <div class="gallery-title-wrap">
-      <h2 class="gallery-heading">Event Gallery</h2>
-      <!-- <p class="gallery-note">Swipe or use arrows. Click any image for full-screen view.</p> -->
-    </div>
-
-    <div class="event-gallery-carousel" data-event-gallery>
-      <button class="gallery-nav-btn" type="button" data-gallery-prev aria-label="Show previous images">
-        <i class="fa-solid fa-arrow-left"></i>
-      </button>
-
-      <div class="event-gallery-window" data-gallery-window>
-        <div class="event-gallery-track">
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/pastevent3/1.jpg" alt="">
-        </button>
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/pastevent3/2.jpg" alt="">
-        </button>
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/pastevent3/3.jpg" alt="">
-        </button>
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/pastevent3/4.jpg" alt="">
-        </button>
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/pastevent3/5.jpg" alt="">
-        </button>
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/pastevent3/6.jpg" alt="">
-        </button>
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/pastevent3/7.jpg" alt="">
-        </button>
-
-
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/pastevent3/8.jpg" alt="">
-        </button>
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/pastevent3/9.jpg" alt="">
-        </button>
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/pastevent3/10.jpg" alt="">
-        </button>
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/pastevent3/11.jpg" alt="">
-        </button>
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/pastevent3/12.jpg" alt="">
-        </button>
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/pastevent3/13.jpg" alt="">
-        </button>
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/pastevent3/14.jpg" alt="">
-        </button>
-        </div>
-      </div>
-
-      <button class="gallery-nav-btn" type="button" data-gallery-next aria-label="Show next images">
-        <i class="fa-solid fa-arrow-right"></i>
-      </button>
-    </div>
-  </div>
-</section>
-  <!-- ABOUT -->
-  <section class="course-intro">
-    <div class="course-wrap">
-            <aside class="course-side">
-        <h4>TAGS</h4>
-        <ul class="left-tag">
-          <li><a href="./events.html">EVENTS</a></li>
-          <li><a href="./events.html">UPCOMING EVENTS</a></li>
-          <li><a href="./events.html">PAST EVENTS</a></li>
+          </li>
+          <li><a href="./about.html">About Us</a></li>
         </ul>
-
-        <h4>Share</h4>
-        <div class="share">
-          <a href="https://www.facebook.com/profile.php?id=100057220428403#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#https://api.whatsapp.com/send?phone=%2B919819893250&fbclid=IwY2xjawPoEE5leHRuA2FlbQIxMABicmlkETF6RGc1bGQ4MkNKQWFJZk92c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHp2k4EqPl-RmwWcQOpyXPFBwZ3hiBsmaGeaDHKGKfc-xCPP1c-quzaeBwZvZ_aem_T58P-OzKvAzVUFaIDa5-NQ"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="https://www.instagram.com/marks.biotechinc/"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.youtube.com/channel/UCxWtOTeE4P1x1AaXL_Dlvpw"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-      </aside>
-
-      <div class="course-main">
-        <h1>About ISOI Conference 2025</h1>
-
-        <p>
-          The Indian Society of Oral Implantologists (ISOI) Conference is one of the
-          most prestigious implant-focused scientific gatherings in India. The 2025 edition
-          emphasizes digital integration, guided surgical protocols, regenerative advancements,
-          and precision-driven full-arch rehabilitation.
-        </p>
-
-        <p>
-          As implant dentistry evolves, clinicians are increasingly adopting
-          computer-assisted workflows to enhance predictability, efficiency, and patient safety.
-          ISOI 2025 provides an immersive platform for exploring these advancements through:
-        </p>
-
-        <ul class="event-list">
-          <li>Scientific lectures by internationally recognized experts</li>
-          <li>Interactive panel discussions and Q&amp;A sessions</li>
-          <li>Live surgical demonstrations showcasing cutting-edge techniques</li>
-          <li>Hands-on workshops and skill-building sessions</li>
-          <li>Industry-led technology showcases and product launches</li>
-        </ul>
-
-        <p>
-          Attendees will gain practical knowledge to incorporate digital dentistry tools
-          into their practices, network with peers and pioneers, and stay ahead in an
-          ever-evolving field.
-        </p>
       </div>
-    </div>
-  </section>
-  <!-- SHOWCASE -->
-  <div class="event-showcase">
-    <div class="event-container">
+    </header>
 
-      <h2>Technologies & Solutions Presented by Marks Biotech</h2>
+    <section class="event-section">
+      <!-- HERO -->
+      <div class="event-hero">
+        <div class="event-container hero-grid">
+          <!-- LEFT CONTENT -->
+          <div class="event-left">
+            <span class="event-tag">CONFERENCE 2025</span>
 
-      <!-- <div class="showcase-grid">
+            <h1>
+              Indian Society of Oral Implantologists (ISOI) Conference – Mumbai
+            </h1>
+
+            <h3>
+              Future Technology Today – Precision, Navigation & Digital
+              Excellence
+            </h3>
+          </div>
+
+          <!-- RIGHT IMAGE -->
+          <div class="event-right">
+            <img
+              src="./assets/event/13.png"
+              alt="ISOI Conference Mumbai 2025"
+            />
+          </div>
+        </div>
+      </div>
+
+      <section class="event-gallery-section event-gallery-section--slider">
+        <div class="event-gallery-container">
+          <div class="gallery-title-wrap">
+            <h2 class="gallery-heading">Event Gallery</h2>
+            <!-- <p class="gallery-note">Swipe or use arrows. Click any image for full-screen view.</p> -->
+          </div>
+
+          <div class="event-gallery-carousel" data-event-gallery>
+            <button
+              class="gallery-nav-btn"
+              type="button"
+              data-gallery-prev
+              aria-label="Show previous images"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+            <div class="event-gallery-window" data-gallery-window>
+              <div class="event-gallery-track">
+                <button class="gallery-slide" type="button" data-gallery-image>
+                  <img src="./assets/event/pastevent3/1.jpg" alt="" />
+                </button>
+                <button class="gallery-slide" type="button" data-gallery-image>
+                  <img src="./assets/event/pastevent3/2.jpg" alt="" />
+                </button>
+                <button class="gallery-slide" type="button" data-gallery-image>
+                  <img src="./assets/event/pastevent3/3.jpg" alt="" />
+                </button>
+                <button class="gallery-slide" type="button" data-gallery-image>
+                  <img src="./assets/event/pastevent3/4.jpg" alt="" />
+                </button>
+                <button class="gallery-slide" type="button" data-gallery-image>
+                  <img src="./assets/event/pastevent3/5.jpg" alt="" />
+                </button>
+                <button class="gallery-slide" type="button" data-gallery-image>
+                  <img src="./assets/event/pastevent3/6.jpg" alt="" />
+                </button>
+                <button class="gallery-slide" type="button" data-gallery-image>
+                  <img src="./assets/event/pastevent3/7.jpg" alt="" />
+                </button>
+
+                <button class="gallery-slide" type="button" data-gallery-image>
+                  <img src="./assets/event/pastevent3/8.jpg" alt="" />
+                </button>
+                <button class="gallery-slide" type="button" data-gallery-image>
+                  <img src="./assets/event/pastevent3/9.jpg" alt="" />
+                </button>
+                <button class="gallery-slide" type="button" data-gallery-image>
+                  <img src="./assets/event/pastevent3/10.jpg" alt="" />
+                </button>
+                <button class="gallery-slide" type="button" data-gallery-image>
+                  <img src="./assets/event/pastevent3/11.jpg" alt="" />
+                </button>
+                <button class="gallery-slide" type="button" data-gallery-image>
+                  <img src="./assets/event/pastevent3/12.jpg" alt="" />
+                </button>
+                <button class="gallery-slide" type="button" data-gallery-image>
+                  <img src="./assets/event/pastevent3/13.jpg" alt="" />
+                </button>
+                <button class="gallery-slide" type="button" data-gallery-image>
+                  <img src="./assets/event/pastevent3/14.jpg" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <button
+              class="gallery-nav-btn"
+              type="button"
+              data-gallery-next
+              aria-label="Show next images"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT -->
+      <section class="course-intro">
+        <div class="course-wrap">
+          <aside class="course-side">
+            <h4>TAGS</h4>
+            <ul class="left-tag">
+              <li><a href="./events.html">EVENTS</a></li>
+              <li><a href="./events.html">UPCOMING EVENTS</a></li>
+              <li><a href="./events.html">PAST EVENTS</a></li>
+            </ul>
+
+            <h4>Share</h4>
+            <div class="share">
+              <a href="https://www.facebook.com/profile.php?id=100057220428403#"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="#https://api.whatsapp.com/send?phone=%2B919819893250&fbclid=IwY2xjawPoEE5leHRuA2FlbQIxMABicmlkETF6RGc1bGQ4MkNKQWFJZk92c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHp2k4EqPl-RmwWcQOpyXPFBwZ3hiBsmaGeaDHKGKfc-xCPP1c-quzaeBwZvZ_aem_T58P-OzKvAzVUFaIDa5-NQ"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a href="https://www.instagram.com/marks.biotechinc/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.youtube.com/channel/UCxWtOTeE4P1x1AaXL_Dlvpw"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </aside>
+
+          <div class="course-main">
+            <h1>About ISOI Conference 2025</h1>
+
+            <p>
+              The Indian Society of Oral Implantologists (ISOI) Conference is
+              one of the most prestigious implant-focused scientific gatherings
+              in India. The 2025 edition emphasizes digital integration, guided
+              surgical protocols, regenerative advancements, and
+              precision-driven full-arch rehabilitation.
+            </p>
+
+            <p>
+              As implant dentistry evolves, clinicians are increasingly adopting
+              computer-assisted workflows to enhance predictability, efficiency,
+              and patient safety. ISOI 2025 provides an immersive platform for
+              exploring these advancements through:
+            </p>
+
+            <ul class="event-list">
+              <li>Scientific lectures by internationally recognized experts</li>
+              <li>Interactive panel discussions and Q&amp;A sessions</li>
+              <li>
+                Live surgical demonstrations showcasing cutting-edge techniques
+              </li>
+              <li>Hands-on workshops and skill-building sessions</li>
+              <li>Industry-led technology showcases and product launches</li>
+            </ul>
+
+            <p>
+              Attendees will gain practical knowledge to incorporate digital
+              dentistry tools into their practices, network with peers and
+              pioneers, and stay ahead in an ever-evolving field.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- SHOWCASE -->
+      <div class="event-showcase">
+        <div class="event-container">
+          <h2>Technologies & Solutions Presented by Marks Biotech</h2>
+
+          <!-- <div class="showcase-grid">
 
         <div class="showcase-card">
           <h3>Navident Dynamic Navigation System</h3>
@@ -357,8 +438,7 @@
 
       </div> -->
 
-
-      <!-- <h2 style="margin-top:60px;">Why Visit Booth 51 & 52?</h2>
+          <!-- <h2 style="margin-top:60px;">Why Visit Booth 51 & 52?</h2>
 
         <p>
         • Experience live navigation workflow demonstrations<br>
@@ -371,150 +451,254 @@
         • Network with professionals and industry leaders in an interactive environment
       </p> -->
 
+          <h2 style="margin-top: 60px">Who Should Attend</h2>
 
-      <h2 style="margin-top:60px;">Who Should Attend</h2>
+          <p>
+            • Implantologists and oral surgeons seeking advanced digital
+            solutions<br />
+            • Prosthodontists focused on precision prosthetics and full-arch
+            rehabilitation<br />
+            • Restorative dentists integrating guided surgery and digital
+            workflows<br />
+            • Dental students and emerging practitioners learning from global
+            experts<br />
+            • Clinic owners exploring future-ready implant technologies
+          </p>
 
-        <p>
-        • Implantologists and oral surgeons seeking advanced digital solutions<br>
-        • Prosthodontists focused on precision prosthetics and full-arch rehabilitation<br>
-        • Restorative dentists integrating guided surgery and digital workflows<br>
-        • Dental students and emerging practitioners learning from global experts<br>
-        • Clinic owners exploring future-ready implant technologies
-      </p>
+          <h2 style="margin-top: 60px">Conference Highlights</h2>
 
+          <p>
+            • Live Surgery & Navigation Demonstrations<br />
+            • Expert Panel Discussions on emerging trends<br />
+            • Hands-on Workshops with digital tools and implant systems<br />
+            • Innovation Zone featuring regenerative techniques & AI-assisted
+            planning<br />
+            • Strategic Networking Opportunities with industry leaders
+          </p>
 
-      <h2 style="margin-top:60px;">Conference Highlights</h2>
+          <h2 style="margin-top: 60px">Future Trends in Implantology</h2>
 
-        <p>
-        • Live Surgery & Navigation Demonstrations<br>
-        • Expert Panel Discussions on emerging trends<br>
-        • Hands-on Workshops with digital tools and implant systems<br>
-        • Innovation Zone featuring regenerative techniques & AI-assisted planning<br>
-        • Strategic Networking Opportunities with industry leaders
-      </p>
+          <p>
+            ISOI 2025 emphasizes the integration of technology, precision, and
+            patient-centric care:
+          </p>
 
+          <p>
+            • Adoption of dynamic navigation systems for safer, more accurate
+            surgeries<br />
+            • Growth of full-digital workflows including photogrammetry &
+            CAD/CAM prosthetics<br />
+            • Incorporation of regenerative and minimally invasive techniques<br />
+            • AI-driven treatment planning and robotics for complex cases<br />
+            • Enhancing patient outcomes through predictable, streamlined
+            protocols
+          </p>
 
-      <h2 style="margin-top:60px;">Future Trends in Implantology</h2>
+          <p>
+            Attendees will leave the conference equipped with actionable
+            insights, ready to implement next-generation solutions in their
+            practices and gain a competitive edge in a rapidly evolving dental
+            landscape.
+          </p>
+        </div>
+      </div>
+    </section>
 
-        <p>
-        ISOI 2025 emphasizes the integration of technology, precision, and patient-centric care:
-      </p>
+    <footer class="about-footer">
+      <!-- TOP -->
+      <div class="about-footer-top">
+        <div class="about-footer-title">
+          <p>We are here to support You</p>
+          <h2>Connect with us</h2>
+        </div>
 
-      <p>
-        • Adoption of dynamic navigation systems for safer, more accurate surgeries<br>
-        • Growth of full-digital workflows including photogrammetry & CAD/CAM prosthetics<br>
-        • Incorporation of regenerative and minimally invasive techniques<br>
-        • AI-driven treatment planning and robotics for complex cases<br>
-        • Enhancing patient outcomes through predictable, streamlined protocols
-      </p>
+        <div class="about-subscribe-box">
+          <form action="" id="form1">
+            <input type="email" name="email" placeholder="Enter your mail id" />
+            <button class="subsc" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
 
-      <p>
-        Attendees will leave the conference equipped with actionable insights,
-        ready to implement next-generation solutions in their practices and
-        gain a competitive edge in a rapidly evolving dental landscape.
-      </p>
+      <hr />
 
+      <!-- BOTTOM -->
+      <div class="footer-content">
+        <!-- QUICK LINKS -->
+        <div class="footer-col">
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="./index.html">Highlights</a></li>
+            <li><a href="./about.html">About us</a></li>
+
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./events.html">Event</a></li>
+            <li><a href="./careers.html">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- PRODUCTS -->
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li>
+              <a href="https://b-and-b-india.netlify.app/uniqueimplant"
+                >B&B Dental Implants Italy</a
+              >
+            </li>
+            <li>
+              <a href="https://b-and-b-india.netlify.app/surgicalkit"
+                >B&B SURGICAL KITS</a
+              >
+            </li>
+            <li>
+              <a href="https://b-and-b-india.netlify.app/digitalsurgicalguide"
+                >Computer Guided Surgery</a
+              >
+            </li>
+            <li><a href="./allograft.html">Rocky Mountain Allograft</a></li>
+            <li><a href="./xenograft.html">NovoBona Xenograft</a></li>
+            <li><a href="./xenograft.html#collagen">T-Collagen Membrane</a></li>
+            <li>
+              <a href="./tissue.html">Tissue Adhesive</a>
+            </li>
+            <li>
+              <a href="https://marksbiotech.com/navident-3.0">Navident 3.0</a>
+            </li>
+            <li>
+              <a href="https://marksbiotech.com/navident-4.0/"
+                >Navident 4.0 EVO</a
+              >
+            </li>
+            <li>
+              <a href="https://marksbiotech.com/micronmapper/">MicronMapper</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ADDRESS -->
+        <div class="footer-col address">
+          <h4>Address</h4>
+
+          <p class="he-red">Operation and Communication Address</p>
+          <p>
+            84, 1st floor, Thirupathy Nagar,<br />
+            Mainroad, 1st Cross street, <br />
+            Valasaravakkam, Chennai, India -600087.
+          </p>
+
+          <p class="he-red">Registered Office Address</p>
+          <p>
+            104/5, 6th Street, S-1, 2nd floor, The Brown CLS Bulding, Radha
+            Avenue, Valasaravakam, Chennai, India -600087.
+          </p>
+        </div>
+
+        <!-- LOGO + MAP -->
+        <div class="footer-col logo-map">
+          <img
+            src="assets/imgs/marks-biotech-logo 1.png"
+            alt="Marks Biotech Logo"
+            class="logo"
+          />
+          <p class="contact">📞 +91 44 485 93250</p>
+          <p class="contact">📞 +91 9819893250 ,+91 9840320250</p>
+          <p class="contact"><span>✉ </span>info@marksbiotech.com</p>
+          <div class="map-box">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.861000188089!2d80.1749978!3d13.044518400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261bb26e13173%3A0x58681e3956ff7dbb!2sMarks%20Biotech%20Inc!5e0!3m2!1sen!2sin!4v1769035781529!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="floating-container">
+      <!-- EVENT BOX -->
+      <div class="event-box">
+        <h3 id="eventName"></h3>
+
+        <div class="event-details">
+          <p id="eventDate"></p>
+          <p id="eventTime"></p>
+          <p id="eventLocation"></p>
+        </div>
+
+        <div class="floating-btn-con">
+          <a href="" class="view-floating-img">View Details</a>
+          <button id="openFormBtn">Register Now</button>
+        </div>
+        <div class="float-event-close">
+          <button id="closeEventBtn">✖</button>
+        </div>
+      </div>
+
+      <!-- WHATSAPP BUTTON -->
+      <a
+        href="https://wa.me/919819893250"
+        id="whatsappBtn"
+        class="whatsapp-btn"
+      >
+        <span class="wave"></span>
+        <span class="wave delay"></span>
+
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" />
+      </a>
+
+      <div id="eventToggleBtn" class="event-toggle-btn">Upcoming Events</div>
     </div>
-  </div>
-
-</section>
-
-
-     <footer class="about-footer">
-    <!-- TOP -->
-    <div class="about-footer-top">
-      <div class="about-footer-title">
-        <p>We are here to support You</p>
-        <h2>Connect with us</h2>
-      </div>
-
-     <div class="about-subscribe-box">
-        <form action="" id="form1">
-        <input type="email" name="email" placeholder="Enter your mail id" />
-        <button class="subsc" type="submit">Subscribe</button></form>
+    <div id="eventImagePopup" class="popup">
+      <div class="popup-content popup-image" style="max-width: 600px">
+        <button id="closeImagePopup" class="close-btn">✖</button>
+        <img
+          id="eventPopupImg"
+          src=""
+          style="width: 100%; border-radius: 10px"
+        />
       </div>
     </div>
+    <!-- POPUP FORM -->
+    <div id="popupForm" class="popup">
+      <div class="popup-content">
+        <button id="closeForm" class="close-btn">✖</button>
 
-    <hr />
+        <h2>Register</h2>
 
-    <!-- BOTTOM -->
-    <div class="footer-content">
-      <!-- QUICK LINKS -->
-      <div class="footer-col">
-        <h4>Quick links</h4>
-        <ul>
-          <li><a href="./index.html">Highlights</a></li>
-          <li><a href="./about.html">About us</a></li>
-          
-          <li><a href="https://marksbiotech.com/micronmapper/">MicronMapper</a></li>
-          
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./events.html">Event</a></li>
-          <li><a href="./careers.html">Careers</a></li>
-          
-        </ul>
-      </div>
+        <form id="leadForm">
+          <input name="name" placeholder="Full Name *" required />
 
-      <!-- PRODUCTS -->
-      <div class="footer-col">
-        <h4>Products</h4>
-        <ul>
-          <li><a href="https://b-and-b-india.netlify.app/uniqueimplant">Dental implants</a></li>
-          <li><a href="https://b-and-b-india.netlify.app/surgicalkit">Free hand Surgical</a></li>
-          <li><a href="https://b-and-b-india.netlify.app/digitalsurgicalguide">Computer Guided Surgery</a></li>
-          <li><a href="./allograft.html">Allograft</a></li>
-          <li><a href="./xenograft.html">Xenograft</a></li>
-          <li><a href="https://marksbiotech.com/navident-3.0">Navident 3.0</a></li>
-          <li><a href="https://marksbiotech.com/navident-4.0/">Navident 4.0 EVO</a></li>
-          <li><a href=".https://marksbiotech.com/micronmapper/">Photogrammetry</a></li>
-          
-          
-        </ul>
-      </div>
+          <select name="title">
+            <option>Dr.</option>
+          </select>
 
-      <!-- ADDRESS -->
-      <div class="footer-col address">
-        <h4>Address</h4>
+          <input name="email" type="email" placeholder="Email *" required />
+          <input name="mobile" placeholder="Mobile Number *" required />
 
-        <p class="he-red">Operation and Communication Address</p>
-        <p>
-          84, 1st floor, Thirupathy Nagar,<br />
-          Mainroad, 1st Cross street, <br />
-          Valasaravakkam, Chennai-600087.
-        </p>
+          <select name="speciality">
+            <option>BDS</option>
+            <option>MDS</option>
+          </select>
 
-        <p class="he-red">Registered Office Address</p>
-        <p>
-          104/5, 6th street, s-1, 2nd floor, The Brown CLS Bulding, Ratha
-          Avenue, Valasaravakam, Chennai-600087.
-        </p>
+          <input name="specialityOther" placeholder="Specify Specialty" />
 
+          <select name="category">
+            <option>Private Practice</option>
+            <option>Students</option>
+          </select>
 
-      </div>
+          <input name="city" placeholder="City *" required />
 
-      <!-- LOGO + MAP -->
-      <div class="footer-col logo-map">
-
-        <img src="assets/imgs/marks-biotech-logo 1.png" alt="Marks Biotech Logo" class="logo" />
-        <p class="contact">📞 +91 44 485 93250</p>
-        <p class="contact">📞 +91 9819893250 ,+91 9840320250</p>
-        <p class="contact"><span>✉ </span>info@marksbiotech.com</p>
-        <div class="map-box"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.861000188089!2d80.1749978!3d13.044518400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261bb26e13173%3A0x58681e3956ff7dbb!2sMarks%20Biotech%20Inc!5e0!3m2!1sen!2sin!4v1769035781529!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </div>
-     </footer>
 
     <script src="./event-gallery.js"></script>
     <script src="./script2.js"></script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-

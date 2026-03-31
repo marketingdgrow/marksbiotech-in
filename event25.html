@@ -1,199 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./events.css"/>
-   <link rel="stylesheet" href="./nav.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./events.css" />
+    <link rel="stylesheet" href="./nav.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-  <script src="./js/gsap.min.js"></script>
-  <script src="./js/ScrollTrigger.min.js"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./responsive-global.css" />
-  
-  
-</head>
-<body class="events-enhanced-page">
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/gsap.min.js"></script>
+    <script src="./js/ScrollTrigger.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./responsive-global.css" />
+  </head>
+  <body class="events-enhanced-page">
+    <header class="site-header">
+      <div class="nav-container">
+        <div class="nav-top">
+          <div class="logo1">
+            <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
+          </div>
 
-  
-  <header class="site-header">
-    <div class="nav-container">
-
-      <div class="nav-top">
-
-        <div class="logo1">
-          <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
+          <div class="hamburger" id="hamburger">?</div>
         </div>
 
-        <div class="hamburger" id="hamburger"> ?
+        <ul class="nav-main-menu">
+          <div class="logo">
+            <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
+          </div>
+          <li><a href="./index.html">Highlights</a></li>
 
-        </div>
+          <!-- ================= Dental Implantology ================= -->
+          <li class="has-mega mega-dental">
+            Dental Implantology<i class="fa-solid fa-angle-down"></i>
+
+            <div class="mega-menu">
+              <!-- COLUMN 2 -->
+              <div class="mega-column column-2" id="col2">
+                <ul>
+                  <li data-img="heritage">
+                    <a href="https://b-and-b-india.netlify.app/heritage"
+                      >Heritage
+                    </a>
+                  </li>
+                  <li id="unique" data-img="unique">
+                    <a href="#col3"
+                      >Unique Design <i class="fa-solid fa-angle-right"></i
+                    ></a>
+                  </li>
+                  <li data-img="custom">
+                    <a href="https://b-and-b-india.netlify.app/subperiosteal"
+                      >Customized Implants</a
+                    >
+                  </li>
+                  <!-- <li data-img="custom">
+                    <a href="https://b-and-b-india.netlify.app/tissue"
+                      >Tissue Adhesive</a
+                    >
+                  </li> -->
+                  <li data-img="guided">
+                    <a
+                      href="https://b-and-b-india.netlify.app/digitalsurgicalguide"
+                      >Digital Guided Surgery</a
+                    >
+                  </li>
+                  <li data-img="kits">
+                    <a href="https://b-and-b-india.netlify.app/surgicalkit"
+                      >Surgical Kits</a
+                    >
+                  </li>
+                  <!-- <li data-img="kits"><a href="https://b-and-b-india.netlify.app/tissue">Tissue Adhesive</a></li> -->
+                </ul>
+              </div>
+
+              <!-- COLUMN 3 -->
+              <div class="mega-column column-3" id="col3">
+                <h4>Implants</h4>
+                <ul>
+                  <li data-img="duravit-ev">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design1"
+                      >DURAVIT EV</a
+                    >
+                  </li>
+                  <li data-img="duravit-3p">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design2"
+                      >DURAVIT 3P</a
+                    >
+                  </li>
+                  <li data-img="duravit-wide">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design3"
+                      >DURAVIT Wide</a
+                    >
+                  </li>
+                  <li data-img="duravit-pterygo">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design4"
+                      >DURAVIT Pterygo</a
+                    >
+                  </li>
+                  <li data-img="duravit-slim">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design5"
+                      >DURAVIT Slim</a
+                    >
+                  </li>
+                  <li data-img="duravit-slim">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design6"
+                      >DURAVIT Mini</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- IMAGES -->
+              <div class="mega-images">
+                <img id="img1" src="./assets/imgs/di-1.webp" />
+                <img id="img2" src="./assets/imgs/di-2.jpg" />
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="https://b-and-b-india.netlify.app/conexaconnection"
+              >Prosthetics</a
+            >
+          </li>
+
+          <!-- ================= Regenerative ================= -->
+          <li class="has-mega mega-regenerative">
+            Regenerative Products<i class="fa-solid fa-angle-down"></i>
+            <div class="mega-menu">
+              <div class="mega-column">
+                <!-- <h4>Bonegraft</h4> -->
+                <ul>
+                  <li>
+                    <a href="./allograft.html">Allograft-Rocky Mountain</a>
+                  </li>
+                  <li><a href="./xenograft.html">Xenograft-NovoBone</a></li>
+                  <li>
+                    <a href="./xenograft.html#collagen"
+                      >Collagen Membrane-Equine</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./tissue.html">Tissue Adhesive</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mega-images">
+                <img src="./assets/imgs/g-1.jpg" />
+                <img src="./assets/imgs/g-2.jpg" />
+              </div>
+            </div>
+          </li>
+
+          <!-- ================= Robotic ================= -->
+          <li class="has-mega mega-robotic">
+            Robotic Navigation<i class="fa-solid fa-angle-down"></i>
+            <div class="mega-menu">
+              <div class="mega-images">
+                <img src="./assets/imgs/r-1.jpg" />
+                <img src="./assets/imgs/3.0.png" />
+              </div>
+              <div class="mega-column">
+                <h4>Navident</h4>
+                <ul>
+                  <li>
+                    <a href="https://marksbiotech.com/navident-3.0"
+                      >Navident 3.0</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://marksbiotech.com/navident-4.0/"
+                      >Navident 4.0 EVO</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="https://marksbiotech.com/micronmapper/">Photogrammetry</a>
+          </li>
+
+          <li class="has-mega mega-resources">
+            Resources<i class="fa-solid fa-angle-down"></i>
+            <div class="mega-menu">
+              <div class="mega-column">
+                <ul>
+                  <li><a href="./events.html">Education</a></li>
+                  <li><a href="./blog.html">Blogs</a></li>
+                  <li><a href="./careers.html">Careers</a></li>
+                  <li>
+                    <a href="./scientific-evidence.html">Scientific Evidence</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="./about.html">About Us</a></li>
+        </ul>
       </div>
-
-
-      <ul class="nav-main-menu">
-        <div class="logo">
-          <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
-        </div>
-        <li><a href="./index.html">Highlights</a></li>
-
-
-        <!-- ================= Dental Implantology ================= -->
-        <li class="has-mega mega-dental">
-          Dental Implantology<i class="fa-solid fa-angle-down"></i>
-
-          <div class="mega-menu">
-
-
-            <!-- COLUMN 2 -->
-            <div class="mega-column column-2" id="col2">
-              <ul>
-                <li data-img="heritage"><a href="https://b-and-b-india.netlify.app/heritage">Heritage </a></li>
-                <li id="unique" data-img="unique"><a href="#col3">Unique Design <i class="fa-solid fa-angle-right"></i></a></li>
-                <li data-img="custom"><a href="https://b-and-b-india.netlify.app/subperiosteal">Customized
-                    Implants</a></li>
-                <li data-img="custom"><a href="https://b-and-b-india.netlify.app/tissue">Tissue Adhesive</a></li>
-                <li data-img="guided"><a href="https://b-and-b-india.netlify.app/digitalsurgicalguide">Digital Guided
-                    Surgery</a></li>
-                <li data-img="kits"><a href="https://b-and-b-india.netlify.app/surgicalkit">Surgical Kits</a></li>
-                <li data-img="kits"><a href="https://b-and-b-india.netlify.app/tissue">Tissue Adhesive</a></li>
-              </ul>
-            </div>
-
-            <!-- COLUMN 3 -->
-            <div class="mega-column column-3" id="col3">
-              <h4>Implants</h4>
-              <ul>
-                <li data-img="duravit-ev"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design1">DURAVIT
-                    EV</a></li>
-                <li data-img="duravit-3p"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design2">DURAVIT
-                    3P</a></li>
-                <li data-img="duravit-wide"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design3">DURAVIT
-                    Wide</a></li>
-                <li data-img="duravit-pterygo"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design4">DURAVIT
-                    Pterygo</a></li>
-                <li data-img="duravit-slim"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design5">DURAVIT
-                    Slim</a></li>
-                <li data-img="duravit-slim"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design6">DURAVIT
-                    Mini</a></li>
-              </ul>
-            </div>
-
-            <!-- IMAGES -->
-            <div class="mega-images">
-              <img id="img1" src="./assets/imgs/di-1.webp" />
-              <img id="img2" src="./assets/imgs/di-2.jpg" />
-            </div>
-          </div>
-        </li>
-
-        <li><a href="https://b-and-b-india.netlify.app/conexaconnection">Prosthetics</a></li>
-
-        <!-- ================= Regenerative ================= -->
-        <li class="has-mega mega-regenerative">
-          Regenerative Products<i class="fa-solid fa-angle-down"></i>
-          <div class="mega-menu">
-            <div class="mega-column">
-              <!-- <h4>Bonegraft</h4> -->
-              <ul>
-                <li><a href="./allograft.html">Allograft</a></li>
-                <li><a href="./xenograft.html">Xenograft</a></li>
-                <li><a href="./xenograft.html#collagen">Collagen Membrane</a></li>
-              </ul>
-            </div>
-            <div class="mega-images">
-              <img src="./assets/imgs/g-1.jpg" />
-              <img src="./assets/imgs/g-2.jpg" />
-            </div>
-          </div>
-        </li>
-
-        <!-- ================= Robotic ================= -->
-        <li class="has-mega mega-robotic">
-          Robotic Navigation<i class="fa-solid fa-angle-down"></i>
-          <div class="mega-menu">
-            <div class="mega-images">
-              <img src="./assets/imgs/r-1.jpg" />
-              <img src="./assets/imgs/3.0.png" />
-            </div>
-            <div class="mega-column">
-              <h4>Navident</h4>
-              <ul>
-                <li><a href="https://marksbiotech.com/navident-3.0">Navident 3.0</a></li>
-                <li><a href="https://marksbiotech.com/navident-4.0/">Navident 4.0 EVO</a></li>
-              </ul>
-            </div>
-          </div>
-        </li>
-
-
-        <li><a href="https://marksbiotech.com/micronmapper/">Photogrammetry</a></li>
-
-
-        <li class="has-mega mega-resources">
-          Resources<i class="fa-solid fa-angle-down"></i>
-          <div class="mega-menu">
-            <div class="mega-column">
-              <ul>
-                <li><a href="./events.html">Education</a></li>
-                <li><a href="./blog.html">Blogs</a></li>
-                <li><a href="./careers.html">Careers</a></li>
-                <li><a href="./scientific-evidence.html">Scientific Evidence</a></li>
-                
-
-
-              </ul>
-            </div>
-
-          </div>
-        </li>
-        <li><a href="./about.html">About Us</a></li>
-      </ul>
-
-    </div>
-  </header>
+    </header>
 
     <section class="course-hero">
-    <div class="course-container">
+      <div class="course-container">
+        <!-- LEFT CONTENT -->
+        <div class="course-left reveal-up">
+          <span class="course-tag">Workshop</span>
 
-        
-    <!-- LEFT CONTENT -->
-    <div class="course-left reveal-up">
-      <span class="course-tag">Workshop</span>
+          <h2>Expodent Delhi</h2>
+        </div>
 
-      <h2> Expodent Delhi</h2>
-
-     
-    
-    </div>
-
-    <!-- RIGHT IMAGE -->
-    <div class="course-right reveal-up">
-      <img src="./assets/event/25.jpg" alt="">
-    </div>
-
-  </div>
-</section>
-
-
- <section class="event-gallery-section event-gallery-section--slider">
-  <div class="event-gallery-container">
-    <div class="gallery-title-wrap">
-      <h2 class="gallery-heading">Event Gallery</h2>
-   
-    </div>
-
-    <div class="event-gallery-video">
-      <div class="event-gallery-video-frame">
-        <iframe width="315" height="576" src="https://www.youtube.com/embed/FYQUKaYSk8w" title="Day 2 at Expodent Delhi was nothing short of extraordinary!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- RIGHT IMAGE -->
+        <div class="course-right reveal-up">
+          <img src="./assets/event/25.jpg" alt="" />
+        </div>
       </div>
-    </div>
+    </section>
 
+    <section class="event-gallery-section event-gallery-section--slider">
+      <div class="event-gallery-container">
+        <div class="gallery-title-wrap">
+          <h2 class="gallery-heading">Event Gallery</h2>
+        </div>
 
-    <!-- <div class="event-gallery-carousel" data-event-gallery>
+        <div class="event-gallery-video">
+          <div class="event-gallery-video-frame">
+            <iframe
+              width="315"
+              height="576"
+              src="https://www.youtube.com/embed/FYQUKaYSk8w"
+              title="Day 2 at Expodent Delhi was nothing short of extraordinary!"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- <div class="event-gallery-carousel" data-event-gallery>
       <button class="gallery-nav-btn" type="button" data-gallery-prev aria-label="Show previous images">
         <i class="fa-solid fa-arrow-left"></i>
       </button>
@@ -223,104 +285,204 @@
         <i class="fa-solid fa-arrow-right"></i>
       </button>
     </div> -->
-  </div>
-</section>
+      </div>
+    </section>
 
+    <footer class="about-footer">
+      <!-- TOP -->
+      <div class="about-footer-top">
+        <div class="about-footer-title">
+          <p>We are here to support You</p>
+          <h2>Connect with us</h2>
+        </div>
 
-
-<footer class="about-footer">
-    <!-- TOP -->
-    <div class="about-footer-top">
-      <div class="about-footer-title">
-        <p>We are here to support You</p>
-        <h2>Connect with us</h2>
+        <div class="about-subscribe-box">
+          <form action="" id="form1">
+            <input type="email" name="email" placeholder="Enter your mail id" />
+            <button class="subsc" type="submit">Subscribe</button>
+          </form>
+        </div>
       </div>
 
-      <div class="about-subscribe-box">
-        <form action="" id="form1">
-        <input type="email" name="email" placeholder="Enter your mail id" />
-        <button class="subsc" type="submit">Subscribe</button></form>
+      <hr />
+
+      <!-- BOTTOM -->
+      <div class="footer-content">
+        <!-- QUICK LINKS -->
+        <div class="footer-col">
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="./index.html">Highlights</a></li>
+            <li><a href="./about.html">About us</a></li>
+
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./events.html">Event</a></li>
+            <li><a href="./careers.html">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- PRODUCTS -->
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li>
+              <a href="https://b-and-b-india.netlify.app/uniqueimplant"
+                >B&B Dental Implants Italy</a
+              >
+            </li>
+            <li>
+              <a href="https://b-and-b-india.netlify.app/surgicalkit"
+                >B&B SURGICAL KITS</a
+              >
+            </li>
+            <li>
+              <a href="https://b-and-b-india.netlify.app/digitalsurgicalguide"
+                >Computer Guided Surgery</a
+              >
+            </li>
+            <li><a href="./allograft.html">Rocky Mountain Allograft</a></li>
+            <li><a href="./xenograft.html">NovoBona Xenograft</a></li>
+            <li><a href="./xenograft.html#collagen">T-Collagen Membrane</a></li>
+            <li>
+              <a href="./tissue.html">Tissue Adhesive</a>
+            </li>
+            <li>
+              <a href="https://marksbiotech.com/navident-3.0">Navident 3.0</a>
+            </li>
+            <li>
+              <a href="https://marksbiotech.com/navident-4.0/"
+                >Navident 4.0 EVO</a
+              >
+            </li>
+            <li>
+              <a href="https://marksbiotech.com/micronmapper/">MicronMapper</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ADDRESS -->
+        <div class="footer-col address">
+          <h4>Address</h4>
+
+          <p class="he-red">Operation and Communication Address</p>
+          <p>
+            84, 1st floor, Thirupathy Nagar,<br />
+            Mainroad, 1st Cross street, <br />
+            Valasaravakkam, Chennai, India -600087.
+          </p>
+
+          <p class="he-red">Registered Office Address</p>
+          <p>
+            104/5, 6th Street, S-1, 2nd floor, The Brown CLS Bulding, Radha
+            Avenue, Valasaravakam, Chennai, India -600087.
+          </p>
+        </div>
+
+        <!-- LOGO + MAP -->
+        <div class="footer-col logo-map">
+          <img
+            src="assets/imgs/marks-biotech-logo 1.png"
+            alt="Marks Biotech Logo"
+            class="logo"
+          />
+          <p class="contact">📞 +91 44 485 93250</p>
+          <p class="contact">📞 +91 9819893250 ,+91 9840320250</p>
+          <p class="contact"><span>✉ </span>info@marksbiotech.com</p>
+          <div class="map-box">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.861000188089!2d80.1749978!3d13.044518400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261bb26e13173%3A0x58681e3956ff7dbb!2sMarks%20Biotech%20Inc!5e0!3m2!1sen!2sin!4v1769035781529!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="floating-container">
+      <!-- EVENT BOX -->
+      <div class="event-box">
+        <h3 id="eventName"></h3>
+
+        <div class="event-details">
+          <p id="eventDate"></p>
+          <p id="eventTime"></p>
+          <p id="eventLocation"></p>
+        </div>
+
+        <div class="floating-btn-con">
+          <a href="" class="view-floating-img">View Details</a>
+          <button id="openFormBtn">Register Now</button>
+        </div>
+        <div class="float-event-close">
+          <button id="closeEventBtn">✖</button>
+        </div>
+      </div>
+
+      <!-- WHATSAPP BUTTON -->
+      <a
+        href="https://wa.me/919819893250"
+        id="whatsappBtn"
+        class="whatsapp-btn"
+      >
+        <span class="wave"></span>
+        <span class="wave delay"></span>
+
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" />
+      </a>
+
+      <div id="eventToggleBtn" class="event-toggle-btn">Upcoming Events</div>
+    </div>
+    <div id="eventImagePopup" class="popup">
+      <div class="popup-content popup-image" style="max-width: 600px">
+        <button id="closeImagePopup" class="close-btn">✖</button>
+        <img
+          id="eventPopupImg"
+          src=""
+          style="width: 100%; border-radius: 10px"
+        />
+      </div>
+    </div>
+    <!-- POPUP FORM -->
+    <div id="popupForm" class="popup">
+      <div class="popup-content">
+        <button id="closeForm" class="close-btn">✖</button>
+
+        <h2>Register</h2>
+
+        <form id="leadForm">
+          <input name="name" placeholder="Full Name *" required />
+
+          <select name="title">
+            <option>Dr.</option>
+          </select>
+
+          <input name="email" type="email" placeholder="Email *" required />
+          <input name="mobile" placeholder="Mobile Number *" required />
+
+          <select name="speciality">
+            <option>BDS</option>
+            <option>MDS</option>
+          </select>
+
+          <input name="specialityOther" placeholder="Specify Specialty" />
+
+          <select name="category">
+            <option>Private Practice</option>
+            <option>Students</option>
+          </select>
+
+          <input name="city" placeholder="City *" required />
+
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </div>
 
-    <hr />
-
-    <!-- BOTTOM -->
-    <div class="footer-content">
-      <!-- QUICK LINKS -->
-      <div class="footer-col">
-        <h4>Quick links</h4>
-        <ul>
-          <li><a href="./index.html">Highlights</a></li>
-          <li><a href="./about.html">About us</a></li>
-          
-          <li><a href="https://marksbiotech.com/micronmapper/">MicronMapper</a></li>
-          
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./events.html">Event</a></li>
-          <li><a href="./careers.html">Careers</a></li>
-          
-        </ul>
-      </div>
-
-      <!-- PRODUCTS -->
-      <div class="footer-col">
-        <h4>Products</h4>
-        <ul>
-          <li><a href="https://b-and-b-india.netlify.app/uniqueimplant">Dental implants</a></li>
-          <li><a href="https://b-and-b-india.netlify.app/surgicalkit">Free hand Surgical</a></li>
-          <li><a href="https://b-and-b-india.netlify.app/digitalsurgicalguide">Computer Guided Surgery</a></li>
-          <li><a href="./allograft.html">Allograft</a></li>
-          <li><a href="./xenograft.html">Xenograft</a></li>
-          <li><a href="https://marksbiotech.com/navident-3.0">Navident 3.0</a></li>
-          <li><a href="https://marksbiotech.com/navident-4.0/">Navident 4.0 EVO</a></li>
-          <li><a href=".https://marksbiotech.com/micronmapper/">Photogrammetry</a></li>
-          
-          
-        </ul>
-      </div>
-
-      <!-- ADDRESS -->
-      <div class="footer-col address">
-        <h4>Address</h4>
-
-        <p class="he-red">Operation and Communication Address</p>
-        <p>
-          84, 1st floor, Thirupathy Nagar,<br />
-          Mainroad, 1st Cross street, <br />
-          Valasaravakkam, Chennai-600087.
-        </p>
-
-        <p class="he-red">Registered Office Address</p>
-        <p>
-          104/5, 6th street, s-1, 2nd floor, The Brown CLS Bulding, Ratha
-          Avenue, Valasaravakam, Chennai-600087.
-        </p>
-
-
-      </div>
-
-      <!-- LOGO + MAP -->
-      <div class="footer-col logo-map">
-
-        <img src="assets/imgs/marks-biotech-logo 1.png" alt="Marks Biotech Logo" class="logo" />
-        <p class="contact"> +91 44 485 93250</p>
-        <p class="contact"> +91 9819893250 ,+91 9840320250</p>
-        <p class="contact"><span> </span>info@marksbiotech.com</p>
-        <div class="map-box"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.861000188089!2d80.1749978!3d13.044518400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261bb26e13173%3A0x58681e3956ff7dbb!2sMarks%20Biotech%20Inc!5e0!3m2!1sen!2sin!4v1769035781529!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-
-      </div>
-    </div>
-     </footer>
-
-    
-     <script src="./event-gallery.js"></script>
+    <script src="./event-gallery.js"></script>
     <script src="./script2.js"></script>
   </body>
 </html>
-
-
-
-
-
-

@@ -1,324 +1,552 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morse Taper Connection</title>
-<link rel="stylesheet" href="./blog-2.css"/>
-<link rel="stylesheet" href="./nav.css" />
-<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-  <script src="./js/gsap.min.js"></script>
-  <script src="./js/ScrollTrigger.min.js"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morse Taper Connection</title>
+    <link rel="stylesheet" href="./blog-2.css" />
+    <link rel="stylesheet" href="./nav.css" />
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/gsap.min.js"></script>
+    <script src="./js/ScrollTrigger.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <link rel="stylesheet" href="./responsive-global.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="./responsive-global.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-container">
+        <div class="nav-top">
+          <div class="logo1">
+            <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
+          </div>
 
-      
-   
- <header class="site-header">
-    <div class="nav-container">
-
-      <div class="nav-top">
-
-        <div class="logo1">
-          <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
+          <div class="hamburger" id="hamburger">?</div>
         </div>
 
-        <div class="hamburger" id="hamburger"> ?
+        <ul class="nav-main-menu">
+          <div class="logo">
+            <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
+          </div>
+          <li><a href="./index.html">Highlights</a></li>
 
-        </div>
+          <!-- ================= Dental Implantology ================= -->
+          <li class="has-mega mega-dental">
+            Dental Implantology<i class="fa-solid fa-angle-down"></i>
+
+            <div class="mega-menu">
+              <!-- COLUMN 2 -->
+              <div class="mega-column column-2" id="col2">
+                <ul>
+                  <li data-img="heritage">
+                    <a href="https://b-and-b-india.netlify.app/heritage"
+                      >Heritage
+                    </a>
+                  </li>
+                  <li id="unique" data-img="unique">
+                    <a href="#col3"
+                      >Unique Design <i class="fa-solid fa-angle-right"></i
+                    ></a>
+                  </li>
+                  <li data-img="custom">
+                    <a href="https://b-and-b-india.netlify.app/subperiosteal"
+                      >Customized Implants</a
+                    >
+                  </li>
+                  <!-- <li data-img="custom">
+                    <a href="https://b-and-b-india.netlify.app/tissue"
+                      >Tissue Adhesive</a
+                    >
+                  </li> -->
+                  <li data-img="guided">
+                    <a
+                      href="https://b-and-b-india.netlify.app/digitalsurgicalguide"
+                      >Digital Guided Surgery</a
+                    >
+                  </li>
+                  <li data-img="kits">
+                    <a href="https://b-and-b-india.netlify.app/surgicalkit"
+                      >Surgical Kits</a
+                    >
+                  </li>
+                  <!-- <li data-img="kits"><a href="https://b-and-b-india.netlify.app/tissue">Tissue Adhesive</a></li> -->
+                </ul>
+              </div>
+
+              <!-- COLUMN 3 -->
+              <div class="mega-column column-3" id="col3">
+                <h4>Implants</h4>
+                <ul>
+                  <li data-img="duravit-ev">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design1"
+                      >DURAVIT EV</a
+                    >
+                  </li>
+                  <li data-img="duravit-3p">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design2"
+                      >DURAVIT 3P</a
+                    >
+                  </li>
+                  <li data-img="duravit-wide">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design3"
+                      >DURAVIT Wide</a
+                    >
+                  </li>
+                  <li data-img="duravit-pterygo">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design4"
+                      >DURAVIT Pterygo</a
+                    >
+                  </li>
+                  <li data-img="duravit-slim">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design5"
+                      >DURAVIT Slim</a
+                    >
+                  </li>
+                  <li data-img="duravit-slim">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design6"
+                      >DURAVIT Mini</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- IMAGES -->
+              <div class="mega-images">
+                <img id="img1" src="./assets/imgs/di-1.webp" />
+                <img id="img2" src="./assets/imgs/di-2.jpg" />
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="https://b-and-b-india.netlify.app/conexaconnection"
+              >Prosthetics</a
+            >
+          </li>
+
+          <!-- ================= Regenerative ================= -->
+          <li class="has-mega mega-regenerative">
+            Regenerative Products<i class="fa-solid fa-angle-down"></i>
+            <div class="mega-menu">
+              <div class="mega-column">
+                <!-- <h4>Bonegraft</h4> -->
+                <ul>
+                  <li>
+                    <a href="./allograft.html">Allograft-Rocky Mountain</a>
+                  </li>
+                  <li><a href="./xenograft.html">Xenograft-NovoBone</a></li>
+                  <li>
+                    <a href="./xenograft.html#collagen"
+                      >Collagen Membrane-Equine</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./tissue.html">Tissue Adhesive</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mega-images">
+                <img src="./assets/imgs/g-1.jpg" />
+                <img src="./assets/imgs/g-2.jpg" />
+              </div>
+            </div>
+          </li>
+
+          <!-- ================= Robotic ================= -->
+          <li class="has-mega mega-robotic">
+            Robotic Navigation<i class="fa-solid fa-angle-down"></i>
+            <div class="mega-menu">
+              <div class="mega-images">
+                <img src="./assets/imgs/r-1.jpg" />
+                <img src="./assets/imgs/3.0.png" />
+              </div>
+              <div class="mega-column">
+                <h4>Navident</h4>
+                <ul>
+                  <li>
+                    <a href="https://marksbiotech.com/navident-3.0"
+                      >Navident 3.0</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://marksbiotech.com/navident-4.0/"
+                      >Navident 4.0 EVO</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="https://marksbiotech.com/micronmapper/">Photogrammetry</a>
+          </li>
+
+          <li class="has-mega mega-resources">
+            Resources<i class="fa-solid fa-angle-down"></i>
+            <div class="mega-menu">
+              <div class="mega-column">
+                <ul>
+                  <li><a href="./events.html">Education</a></li>
+                  <li><a href="./blog.html">Blogs</a></li>
+                  <li><a href="./careers.html">Careers</a></li>
+                  <li>
+                    <a href="./scientific-evidence.html">Scientific Evidence</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="./about.html">About Us</a></li>
+        </ul>
       </div>
+    </header>
 
+    <div class="blog-detail-container">
+      <div class="breadcrumb">Home » Blogs » Morse Taper Connection</div>
 
-      <ul class="nav-main-menu">
-        <div class="logo">
-          <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
-        </div>
-        <li><a href="./index.html">Highlights</a></li>
+      <h1 class="blog-detail-title">
+        Dynamic Navigation: Precision Implant Surgery
+      </h1>
 
+      <img src="./assets/imgs/blog-2.jpg" alt="" class="blog-detail-img" />
 
-        <!-- ================= Dental Implantology ================= -->
-        <li class="has-mega mega-dental">
-          Dental Implantology<i class="fa-solid fa-angle-down"></i>
-
-          <div class="mega-menu">
-
-
-            <!-- COLUMN 2 -->
-            <div class="mega-column column-2" id="col2">
-              <ul>
-                <li data-img="heritage"><a href="https://b-and-b-india.netlify.app/heritage">Heritage </a></li>
-                <li id="unique" data-img="unique"><a href="#col3">Unique Design <i class="fa-solid fa-angle-right"></i></a></li>
-                <li data-img="custom"><a href="https://b-and-b-india.netlify.app/subperiosteal">Customized
-                    Implants</a></li>
-                <li data-img="custom"><a href="https://b-and-b-india.netlify.app/tissue">Tissue Adhesive</a></li>
-                <li data-img="guided"><a href="https://b-and-b-india.netlify.app/digitalsurgicalguide">Digital Guided
-                    Surgery</a></li>
-                <li data-img="kits"><a href="https://b-and-b-india.netlify.app/surgicalkit">Surgical Kits</a></li>
-                <li data-img="kits"><a href="https://b-and-b-india.netlify.app/tissue">Tissue Adhesive</a></li>
-              </ul>
-            </div>
-
-            <!-- COLUMN 3 -->
-            <div class="mega-column column-3" id="col3">
-              <h4>Implants</h4>
-              <ul>
-                <li data-img="duravit-ev"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design1">DURAVIT
-                    EV</a></li>
-                <li data-img="duravit-3p"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design2">DURAVIT
-                    3P</a></li>
-                <li data-img="duravit-wide"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design3">DURAVIT
-                    Wide</a></li>
-                <li data-img="duravit-pterygo"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design4">DURAVIT
-                    Pterygo</a></li>
-                <li data-img="duravit-slim"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design5">DURAVIT
-                    Slim</a></li>
-                <li data-img="duravit-slim"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design6">DURAVIT
-                    Mini</a></li>
-              </ul>
-            </div>
-
-            <!-- IMAGES -->
-            <div class="mega-images">
-              <img id="img1" src="./assets/imgs/di-1.webp" />
-              <img id="img2" src="./assets/imgs/di-2.jpg" />
-            </div>
-          </div>
-        </li>
-
-        <li><a href="https://b-and-b-india.netlify.app/conexaconnection">Prosthetics</a></li>
-
-        <!-- ================= Regenerative ================= -->
-        <li class="has-mega mega-regenerative">
-          Regenerative Products<i class="fa-solid fa-angle-down"></i>
-          <div class="mega-menu">
-            <div class="mega-column">
-              <!-- <h4>Bonegraft</h4> -->
-              <ul>
-                <li><a href="./allograft.html">Allograft</a></li>
-                <li><a href="./xenograft.html">Xenograft</a></li>
-                <li><a href="./xenograft.html#collagen">Collagen Membrane</a></li>
-              </ul>
-            </div>
-            <div class="mega-images">
-              <img src="./assets/imgs/g-1.jpg" />
-              <img src="./assets/imgs/g-2.jpg" />
-            </div>
-          </div>
-        </li>
-
-        <!-- ================= Robotic ================= -->
-        <li class="has-mega mega-robotic">
-          Robotic Navigation<i class="fa-solid fa-angle-down"></i>
-          <div class="mega-menu">
-            <div class="mega-images">
-              <img src="./assets/imgs/r-1.jpg" />
-              <img src="./assets/imgs/3.0.png" />
-            </div>
-            <div class="mega-column">
-              <h4>Navident</h4>
-              <ul>
-                <li><a href="https://marksbiotech.com/navident-3.0">Navident 3.0</a></li>
-                <li><a href="https://marksbiotech.com/navident-4.0/">Navident 4.0 EVO</a></li>
-              </ul>
-            </div>
-          </div>
-        </li>
-
-
-        <li><a href="https://marksbiotech.com/micronmapper/">Photogrammetry</a></li>
-
-
-        <li class="has-mega mega-resources">
-          Resources<i class="fa-solid fa-angle-down"></i>
-          <div class="mega-menu">
-            <div class="mega-column">
-              <ul>
-                <li><a href="./events.html">Education</a></li>
-                <li><a href="./blog.html">Blogs</a></li>
-                <li><a href="./careers.html">Careers</a></li>
-                <li><a href="./scientific-evidence.html">Scientific Evidence</a></li>
-                
-
-
-              </ul>
-            </div>
-
-          </div>
-        </li>
-        <li><a href="./about.html">About Us</a></li>
-      </ul>
-
-    </div>
-  </header>
-
-  
-  
- <div class="blog-detail-container">
-
-    <div class="breadcrumb">Home » Blogs » Morse Taper Connection
-        
-    </div>
-
-    <h1 class="blog-detail-title">Dynamic Navigation: Precision Implant Surgery</h1>
-
-    <img src="./assets/imgs/blog-2.jpg" alt="" class="blog-detail-img">
-
-    <div class="blog-detail-content">
-        <p>Dynamic Navigation: Precision Implant Surgery Dynamic Navigation is the most effective means by which to accurately transfer a planned implant position to a patient. In contrast to the inherent inaccuracy of Freehand and Static Navigation, Dynamic Navigation software algorithms direct the surgeon to angulate and orient the osteotomy drill using realtime feedback. The surgical path can be modified during treatment and the use of Dynamic Navigation in such situations as limited opening is unparalleled. It is equally as exacting with dentate and anodentate jaws.</p>
+      <div class="blog-detail-content">
+        <p>
+          Dynamic Navigation: Precision Implant Surgery Dynamic Navigation is
+          the most effective means by which to accurately transfer a planned
+          implant position to a patient. In contrast to the inherent inaccuracy
+          of Freehand and Static Navigation, Dynamic Navigation software
+          algorithms direct the surgeon to angulate and orient the osteotomy
+          drill using realtime feedback. The surgical path can be modified
+          during treatment and the use of Dynamic Navigation in such situations
+          as limited opening is unparalleled. It is equally as exacting with
+          dentate and anodentate jaws.
+        </p>
 
         <h4>Planning Phase</h4>
 
-        <p>Implant dentistry demands precision placement of the fixture. Ideal location and position, dimension (length and diameter) and depth and angulation are mandated for positive treatment outcomes. Restoratively driven implant placement is paramount for the overall integrity of the dentition. Thus, it is essential to first visualize the final prosthesis in place in order to determine the type and number of implants necessary to support the intended prosthesis based on residual bone volume [Figures 1a, 1b].</p>
+        <p>
+          Implant dentistry demands precision placement of the fixture. Ideal
+          location and position, dimension (length and diameter) and depth and
+          angulation are mandated for positive treatment outcomes. Restoratively
+          driven implant placement is paramount for the overall integrity of the
+          dentition. Thus, it is essential to first visualize the final
+          prosthesis in place in order to determine the type and number of
+          implants necessary to support the intended prosthesis based on
+          residual bone volume [Figures 1a, 1b].
+        </p>
 
-        <img src="./assets/imgs/blog-2-Dynamic-Navigation-2.jpg" alt="">
+        <img src="./assets/imgs/blog-2-Dynamic-Navigation-2.jpg" alt="" />
         <p>Figure 1a</p>
-        <img src="./assets/imgs/blog-2-Dynamic-Navigation-3.jpg" alt="">
-        <p>Figure 1b</p> <br>
+        <img src="./assets/imgs/blog-2-Dynamic-Navigation-3.jpg" alt="" />
+        <p>Figure 1b</p>
+        <br />
 
         <h4>Trace and Place Registration (TaP)</h4>
         <div class="blog-sub-text">
-    <img src="./assets/imgs/blog-2-Dynamic-Navigation-4.jpg" alt="">
-    
-    <div>
-    <p>Historically, image-guided surgical registration required the use of fiducials to map the maxilla or the mandible to the cbCT scan. TaP registers high-contrast surfaces present in the data set obviating the need for a stent or clip attached to or positioned between the maxilla and mandible.</p>
-    <p>TaP uses a Tracer Tool and Tag [Figure 2], Jaw Tracker [Figure 3] or a Head Tracker [Figure 4]. The Jaw Tracker in the mandible (or maxilla) or the Head Tracker in the maxilla are detected and triangulated by the optical sensor and thus always in sync regardless of how the head is positioned.</p>
-    </div>
-    
-    
-</div>
-<p>figure 2</p> <br><br>
-<div class="blog-sub-text-img">
-    <img src="./assets/imgs/blog-2-Dynamic-Navigation-5.jpg" alt="">
-    <img src="./assets/imgs/blog-2-Dynamic-Navigation-6.jpg" alt="">
-</div>
-<div class="blog-sub-text-bot-text">
-    <p>figure 3</p>
-    <p>figure 4</p>
-</div>
+          <img src="./assets/imgs/blog-2-Dynamic-Navigation-4.jpg" alt="" />
 
-<br><br><br>
-<p>Three to six stable structures (non-colinear teeth or bone screws in edentulous jaws) are chosen. The software algorithms prompt the user to hold the Tracer Tool on the marked structures as close to the landmark position as possible.</p>
+          <div>
+            <p>
+              Historically, image-guided surgical registration required the use
+              of fiducials to map the maxilla or the mandible to the cbCT scan.
+              TaP registers high-contrast surfaces present in the data set
+              obviating the need for a stent or clip attached to or positioned
+              between the maxilla and mandible.
+            </p>
+            <p>
+              TaP uses a Tracer Tool and Tag [Figure 2], Jaw Tracker [Figure 3]
+              or a Head Tracker [Figure 4]. The Jaw Tracker in the mandible (or
+              maxilla) or the Head Tracker in the maxilla are detected and
+              triangulated by the optical sensor and thus always in sync
+              regardless of how the head is positioned.
+            </p>
+          </div>
+        </div>
+        <p>figure 2</p>
+        <br /><br />
+        <div class="blog-sub-text-img">
+          <img src="./assets/imgs/blog-2-Dynamic-Navigation-5.jpg" alt="" />
+          <img src="./assets/imgs/blog-2-Dynamic-Navigation-6.jpg" alt="" />
+        </div>
+        <div class="blog-sub-text-bot-text">
+          <p>figure 3</p>
+          <p>figure 4</p>
+        </div>
 
-<img src="./assets/imgs/blog-2-Dynamic-Navigation-7.jpg" alt="">
-<p>figure 5a</p>
-
-<p>The Tracer Tool is moved around the landmark (only the tip should contact the tooth). A sound denotes the counter reaching 100, a percentage the points contacted. When trace registration is completed, the jaw structure has been mapped to the cbCT data set [Figure 5b].
-</p>
-
-<img src="./assets/imgs/blog-2-Dynamic-Navigation-8.jpg" alt="">
-<p>figure 5b</p>
-
-
-
-<h4>Calibration of the handpiece</h4>
-<p>The handpiece (product agnostic) is attached to a Drill Tag and the drill axis and drill tip are calibrated. This ensures that the spatial correlation of the drill axis and the drill tip is exact. The optical sensor is able to track and triangulate the tags (on patient, on tracer, on drill) at any time from the moment the sensor is ON. The difference is that after Calibration of the instruments and Registration of patient to the CBCT scan – the system can now show, in real-time, and continuously, the location of the drill in the patient [Figure 6a, 6b]</p>
-<img src="./assets/imgs/blog-2-Dynamic-Navigation-9.jpg" alt=""><p>figure 6a</p>
-<img src="./assets/imgs/blog-2-Dynamic-Navigation-10.jpg" alt=""><p>figure 6b</p>
-
-<h4>Surgical Navigation</h4>
-<p>The navigation screen is active when the system identifies the calibrated instrument as it approaches the patient’s jaw. The target view measures the distance between the instrument’s tip and central axis of the designated access penetration point, the glide path or the osteotomy. The central axis length of the planned procedure is represented by the center of the static white target, the tip of the drill is indicated by the moving black cross following the drill tip movement. The real-time direction of the drill is represented as a cone in the head of the handpiece [Figure 7].</p>
-<img src="./assets/imgs/blog-2-Dynamic-Navigation-10.jpg" alt=""><p>figure 7</p>
-<br>
-<h4>Conclusion</h4>
-<p>TaP registration is more time and treatment efficient and effective than traditional stent protocols. Scans can be taken with the jaws in occlusion (no stent to separate them) for improved crown planning. Stents or clips do not impede handpiece access to space restricted locations and most importantly, dynamic guided surgery enables changes to the treatment plan intra-operatively.</p>
-</div></div>
-
-
-
- 
-  <footer class="about-footer">
-    <!-- TOP -->
-    <div class="about-footer-top">
-      <div class="about-footer-title">
-        <p>We are here to support You</p>
-        <h2>Connect with us</h2>
-      </div>
-
-     <div class="about-subscribe-box">
-        <form action="" id="form1">
-        <input type="email" name="email" placeholder="Enter your mail id" />
-        <button class="subsc" type="submit">Subscribe</button></form>
-      </div>
-    </div>
-
-    <hr />
-
-    <!-- BOTTOM -->
-    <div class="footer-content">
-      <!-- QUICK LINKS -->
-      <div class="footer-col">
-        <h4>Quick links</h4>
-        <ul>
-          <li><a href="./index.html">Highlights</a></li>
-          <li><a href="./about.html">About us</a></li>
-          
-          <li><a href="https://marksbiotech.com/micronmapper/">MicronMapper</a></li>
-          
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./events.html">Event</a></li>
-          <li><a href="./careers.html">Careers</a></li>
-          
-        </ul>
-      </div>
-
-      <!-- PRODUCTS -->
-      <div class="footer-col">
-        <h4>Products</h4>
-        <ul>
-          <li><a href="https://b-and-b-india.netlify.app/uniqueimplant">Dental implants</a></li>
-          <li><a href="https://b-and-b-india.netlify.app/surgicalkit">Free hand Surgical</a></li>
-          <li><a href="https://b-and-b-india.netlify.app/digitalsurgicalguide">Computer Guided Surgery</a></li>
-          <li><a href="./allograft.html">Allograft</a></li>
-          <li><a href="./xenograft.html">Xenograft</a></li>
-          <li><a href="https://marksbiotech.com/navident-3.0">Navident 3.0</a></li>
-          <li><a href="https://marksbiotech.com/navident-4.0/">Navident 4.0 EVO</a></li>
-          <li><a href=".https://marksbiotech.com/micronmapper/">Photogrammetry</a></li>
-          
-          
-        </ul>
-      </div>
-
-      <!-- ADDRESS -->
-      <div class="footer-col address">
-        <h4>Address</h4>
-
-        <p class="he-red">Operation and Communication Address</p>
+        <br /><br /><br />
         <p>
-          84, 1st floor, Thirupathy Nagar,<br />
-          Mainroad, 1st Cross street, <br />
-          Valasaravakkam, Chennai-600087.
+          Three to six stable structures (non-colinear teeth or bone screws in
+          edentulous jaws) are chosen. The software algorithms prompt the user
+          to hold the Tracer Tool on the marked structures as close to the
+          landmark position as possible.
         </p>
 
-        <p class="he-red">Registered Office Address</p>
+        <img src="./assets/imgs/blog-2-Dynamic-Navigation-7.jpg" alt="" />
+        <p>figure 5a</p>
+
         <p>
-          104/5, 6th street, s-1, 2nd floor, The Brown CLS Bulding, Ratha
-          Avenue, Valasaravakam, Chennai-600087.
+          The Tracer Tool is moved around the landmark (only the tip should
+          contact the tooth). A sound denotes the counter reaching 100, a
+          percentage the points contacted. When trace registration is completed,
+          the jaw structure has been mapped to the cbCT data set [Figure 5b].
         </p>
 
+        <img src="./assets/imgs/blog-2-Dynamic-Navigation-8.jpg" alt="" />
+        <p>figure 5b</p>
 
+        <h4>Calibration of the handpiece</h4>
+        <p>
+          The handpiece (product agnostic) is attached to a Drill Tag and the
+          drill axis and drill tip are calibrated. This ensures that the spatial
+          correlation of the drill axis and the drill tip is exact. The optical
+          sensor is able to track and triangulate the tags (on patient, on
+          tracer, on drill) at any time from the moment the sensor is ON. The
+          difference is that after Calibration of the instruments and
+          Registration of patient to the CBCT scan – the system can now show, in
+          real-time, and continuously, the location of the drill in the patient
+          [Figure 6a, 6b]
+        </p>
+        <img src="./assets/imgs/blog-2-Dynamic-Navigation-9.jpg" alt="" />
+        <p>figure 6a</p>
+        <img src="./assets/imgs/blog-2-Dynamic-Navigation-10.jpg" alt="" />
+        <p>figure 6b</p>
+
+        <h4>Surgical Navigation</h4>
+        <p>
+          The navigation screen is active when the system identifies the
+          calibrated instrument as it approaches the patient’s jaw. The target
+          view measures the distance between the instrument’s tip and central
+          axis of the designated access penetration point, the glide path or the
+          osteotomy. The central axis length of the planned procedure is
+          represented by the center of the static white target, the tip of the
+          drill is indicated by the moving black cross following the drill tip
+          movement. The real-time direction of the drill is represented as a
+          cone in the head of the handpiece [Figure 7].
+        </p>
+        <img src="./assets/imgs/blog-2-Dynamic-Navigation-10.jpg" alt="" />
+        <p>figure 7</p>
+        <br />
+        <h4>Conclusion</h4>
+        <p>
+          TaP registration is more time and treatment efficient and effective
+          than traditional stent protocols. Scans can be taken with the jaws in
+          occlusion (no stent to separate them) for improved crown planning.
+          Stents or clips do not impede handpiece access to space restricted
+          locations and most importantly, dynamic guided surgery enables changes
+          to the treatment plan intra-operatively.
+        </p>
       </div>
-
-      <!-- LOGO + MAP -->
-      <div class="footer-col logo-map">
-
-        <img src="assets/imgs/marks-biotech-logo 1.png" alt="Marks Biotech Logo" class="logo" />
-        <p class="contact">📞 +91 44 485 93250</p>
-        <p class="contact">📞 +91 9819893250 ,+91 9840320250</p>
-        <p class="contact"><span>✉ </span>info@marksbiotech.com</p>
-        <div class="map-box"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.861000188089!2d80.1749978!3d13.044518400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261bb26e13173%3A0x58681e3956ff7dbb!2sMarks%20Biotech%20Inc!5e0!3m2!1sen!2sin!4v1769035781529!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-
-      </div>
-      
     </div>
-  </footer>
 
-  <script src="./script2.js"></script>
+    <footer class="about-footer">
+      <!-- TOP -->
+      <div class="about-footer-top">
+        <div class="about-footer-title">
+          <p>We are here to support You</p>
+          <h2>Connect with us</h2>
+        </div>
 
-</body>
+        <div class="about-subscribe-box">
+          <form action="" id="form1">
+            <input type="email" name="email" placeholder="Enter your mail id" />
+            <button class="subsc" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- BOTTOM -->
+      <div class="footer-content">
+        <!-- QUICK LINKS -->
+        <div class="footer-col">
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="./index.html">Highlights</a></li>
+            <li><a href="./about.html">About us</a></li>
+
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./events.html">Event</a></li>
+            <li><a href="./careers.html">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- PRODUCTS -->
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li>
+              <a href="https://b-and-b-india.netlify.app/uniqueimplant"
+                >B&B Dental Implants Italy</a
+              >
+            </li>
+            <li>
+              <a href="https://b-and-b-india.netlify.app/surgicalkit"
+                >B&B SURGICAL KITS</a
+              >
+            </li>
+            <li>
+              <a href="https://b-and-b-india.netlify.app/digitalsurgicalguide"
+                >Computer Guided Surgery</a
+              >
+            </li>
+            <li><a href="./allograft.html">Rocky Mountain Allograft</a></li>
+            <li><a href="./xenograft.html">NovoBona Xenograft</a></li>
+            <li><a href="./xenograft.html#collagen">T-Collagen Membrane</a></li>
+            <li>
+              <a href="./tissue.html">Tissue Adhesive</a>
+            </li>
+            <li>
+              <a href="https://marksbiotech.com/navident-3.0">Navident 3.0</a>
+            </li>
+            <li>
+              <a href="https://marksbiotech.com/navident-4.0/"
+                >Navident 4.0 EVO</a
+              >
+            </li>
+            <li>
+              <a href="https://marksbiotech.com/micronmapper/">MicronMapper</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ADDRESS -->
+        <div class="footer-col address">
+          <h4>Address</h4>
+
+          <p class="he-red">Operation and Communication Address</p>
+          <p>
+            84, 1st floor, Thirupathy Nagar,<br />
+            Mainroad, 1st Cross street, <br />
+            Valasaravakkam, Chennai, India -600087.
+          </p>
+
+          <p class="he-red">Registered Office Address</p>
+          <p>
+            104/5, 6th Street, S-1, 2nd floor, The Brown CLS Bulding, Radha
+            Avenue, Valasaravakam, Chennai, India -600087.
+          </p>
+        </div>
+
+        <!-- LOGO + MAP -->
+        <div class="footer-col logo-map">
+          <img
+            src="assets/imgs/marks-biotech-logo 1.png"
+            alt="Marks Biotech Logo"
+            class="logo"
+          />
+          <p class="contact">📞 +91 44 485 93250</p>
+          <p class="contact">📞 +91 9819893250 ,+91 9840320250</p>
+          <p class="contact"><span>✉ </span>info@marksbiotech.com</p>
+          <div class="map-box">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.861000188089!2d80.1749978!3d13.044518400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261bb26e13173%3A0x58681e3956ff7dbb!2sMarks%20Biotech%20Inc!5e0!3m2!1sen!2sin!4v1769035781529!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="floating-container">
+      <!-- EVENT BOX -->
+      <div class="event-box">
+        <h3 id="eventName"></h3>
+
+        <div class="event-details">
+          <p id="eventDate"></p>
+          <p id="eventTime"></p>
+          <p id="eventLocation"></p>
+        </div>
+
+        <div class="floating-btn-con">
+          <a href="" class="view-floating-img">View Details</a>
+          <button id="openFormBtn">Register Now</button>
+        </div>
+        <div class="float-event-close">
+          <button id="closeEventBtn">✖</button>
+        </div>
+      </div>
+
+      <!-- WHATSAPP BUTTON -->
+      <a
+        href="https://wa.me/919819893250"
+        id="whatsappBtn"
+        class="whatsapp-btn"
+      >
+        <span class="wave"></span>
+        <span class="wave delay"></span>
+
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" />
+      </a>
+
+      <div id="eventToggleBtn" class="event-toggle-btn">Upcoming Events</div>
+    </div>
+    <div id="eventImagePopup" class="popup">
+      <div class="popup-content popup-image" style="max-width: 600px">
+        <button id="closeImagePopup" class="close-btn">✖</button>
+        <img
+          id="eventPopupImg"
+          src=""
+          style="width: 100%; border-radius: 10px"
+        />
+      </div>
+    </div>
+    <!-- POPUP FORM -->
+    <div id="popupForm" class="popup">
+      <div class="popup-content">
+        <button id="closeForm" class="close-btn">✖</button>
+
+        <h2>Register</h2>
+
+        <form id="leadForm">
+          <input name="name" placeholder="Full Name *" required />
+
+          <select name="title">
+            <option>Dr.</option>
+          </select>
+
+          <input name="email" type="email" placeholder="Email *" required />
+          <input name="mobile" placeholder="Mobile Number *" required />
+
+          <select name="speciality">
+            <option>BDS</option>
+            <option>MDS</option>
+          </select>
+
+          <input name="specialityOther" placeholder="Specify Specialty" />
+
+          <select name="category">
+            <option>Private Practice</option>
+            <option>Students</option>
+          </select>
+
+          <input name="city" placeholder="City *" required />
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./script2.js"></script>
+  </body>
 </html>
-
-

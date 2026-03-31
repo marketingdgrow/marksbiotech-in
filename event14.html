@@ -1,496 +1,669 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./events.css"/>
-   <link rel="stylesheet" href="./nav.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./events.css" />
+    <link rel="stylesheet" href="./nav.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-  <script src="./js/gsap.min.js"></script>
-  <script src="./js/ScrollTrigger.min.js"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./responsive-global.css" />
-</head>
-<body class="events-enhanced-page event8-layout-match">
-
-
- <header class="site-header">
-    <div class="nav-container">
-
-      <div class="nav-top">
-
-        <div class="logo1">
-          <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
-        </div>
-
-        <div class="hamburger" id="hamburger"> ?
-
-        </div>
-      </div>
-
-
-      <ul class="nav-main-menu">
-        <div class="logo">
-          <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
-        </div>
-        <li><a href="./index.html">Highlights</a></li>
-
-
-        <!-- ================= Dental Implantology ================= -->
-        <li class="has-mega mega-dental">
-          Dental Implantology<i class="fa-solid fa-angle-down"></i>
-
-          <div class="mega-menu">
-
-
-            <!-- COLUMN 2 -->
-            <div class="mega-column column-2" id="col2">
-              <ul>
-                <li data-img="heritage"><a href="https://b-and-b-india.netlify.app/heritage">Heritage </a></li>
-                <li id="unique" data-img="unique"><a href="#col3">Unique Design <i class="fa-solid fa-angle-right"></i></a></li>
-                <li data-img="custom"><a href="https://b-and-b-india.netlify.app/subperiosteal">Customized
-                    Implants</a></li>
-                <li data-img="custom"><a href="https://b-and-b-india.netlify.app/tissue">Tissue Adhesive</a></li>
-                <li data-img="guided"><a href="https://b-and-b-india.netlify.app/digitalsurgicalguide">Digital Guided
-                    Surgery</a></li>
-                <li data-img="kits"><a href="https://b-and-b-india.netlify.app/surgicalkit">Surgical Kits</a></li>
-                <li data-img="kits"><a href="https://b-and-b-india.netlify.app/tissue">Tissue Adhesive</a></li>
-              </ul>
-            </div>
-
-            <!-- COLUMN 3 -->
-            <div class="mega-column column-3" id="col3">
-              <h4>Implants</h4>
-              <ul>
-                <li data-img="duravit-ev"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design1">DURAVIT
-                    EV</a></li>
-                <li data-img="duravit-3p"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design2">DURAVIT
-                    3P</a></li>
-                <li data-img="duravit-wide"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design3">DURAVIT
-                    Wide</a></li>
-                <li data-img="duravit-pterygo"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design4">DURAVIT
-                    Pterygo</a></li>
-                <li data-img="duravit-slim"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design5">DURAVIT
-                    Slim</a></li>
-                <li data-img="duravit-slim"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design6">DURAVIT
-                    Mini</a></li>
-              </ul>
-            </div>
-
-            <!-- IMAGES -->
-            <div class="mega-images">
-              <img id="img1" src="./assets/imgs/di-1.webp" />
-              <img id="img2" src="./assets/imgs/di-2.jpg" />
-            </div>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/gsap.min.js"></script>
+    <script src="./js/ScrollTrigger.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./responsive-global.css" />
+  </head>
+  <body class="events-enhanced-page event8-layout-match">
+    <header class="site-header">
+      <div class="nav-container">
+        <div class="nav-top">
+          <div class="logo1">
+            <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
           </div>
-        </li>
 
-        <li><a href="https://b-and-b-india.netlify.app/conexaconnection">Prosthetics</a></li>
-
-        <!-- ================= Regenerative ================= -->
-        <li class="has-mega mega-regenerative">
-          Regenerative Products<i class="fa-solid fa-angle-down"></i>
-          <div class="mega-menu">
-            <div class="mega-column">
-              <!-- <h4>Bonegraft</h4> -->
-              <ul>
-                <li><a href="./allograft.html">Allograft</a></li>
-                <li><a href="./xenograft.html">Xenograft</a></li>
-                <li><a href="./xenograft.html#collagen">Collagen Membrane</a></li>
-              </ul>
-            </div>
-            <div class="mega-images">
-              <img src="./assets/imgs/g-1.jpg" />
-              <img src="./assets/imgs/g-2.jpg" />
-            </div>
-          </div>
-        </li>
-
-        <!-- ================= Robotic ================= -->
-        <li class="has-mega mega-robotic">
-          Robotic Navigation<i class="fa-solid fa-angle-down"></i>
-          <div class="mega-menu">
-            <div class="mega-images">
-              <img src="./assets/imgs/r-1.jpg" />
-              <img src="./assets/imgs/3.0.png" />
-            </div>
-            <div class="mega-column">
-              <h4>Navident</h4>
-              <ul>
-                <li><a href="https://marksbiotech.com/navident-3.0">Navident 3.0</a></li>
-                <li><a href="https://marksbiotech.com/navident-4.0/">Navident 4.0 EVO</a></li>
-              </ul>
-            </div>
-          </div>
-        </li>
-
-
-        <li><a href="https://marksbiotech.com/micronmapper/">Photogrammetry</a></li>
-
-
-        <li class="has-mega mega-resources">
-          Resources<i class="fa-solid fa-angle-down"></i>
-          <div class="mega-menu">
-            <div class="mega-column">
-              <ul>
-                <li><a href="./events.html">Education</a></li>
-                <li><a href="./blog.html">Blogs</a></li>
-                <li><a href="./careers.html">Careers</a></li>
-                <li><a href="./scientific-evidence.html">Scientific Evidence</a></li>
-                
-
-
-              </ul>
-            </div>
-
-          </div>
-        </li>
-        <li><a href="./about.html">About Us</a></li>
-      </ul>
-
-    </div>
-  </header>
-
-
-<section class="event-section">
-
-  <!-- HERO SECTION -->
-  <div class="event-hero">
-    <div class="event-container hero-grid">
-
-      <!-- LEFT CONTENT -->
-      <div class="event-left">
-        <span class="event-tag">CONFERENCE 2025</span>
-
-        <h1>
-          OSICON 2025 – 2nd National Conference of the Osseointegration Society of India
-        </h1>
-
-        <h3>Jaipur | 31st October – 2nd November 2025</h3>
-
-        <p>
-          The 2nd National Conference of the Osseointegration Society of India
-          (OSICON 2025) concluded successfully in Jaipur, bringing together
-          leading implantologists, clinicians, researchers, and industry innovators
-          from across the country.
-        </p>
-
-        
-      </div>
-
-      <!-- RIGHT IMAGE -->
-      <div class="event-right">
-        <img src="./assets/event/16.png" alt="OSICON 2025 Conference Jaipur">
-      </div>
-
-    </div>
-  </div>
-
-
-  <section class="event-gallery-section event-gallery-section--slider">
-  <div class="event-gallery-container">
-    <div class="gallery-title-wrap">
-      <h2 class="gallery-heading">Event Gallery</h2>
-     
-    </div>
-    
-     <div class="event-gallery-video">
-      <div class="event-gallery-video-frame">
-        <iframe width="315" height="576" src="https://www.youtube.com/embed/SWYnYcEhtWY" title="OSICON 2025 – 2nd National Conference #b&amp;dentalimplants #implantology #digitalDentistry" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-    </div>
-
-    <div class="event-gallery-carousel" data-event-gallery>
-      <button class="gallery-nav-btn" type="button" data-gallery-prev aria-label="Show previous images">
-        <i class="fa-solid fa-arrow-left"></i>
-      </button>
-
-      <div class="event-gallery-window" data-gallery-window>
-        <div class="event-gallery-track">
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/pastevent6/1.jpg" alt="">
-        </button>
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/pastevent6/2.jpg" alt="">
-        </button>
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/pastevent6/3.png" alt="">
-        </button>
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/pastevent6/4.jpg" alt="">
-        </button>
-
-
-        
+          <div class="hamburger" id="hamburger">?</div>
         </div>
-      </div>
 
-      <button class="gallery-nav-btn" type="button" data-gallery-next aria-label="Show next images">
-        <i class="fa-solid fa-arrow-right"></i>
-      </button>
-    </div>
-  </div>
-</section>
-  <!-- ABOUT SECTION -->
-  <section class="course-intro">
-    <div class="course-wrap">
-            <aside class="course-side">
-        <h4>TAGS</h4>
-        <ul class="left-tag">
-          <li><a href="./events.html">EVENTS</a></li>
-          <li><a href="./events.html">UPCOMING EVENTS</a></li>
-          <li><a href="./events.html">PAST EVENTS</a></li>
-        </ul>
-
-        <h4>Share</h4>
-        <div class="share">
-          <a href="https://www.facebook.com/profile.php?id=100057220428403#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#https://api.whatsapp.com/send?phone=%2B919819893250&fbclid=IwY2xjawPoEE5leHRuA2FlbQIxMABicmlkETF6RGc1bGQ4MkNKQWFJZk92c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHp2k4EqPl-RmwWcQOpyXPFBwZ3hiBsmaGeaDHKGKfc-xCPP1c-quzaeBwZvZ_aem_T58P-OzKvAzVUFaIDa5-NQ"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="https://www.instagram.com/marks.biotechinc/"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.youtube.com/channel/UCxWtOTeE4P1x1AaXL_Dlvpw"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-      </aside>
-
-      <div class="course-main">
-        <h1>About OSICON 2025</h1>
-
-        <p>
-          Centered around the theme “Osseointegration: From Foundation to Future”,
-          the conference served as a powerful platform for scientific exchange,
-          clinical discussions, and the exploration of next-generation implant technologies.
-        </p>
-
-        <p>
-          The event gathered some of the most respected voices in implant dentistry,
-          creating an environment that fostered learning, collaboration,
-          and innovation across academic and clinical domains.
-        </p>
-      </div>
-    </div>
-  </section>
-  <!-- OUR PRESENCE SECTION -->
-  <div class="event-showcase">
-    <div class="event-container">
-
-      <h2>Our Presence at OSICON 2025</h2>
-
-        <p>
-        We were proud to participate in this prestigious national event at
-        <strong>Booth 104 & 105</strong>, where we showcased our advanced implant
-        solutions and cutting-edge technologies in collaboration with global
-        leaders in implant innovation.
-      </p>
-
-      <p>
-        Our booth attracted significant engagement from dental professionals,
-        academic experts, and young clinicians eager to explore:
-      </p>
-
-      <ul class="event-list">
-        <li>Advanced implant systems</li>
-        <li>Precision-driven surgical solutions</li>
-        <li>Innovative biomaterials</li>
-        <li>Digital workflow integration</li>
-        <li>Evidence-based clinical applications</li>
-      </ul>
-
-      <p>
-        The response was overwhelming, reaffirming the growing demand for
-        high-quality, reliable implant solutions in the Indian market.
-      </p>
-
-    </div>
-  </div>
-
-
-  <!-- SCIENTIFIC SECTION -->
-  <div class="event-about">
-    <div class="event-container">
-
-      <h2>Scientific Excellence & Industry Innovation</h2>
-
-        <p>
-        OSICON 2025 featured insightful keynote lectures, panel discussions,
-        scientific paper presentations, and hands-on sessions led by respected
-        experts in implant dentistry.
-      </p>
-
-      <p>The conference highlighted emerging trends in:</p>
-
-      <ul class="event-list">
-        <li>Surface technology advancements</li>
-        <li>Regenerative protocols</li>
-        <li>Guided implant surgery</li>
-        <li>Prosthetic precision</li>
-        <li>Long-term clinical predictability</li>
-      </ul>
-
-      <p>
-        The scientific depth and collaborative environment made this edition
-        of OSICON a benchmark event in the implant dentistry landscape.
-      </p>
-
-    </div>
-  </div>
-
-
-  <!-- PARTNERS SECTION -->
-  <div class="event-showcase">
-    <div class="event-container">
-
-      <h2>Strengthening Strategic Partnerships</h2>
-
-        <p>
-        Our participation also strengthened strategic collaborations with
-        leading implant innovators including:
-      </p>
-
-      <ul class="event-list">
-        <li>Navident</li>
-        <li>B&B Dental Implant Company (Italy)</li>
-      </ul>
-
-      <p>
-        These partnerships reflect our continued commitment to delivering
-        world-class implant solutions backed by research, precision,
-        and long-term clinical reliability.
-      </p>
-
-    </div>
-  </div>
-
-
-  <!-- CONCLUSION -->
-  <div class="event-about">
-    <div class="event-container">
-
-      <h2>A Successful Milestone</h2>
-
-        <p>
-        OSICON 2025 was more than a conference — it was a milestone in advancing
-        implant dentistry in India. The exchange of ideas, the enthusiasm of
-        young professionals, and the spirit of innovation demonstrated that
-        the future of osseointegration is stronger than ever.
-      </p>
-
-      <p>
-        We extend our sincere gratitude to the Osseointegration Society of India,
-        the organizing committee, and all the dental professionals who visited
-        us at Booth 104 & 105.
-      </p>
-
-      <p>
-        We look forward to continuing our journey of innovation, collaboration,
-        and excellence in implant dentistry.
-      </p>
-
-    </div>
-  </div>
-
-</section>
-
- 
-
-
-
-     <footer class="about-footer">
-    <!-- TOP -->
-    <div class="about-footer-top">
-      <div class="about-footer-title">
-        <p>We are here to support You</p>
-        <h2>Connect with us</h2>
-      </div>
-
-      <div class="about-subscribe-box">
-        <form action="" id="form1">
-        <input type="email" name="email" placeholder="Enter your mail id" />
-        <button class="subsc" type="submit">Subscribe</button></form>
-      </div>
-    </div>
-
-    <hr />
-
-    <!-- BOTTOM -->
-    <div class="footer-content">
-      <!-- QUICK LINKS -->
-      <div class="footer-col">
-        <h4>Quick links</h4>
-        <ul>
+        <ul class="nav-main-menu">
+          <div class="logo">
+            <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
+          </div>
           <li><a href="./index.html">Highlights</a></li>
-          <li><a href="./about.html">About us</a></li>
-          
-          <li><a href="https://marksbiotech.com/micronmapper/">MicronMapper</a></li>
-          
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./events.html">Event</a></li>
-          <li><a href="./careers.html">Careers</a></li>
-          
+
+          <!-- ================= Dental Implantology ================= -->
+          <li class="has-mega mega-dental">
+            Dental Implantology<i class="fa-solid fa-angle-down"></i>
+
+            <div class="mega-menu">
+              <!-- COLUMN 2 -->
+              <div class="mega-column column-2" id="col2">
+                <ul>
+                  <li data-img="heritage">
+                    <a href="https://b-and-b-india.netlify.app/heritage"
+                      >Heritage
+                    </a>
+                  </li>
+                  <li id="unique" data-img="unique">
+                    <a href="#col3"
+                      >Unique Design <i class="fa-solid fa-angle-right"></i
+                    ></a>
+                  </li>
+                  <li data-img="custom">
+                    <a href="https://b-and-b-india.netlify.app/subperiosteal"
+                      >Customized Implants</a
+                    >
+                  </li>
+                  <!-- <li data-img="custom">
+                    <a href="https://b-and-b-india.netlify.app/tissue"
+                      >Tissue Adhesive</a
+                    >
+                  </li> -->
+                  <li data-img="guided">
+                    <a
+                      href="https://b-and-b-india.netlify.app/digitalsurgicalguide"
+                      >Digital Guided Surgery</a
+                    >
+                  </li>
+                  <li data-img="kits">
+                    <a href="https://b-and-b-india.netlify.app/surgicalkit"
+                      >Surgical Kits</a
+                    >
+                  </li>
+                  <!-- <li data-img="kits"><a href="https://b-and-b-india.netlify.app/tissue">Tissue Adhesive</a></li> -->
+                </ul>
+              </div>
+
+              <!-- COLUMN 3 -->
+              <div class="mega-column column-3" id="col3">
+                <h4>Implants</h4>
+                <ul>
+                  <li data-img="duravit-ev">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design1"
+                      >DURAVIT EV</a
+                    >
+                  </li>
+                  <li data-img="duravit-3p">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design2"
+                      >DURAVIT 3P</a
+                    >
+                  </li>
+                  <li data-img="duravit-wide">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design3"
+                      >DURAVIT Wide</a
+                    >
+                  </li>
+                  <li data-img="duravit-pterygo">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design4"
+                      >DURAVIT Pterygo</a
+                    >
+                  </li>
+                  <li data-img="duravit-slim">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design5"
+                      >DURAVIT Slim</a
+                    >
+                  </li>
+                  <li data-img="duravit-slim">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design6"
+                      >DURAVIT Mini</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- IMAGES -->
+              <div class="mega-images">
+                <img id="img1" src="./assets/imgs/di-1.webp" />
+                <img id="img2" src="./assets/imgs/di-2.jpg" />
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="https://b-and-b-india.netlify.app/conexaconnection"
+              >Prosthetics</a
+            >
+          </li>
+
+          <!-- ================= Regenerative ================= -->
+          <li class="has-mega mega-regenerative">
+            Regenerative Products<i class="fa-solid fa-angle-down"></i>
+            <div class="mega-menu">
+              <div class="mega-column">
+                <!-- <h4>Bonegraft</h4> -->
+                <ul>
+                  <li>
+                    <a href="./allograft.html">Allograft-Rocky Mountain</a>
+                  </li>
+                  <li><a href="./xenograft.html">Xenograft-NovoBone</a></li>
+                  <li>
+                    <a href="./xenograft.html#collagen"
+                      >Collagen Membrane-Equine</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./tissue.html">Tissue Adhesive</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mega-images">
+                <img src="./assets/imgs/g-1.jpg" />
+                <img src="./assets/imgs/g-2.jpg" />
+              </div>
+            </div>
+          </li>
+
+          <!-- ================= Robotic ================= -->
+          <li class="has-mega mega-robotic">
+            Robotic Navigation<i class="fa-solid fa-angle-down"></i>
+            <div class="mega-menu">
+              <div class="mega-images">
+                <img src="./assets/imgs/r-1.jpg" />
+                <img src="./assets/imgs/3.0.png" />
+              </div>
+              <div class="mega-column">
+                <h4>Navident</h4>
+                <ul>
+                  <li>
+                    <a href="https://marksbiotech.com/navident-3.0"
+                      >Navident 3.0</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://marksbiotech.com/navident-4.0/"
+                      >Navident 4.0 EVO</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="https://marksbiotech.com/micronmapper/">Photogrammetry</a>
+          </li>
+
+          <li class="has-mega mega-resources">
+            Resources<i class="fa-solid fa-angle-down"></i>
+            <div class="mega-menu">
+              <div class="mega-column">
+                <ul>
+                  <li><a href="./events.html">Education</a></li>
+                  <li><a href="./blog.html">Blogs</a></li>
+                  <li><a href="./careers.html">Careers</a></li>
+                  <li>
+                    <a href="./scientific-evidence.html">Scientific Evidence</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="./about.html">About Us</a></li>
         </ul>
       </div>
+    </header>
 
-      <!-- PRODUCTS -->
-      <div class="footer-col">
-        <h4>Products</h4>
-        <ul>
-          <li><a href="https://b-and-b-india.netlify.app/uniqueimplant">Dental implants</a></li>
-          <li><a href="https://b-and-b-india.netlify.app/surgicalkit">Free hand Surgical</a></li>
-          <li><a href="https://b-and-b-india.netlify.app/digitalsurgicalguide">Computer Guided Surgery</a></li>
-          <li><a href="./allograft.html">Allograft</a></li>
-          <li><a href="./xenograft.html">Xenograft</a></li>
-          <li><a href="https://marksbiotech.com/navident-3.0">Navident 3.0</a></li>
-          <li><a href="https://marksbiotech.com/navident-4.0/">Navident 4.0 EVO</a></li>
-          <li><a href=".https://marksbiotech.com/micronmapper/">Photogrammetry</a></li>
-          
-          
-        </ul>
+    <section class="event-section">
+      <!-- HERO SECTION -->
+      <div class="event-hero">
+        <div class="event-container hero-grid">
+          <!-- LEFT CONTENT -->
+          <div class="event-left">
+            <span class="event-tag">CONFERENCE 2025</span>
+
+            <h1>
+              OSICON 2025 – 2nd National Conference of the Osseointegration
+              Society of India
+            </h1>
+
+            <h3>Jaipur | 31st October – 2nd November 2025</h3>
+
+            <p>
+              The 2nd National Conference of the Osseointegration Society of
+              India (OSICON 2025) concluded successfully in Jaipur, bringing
+              together leading implantologists, clinicians, researchers, and
+              industry innovators from across the country.
+            </p>
+          </div>
+
+          <!-- RIGHT IMAGE -->
+          <div class="event-right">
+            <img
+              src="./assets/event/16.png"
+              alt="OSICON 2025 Conference Jaipur"
+            />
+          </div>
+        </div>
       </div>
 
-      <!-- ADDRESS -->
-      <div class="footer-col address">
-        <h4>Address</h4>
+      <section class="event-gallery-section event-gallery-section--slider">
+        <div class="event-gallery-container">
+          <div class="gallery-title-wrap">
+            <h2 class="gallery-heading">Event Gallery</h2>
+          </div>
 
-        <p class="he-red">Operation and Communication Address</p>
-        <p>
-          84, 1st floor, Thirupathy Nagar,<br />
-          Mainroad, 1st Cross street, <br />
-          Valasaravakkam, Chennai-600087.
-        </p>
+          <div class="event-gallery-video">
+            <div class="event-gallery-video-frame">
+              <iframe
+                width="315"
+                height="576"
+                src="https://www.youtube.com/embed/SWYnYcEhtWY"
+                title="OSICON 2025 – 2nd National Conference #b&amp;dentalimplants #implantology #digitalDentistry"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
 
-        <p class="he-red">Registered Office Address</p>
-        <p>
-          104/5, 6th street, s-1, 2nd floor, The Brown CLS Bulding, Ratha
-          Avenue, Valasaravakam, Chennai-600087.
-        </p>
+          <div class="event-gallery-carousel" data-event-gallery>
+            <button
+              class="gallery-nav-btn"
+              type="button"
+              data-gallery-prev
+              aria-label="Show previous images"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
 
+            <div class="event-gallery-window" data-gallery-window>
+              <div class="event-gallery-track">
+                <button class="gallery-slide" type="button" data-gallery-image>
+                  <img src="./assets/event/pastevent6/1.jpg" alt="" />
+                </button>
+                <button class="gallery-slide" type="button" data-gallery-image>
+                  <img src="./assets/event/pastevent6/2.jpg" alt="" />
+                </button>
+                <button class="gallery-slide" type="button" data-gallery-image>
+                  <img src="./assets/event/pastevent6/3.png" alt="" />
+                </button>
+                <button class="gallery-slide" type="button" data-gallery-image>
+                  <img src="./assets/event/pastevent6/4.jpg" alt="" />
+                </button>
+              </div>
+            </div>
 
+            <button
+              class="gallery-nav-btn"
+              type="button"
+              data-gallery-next
+              aria-label="Show next images"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT SECTION -->
+      <section class="course-intro">
+        <div class="course-wrap">
+          <aside class="course-side">
+            <h4>TAGS</h4>
+            <ul class="left-tag">
+              <li><a href="./events.html">EVENTS</a></li>
+              <li><a href="./events.html">UPCOMING EVENTS</a></li>
+              <li><a href="./events.html">PAST EVENTS</a></li>
+            </ul>
+
+            <h4>Share</h4>
+            <div class="share">
+              <a href="https://www.facebook.com/profile.php?id=100057220428403#"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="#https://api.whatsapp.com/send?phone=%2B919819893250&fbclid=IwY2xjawPoEE5leHRuA2FlbQIxMABicmlkETF6RGc1bGQ4MkNKQWFJZk92c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHp2k4EqPl-RmwWcQOpyXPFBwZ3hiBsmaGeaDHKGKfc-xCPP1c-quzaeBwZvZ_aem_T58P-OzKvAzVUFaIDa5-NQ"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a href="https://www.instagram.com/marks.biotechinc/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.youtube.com/channel/UCxWtOTeE4P1x1AaXL_Dlvpw"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </aside>
+
+          <div class="course-main">
+            <h1>About OSICON 2025</h1>
+
+            <p>
+              Centered around the theme “Osseointegration: From Foundation to
+              Future”, the conference served as a powerful platform for
+              scientific exchange, clinical discussions, and the exploration of
+              next-generation implant technologies.
+            </p>
+
+            <p>
+              The event gathered some of the most respected voices in implant
+              dentistry, creating an environment that fostered learning,
+              collaboration, and innovation across academic and clinical
+              domains.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- OUR PRESENCE SECTION -->
+      <div class="event-showcase">
+        <div class="event-container">
+          <h2>Our Presence at OSICON 2025</h2>
+
+          <p>
+            We were proud to participate in this prestigious national event at
+            <strong>Booth 104 & 105</strong>, where we showcased our advanced
+            implant solutions and cutting-edge technologies in collaboration
+            with global leaders in implant innovation.
+          </p>
+
+          <p>
+            Our booth attracted significant engagement from dental
+            professionals, academic experts, and young clinicians eager to
+            explore:
+          </p>
+
+          <ul class="event-list">
+            <li>Advanced implant systems</li>
+            <li>Precision-driven surgical solutions</li>
+            <li>Innovative biomaterials</li>
+            <li>Digital workflow integration</li>
+            <li>Evidence-based clinical applications</li>
+          </ul>
+
+          <p>
+            The response was overwhelming, reaffirming the growing demand for
+            high-quality, reliable implant solutions in the Indian market.
+          </p>
+        </div>
       </div>
 
-      <!-- LOGO + MAP -->
-      <div class="footer-col logo-map">
+      <!-- SCIENTIFIC SECTION -->
+      <div class="event-about">
+        <div class="event-container">
+          <h2>Scientific Excellence & Industry Innovation</h2>
 
-        <img src="assets/imgs/marks-biotech-logo 1.png" alt="Marks Biotech Logo" class="logo" />
-        <p class="contact">📞 +91 44 485 93250</p>
-        <p class="contact">📞 +91 9819893250 ,+91 9840320250</p>
-        <p class="contact"><span>✉ </span>info@marksbiotech.com</p>
-        <div class="map-box"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.861000188089!2d80.1749978!3d13.044518400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261bb26e13173%3A0x58681e3956ff7dbb!2sMarks%20Biotech%20Inc!5e0!3m2!1sen!2sin!4v1769035781529!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          <p>
+            OSICON 2025 featured insightful keynote lectures, panel discussions,
+            scientific paper presentations, and hands-on sessions led by
+            respected experts in implant dentistry.
+          </p>
 
+          <p>The conference highlighted emerging trends in:</p>
+
+          <ul class="event-list">
+            <li>Surface technology advancements</li>
+            <li>Regenerative protocols</li>
+            <li>Guided implant surgery</li>
+            <li>Prosthetic precision</li>
+            <li>Long-term clinical predictability</li>
+          </ul>
+
+          <p>
+            The scientific depth and collaborative environment made this edition
+            of OSICON a benchmark event in the implant dentistry landscape.
+          </p>
+        </div>
+      </div>
+
+      <!-- PARTNERS SECTION -->
+      <div class="event-showcase">
+        <div class="event-container">
+          <h2>Strengthening Strategic Partnerships</h2>
+
+          <p>
+            Our participation also strengthened strategic collaborations with
+            leading implant innovators including:
+          </p>
+
+          <ul class="event-list">
+            <li>Navident</li>
+            <li>B&B Dental Implant Company (Italy)</li>
+          </ul>
+
+          <p>
+            These partnerships reflect our continued commitment to delivering
+            world-class implant solutions backed by research, precision, and
+            long-term clinical reliability.
+          </p>
+        </div>
+      </div>
+
+      <!-- CONCLUSION -->
+      <div class="event-about">
+        <div class="event-container">
+          <h2>A Successful Milestone</h2>
+
+          <p>
+            OSICON 2025 was more than a conference — it was a milestone in
+            advancing implant dentistry in India. The exchange of ideas, the
+            enthusiasm of young professionals, and the spirit of innovation
+            demonstrated that the future of osseointegration is stronger than
+            ever.
+          </p>
+
+          <p>
+            We extend our sincere gratitude to the Osseointegration Society of
+            India, the organizing committee, and all the dental professionals
+            who visited us at Booth 104 & 105.
+          </p>
+
+          <p>
+            We look forward to continuing our journey of innovation,
+            collaboration, and excellence in implant dentistry.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="about-footer">
+      <!-- TOP -->
+      <div class="about-footer-top">
+        <div class="about-footer-title">
+          <p>We are here to support You</p>
+          <h2>Connect with us</h2>
+        </div>
+
+        <div class="about-subscribe-box">
+          <form action="" id="form1">
+            <input type="email" name="email" placeholder="Enter your mail id" />
+            <button class="subsc" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- BOTTOM -->
+      <div class="footer-content">
+        <!-- QUICK LINKS -->
+        <div class="footer-col">
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="./index.html">Highlights</a></li>
+            <li><a href="./about.html">About us</a></li>
+
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./events.html">Event</a></li>
+            <li><a href="./careers.html">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- PRODUCTS -->
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li>
+              <a href="https://b-and-b-india.netlify.app/uniqueimplant"
+                >B&B Dental Implants Italy</a
+              >
+            </li>
+            <li>
+              <a href="https://b-and-b-india.netlify.app/surgicalkit"
+                >B&B SURGICAL KITS</a
+              >
+            </li>
+            <li>
+              <a href="https://b-and-b-india.netlify.app/digitalsurgicalguide"
+                >Computer Guided Surgery</a
+              >
+            </li>
+            <li><a href="./allograft.html">Rocky Mountain Allograft</a></li>
+            <li><a href="./xenograft.html">NovoBona Xenograft</a></li>
+            <li><a href="./xenograft.html#collagen">T-Collagen Membrane</a></li>
+            <li>
+              <a href="./tissue.html">Tissue Adhesive</a>
+            </li>
+            <li>
+              <a href="https://marksbiotech.com/navident-3.0">Navident 3.0</a>
+            </li>
+            <li>
+              <a href="https://marksbiotech.com/navident-4.0/"
+                >Navident 4.0 EVO</a
+              >
+            </li>
+            <li>
+              <a href="https://marksbiotech.com/micronmapper/">MicronMapper</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ADDRESS -->
+        <div class="footer-col address">
+          <h4>Address</h4>
+
+          <p class="he-red">Operation and Communication Address</p>
+          <p>
+            84, 1st floor, Thirupathy Nagar,<br />
+            Mainroad, 1st Cross street, <br />
+            Valasaravakkam, Chennai, India -600087.
+          </p>
+
+          <p class="he-red">Registered Office Address</p>
+          <p>
+            104/5, 6th Street, S-1, 2nd floor, The Brown CLS Bulding, Radha
+            Avenue, Valasaravakam, Chennai, India -600087.
+          </p>
+        </div>
+
+        <!-- LOGO + MAP -->
+        <div class="footer-col logo-map">
+          <img
+            src="assets/imgs/marks-biotech-logo 1.png"
+            alt="Marks Biotech Logo"
+            class="logo"
+          />
+          <p class="contact">📞 +91 44 485 93250</p>
+          <p class="contact">📞 +91 9819893250 ,+91 9840320250</p>
+          <p class="contact"><span>✉ </span>info@marksbiotech.com</p>
+          <div class="map-box">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.861000188089!2d80.1749978!3d13.044518400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261bb26e13173%3A0x58681e3956ff7dbb!2sMarks%20Biotech%20Inc!5e0!3m2!1sen!2sin!4v1769035781529!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="floating-container">
+      <!-- EVENT BOX -->
+      <div class="event-box">
+        <h3 id="eventName"></h3>
+
+        <div class="event-details">
+          <p id="eventDate"></p>
+          <p id="eventTime"></p>
+          <p id="eventLocation"></p>
+        </div>
+
+        <div class="floating-btn-con">
+          <a href="" class="view-floating-img">View Details</a>
+          <button id="openFormBtn">Register Now</button>
+        </div>
+        <div class="float-event-close">
+          <button id="closeEventBtn">✖</button>
+        </div>
+      </div>
+
+      <!-- WHATSAPP BUTTON -->
+      <a
+        href="https://wa.me/919819893250"
+        id="whatsappBtn"
+        class="whatsapp-btn"
+      >
+        <span class="wave"></span>
+        <span class="wave delay"></span>
+
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" />
+      </a>
+
+      <div id="eventToggleBtn" class="event-toggle-btn">Upcoming Events</div>
+    </div>
+    <div id="eventImagePopup" class="popup">
+      <div class="popup-content popup-image" style="max-width: 600px">
+        <button id="closeImagePopup" class="close-btn">✖</button>
+        <img
+          id="eventPopupImg"
+          src=""
+          style="width: 100%; border-radius: 10px"
+        />
       </div>
     </div>
-     </footer>
+    <!-- POPUP FORM -->
+    <div id="popupForm" class="popup">
+      <div class="popup-content">
+        <button id="closeForm" class="close-btn">✖</button>
+
+        <h2>Register</h2>
+
+        <form id="leadForm">
+          <input name="name" placeholder="Full Name *" required />
+
+          <select name="title">
+            <option>Dr.</option>
+          </select>
+
+          <input name="email" type="email" placeholder="Email *" required />
+          <input name="mobile" placeholder="Mobile Number *" required />
+
+          <select name="speciality">
+            <option>BDS</option>
+            <option>MDS</option>
+          </select>
+
+          <input name="specialityOther" placeholder="Specify Specialty" />
+
+          <select name="category">
+            <option>Private Practice</option>
+            <option>Students</option>
+          </select>
+
+          <input name="city" placeholder="City *" required />
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
 
     <script src="./event-gallery.js"></script>
     <script src="./script2.js"></script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-

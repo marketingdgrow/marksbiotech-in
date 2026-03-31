@@ -1026,13 +1026,13 @@ subForm.addEventListener("submit", async (e) => {
 //       });
 //   });
 // });
-
-// ===== EVENT DATA (EDIT HERE ONLY) =====
+// ===== EVENT DATA =====
 const eventData = {
   name: "FULL ARCH DENTAL IMPLANTS PROSTHETIC WORKSHOP - MASTER CLASS",
   date: "April 19th, 2026",
-  time: "08:30 AM ",
+  time: "08:30 AM",
   location: "Pune",
+  eventImage: "./assets/imgs/upcoming-event-1.png",
 };
 
 // ===== LOAD EVENT =====
@@ -1041,19 +1041,101 @@ document.getElementById("eventDate").innerText = eventData.date;
 document.getElementById("eventTime").innerText = eventData.time;
 document.getElementById("eventLocation").innerText = eventData.location;
 
-// ===== POPUP CONTROL =====
+// ===== ELEMENTS =====
 const popup = document.getElementById("popupForm");
 const openBtn = document.getElementById("openFormBtn");
 const closeBtn = document.getElementById("closeForm");
 
-openBtn.onclick = () => (popup.style.display = "flex");
-closeBtn.onclick = () => (popup.style.display = "none");
+const imagePopup = document.getElementById("eventImagePopup");
+const imageEl = document.getElementById("eventPopupImg");
+const closeImageBtn = document.getElementById("closeImagePopup");
 
-window.onclick = (e) => {
-  if (e.target === popup) popup.style.display = "none";
+const viewBtn = document.querySelector(".view-floating-img");
+const closeEventBtn = document.getElementById("closeEventBtn");
+const floatingContainer = document.querySelector(".floating-container");
+
+// 🔥 NEW (toggle button)
+const eventBox = document.querySelector(".event-box");
+const eventToggleBtn = document.getElementById("eventToggleBtn");
+
+// ===== FORM POPUP =====
+openBtn.onclick = () => {
+  popup.style.display = "flex";
 };
 
-// ===== GOOGLE SHEETS SUBMIT =====
+closeBtn.onclick = () => {
+  popup.style.display = "none";
+};
+
+// ===== AUTO OPEN FORM (10 sec) =====
+setTimeout(() => {
+  popup.style.display = "flex";
+}, 10000);
+
+// ===== IMAGE POPUP =====
+viewBtn.addEventListener("click", (e) => {
+  e.preventDefault(); // prevent page reload
+
+  imageEl.src = eventData.eventImage;
+  imagePopup.style.display = "flex";
+});
+
+closeImageBtn.onclick = () => {
+  imagePopup.style.display = "none";
+};
+
+// ===== CLOSE EVENT BOX + SHOW SMALL BTN =====
+closeEventBtn.onclick = () => {
+  eventBox.style.display = "none";
+  if (eventToggleBtn) {
+    eventToggleBtn.style.display = "block";
+  }
+
+  // optional persistence
+  localStorage.setItem("eventClosed", "true");
+};
+
+// ===== REOPEN EVENT BOX =====
+if (eventToggleBtn) {
+  eventToggleBtn.onclick = () => {
+    eventBox.style.display = "block";
+    eventToggleBtn.style.display = "none";
+
+    localStorage.removeItem("eventClosed");
+  };
+}
+
+// ===== SCROLL SHOW (initially hidden) =====
+floatingContainer.style.display = "none";
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    floatingContainer.style.display = "flex";
+  }
+});
+
+// ===== LOAD STATE (if previously closed) =====
+window.addEventListener("load", () => {
+  if (localStorage.getItem("eventClosed") === "true") {
+    eventBox.style.display = "none";
+    if (eventToggleBtn) {
+      eventToggleBtn.style.display = "block";
+    }
+  }
+});
+
+// ===== CLICK OUTSIDE CLOSE =====
+window.addEventListener("click", (e) => {
+  if (e.target === popup) {
+    popup.style.display = "none";
+  }
+
+  if (e.target === imagePopup) {
+    imagePopup.style.display = "none";
+  }
+});
+
+// ===== GOOGLE SHEETS =====
 const scriptURL = "YOUR_GOOGLE_SCRIPT_URL";
 
 document.getElementById("leadForm").addEventListener("submit", async (e) => {

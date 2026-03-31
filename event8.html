@@ -1,504 +1,685 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./events.css"/>
-   <link rel="stylesheet" href="./nav.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./events.css" />
+    <link rel="stylesheet" href="./nav.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-  <script src="./js/gsap.min.js"></script>
-  <script src="./js/ScrollTrigger.min.js"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./responsive-global.css" />
-</head>
-<body class="events-enhanced-page">
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/gsap.min.js"></script>
+    <script src="./js/ScrollTrigger.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./responsive-global.css" />
+  </head>
+  <body class="events-enhanced-page">
+    <header class="site-header">
+      <div class="nav-container">
+        <div class="nav-top">
+          <div class="logo1">
+            <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
+          </div>
 
-
-   <header class="site-header">
-    <div class="nav-container">
-
-      <div class="nav-top">
-
-        <div class="logo1">
-          <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
+          <div class="hamburger" id="hamburger">?</div>
         </div>
 
-        <div class="hamburger" id="hamburger"> ?
+        <ul class="nav-main-menu">
+          <div class="logo">
+            <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
+          </div>
+          <li><a href="./index.html">Highlights</a></li>
 
-        </div>
+          <!-- ================= Dental Implantology ================= -->
+          <li class="has-mega mega-dental">
+            Dental Implantology<i class="fa-solid fa-angle-down"></i>
+
+            <div class="mega-menu">
+              <!-- COLUMN 2 -->
+              <div class="mega-column column-2" id="col2">
+                <ul>
+                  <li data-img="heritage">
+                    <a href="https://b-and-b-india.netlify.app/heritage"
+                      >Heritage
+                    </a>
+                  </li>
+                  <li id="unique" data-img="unique">
+                    <a href="#col3"
+                      >Unique Design <i class="fa-solid fa-angle-right"></i
+                    ></a>
+                  </li>
+                  <li data-img="custom">
+                    <a href="https://b-and-b-india.netlify.app/subperiosteal"
+                      >Customized Implants</a
+                    >
+                  </li>
+                  <!-- <li data-img="custom">
+                    <a href="https://b-and-b-india.netlify.app/tissue"
+                      >Tissue Adhesive</a
+                    >
+                  </li> -->
+                  <li data-img="guided">
+                    <a
+                      href="https://b-and-b-india.netlify.app/digitalsurgicalguide"
+                      >Digital Guided Surgery</a
+                    >
+                  </li>
+                  <li data-img="kits">
+                    <a href="https://b-and-b-india.netlify.app/surgicalkit"
+                      >Surgical Kits</a
+                    >
+                  </li>
+                  <!-- <li data-img="kits"><a href="https://b-and-b-india.netlify.app/tissue">Tissue Adhesive</a></li> -->
+                </ul>
+              </div>
+
+              <!-- COLUMN 3 -->
+              <div class="mega-column column-3" id="col3">
+                <h4>Implants</h4>
+                <ul>
+                  <li data-img="duravit-ev">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design1"
+                      >DURAVIT EV</a
+                    >
+                  </li>
+                  <li data-img="duravit-3p">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design2"
+                      >DURAVIT 3P</a
+                    >
+                  </li>
+                  <li data-img="duravit-wide">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design3"
+                      >DURAVIT Wide</a
+                    >
+                  </li>
+                  <li data-img="duravit-pterygo">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design4"
+                      >DURAVIT Pterygo</a
+                    >
+                  </li>
+                  <li data-img="duravit-slim">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design5"
+                      >DURAVIT Slim</a
+                    >
+                  </li>
+                  <li data-img="duravit-slim">
+                    <a
+                      href="https://b-and-b-india.netlify.app/uniqueimplant#design6"
+                      >DURAVIT Mini</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- IMAGES -->
+              <div class="mega-images">
+                <img id="img1" src="./assets/imgs/di-1.webp" />
+                <img id="img2" src="./assets/imgs/di-2.jpg" />
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="https://b-and-b-india.netlify.app/conexaconnection"
+              >Prosthetics</a
+            >
+          </li>
+
+          <!-- ================= Regenerative ================= -->
+          <li class="has-mega mega-regenerative">
+            Regenerative Products<i class="fa-solid fa-angle-down"></i>
+            <div class="mega-menu">
+              <div class="mega-column">
+                <!-- <h4>Bonegraft</h4> -->
+                <ul>
+                  <li>
+                    <a href="./allograft.html">Allograft-Rocky Mountain</a>
+                  </li>
+                  <li><a href="./xenograft.html">Xenograft-NovoBone</a></li>
+                  <li>
+                    <a href="./xenograft.html#collagen"
+                      >Collagen Membrane-Equine</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./tissue.html">Tissue Adhesive</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mega-images">
+                <img src="./assets/imgs/g-1.jpg" />
+                <img src="./assets/imgs/g-2.jpg" />
+              </div>
+            </div>
+          </li>
+
+          <!-- ================= Robotic ================= -->
+          <li class="has-mega mega-robotic">
+            Robotic Navigation<i class="fa-solid fa-angle-down"></i>
+            <div class="mega-menu">
+              <div class="mega-images">
+                <img src="./assets/imgs/r-1.jpg" />
+                <img src="./assets/imgs/3.0.png" />
+              </div>
+              <div class="mega-column">
+                <h4>Navident</h4>
+                <ul>
+                  <li>
+                    <a href="https://marksbiotech.com/navident-3.0"
+                      >Navident 3.0</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://marksbiotech.com/navident-4.0/"
+                      >Navident 4.0 EVO</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="https://marksbiotech.com/micronmapper/">Photogrammetry</a>
+          </li>
+
+          <li class="has-mega mega-resources">
+            Resources<i class="fa-solid fa-angle-down"></i>
+            <div class="mega-menu">
+              <div class="mega-column">
+                <ul>
+                  <li><a href="./events.html">Education</a></li>
+                  <li><a href="./blog.html">Blogs</a></li>
+                  <li><a href="./careers.html">Careers</a></li>
+                  <li>
+                    <a href="./scientific-evidence.html">Scientific Evidence</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="./about.html">About Us</a></li>
+        </ul>
       </div>
-
-
-      <ul class="nav-main-menu">
-        <div class="logo">
-          <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
-        </div>
-        <li><a href="./index.html">Highlights</a></li>
-
-
-        <!-- ================= Dental Implantology ================= -->
-        <li class="has-mega mega-dental">
-          Dental Implantology<i class="fa-solid fa-angle-down"></i>
-
-          <div class="mega-menu">
-
-
-            <!-- COLUMN 2 -->
-            <div class="mega-column column-2" id="col2">
-              <ul>
-                <li data-img="heritage"><a href="https://b-and-b-india.netlify.app/heritage">Heritage </a></li>
-                <li id="unique" data-img="unique"><a href="#col3">Unique Design <i class="fa-solid fa-angle-right"></i></a></li>
-                <li data-img="custom"><a href="https://b-and-b-india.netlify.app/subperiosteal">Customized
-                    Implants</a></li>
-                <li data-img="custom"><a href="https://b-and-b-india.netlify.app/tissue">Tissue Adhesive</a></li>
-                <li data-img="guided"><a href="https://b-and-b-india.netlify.app/digitalsurgicalguide">Digital Guided
-                    Surgery</a></li>
-                <li data-img="kits"><a href="https://b-and-b-india.netlify.app/surgicalkit">Surgical Kits</a></li>
-                <li data-img="kits"><a href="https://b-and-b-india.netlify.app/tissue">Tissue Adhesive</a></li>
-              </ul>
-            </div>
-
-            <!-- COLUMN 3 -->
-            <div class="mega-column column-3" id="col3">
-              <h4>Implants</h4>
-              <ul>
-                <li data-img="duravit-ev"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design1">DURAVIT
-                    EV</a></li>
-                <li data-img="duravit-3p"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design2">DURAVIT
-                    3P</a></li>
-                <li data-img="duravit-wide"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design3">DURAVIT
-                    Wide</a></li>
-                <li data-img="duravit-pterygo"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design4">DURAVIT
-                    Pterygo</a></li>
-                <li data-img="duravit-slim"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design5">DURAVIT
-                    Slim</a></li>
-                <li data-img="duravit-slim"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design6">DURAVIT
-                    Mini</a></li>
-              </ul>
-            </div>
-
-            <!-- IMAGES -->
-            <div class="mega-images">
-              <img id="img1" src="./assets/imgs/di-1.webp" />
-              <img id="img2" src="./assets/imgs/di-2.jpg" />
-            </div>
-          </div>
-        </li>
-
-        <li><a href="https://b-and-b-india.netlify.app/conexaconnection">Prosthetics</a></li>
-
-        <!-- ================= Regenerative ================= -->
-        <li class="has-mega mega-regenerative">
-          Regenerative Products<i class="fa-solid fa-angle-down"></i>
-          <div class="mega-menu">
-            <div class="mega-column">
-              <!-- <h4>Bonegraft</h4> -->
-              <ul>
-                <li><a href="./allograft.html">Allograft</a></li>
-                <li><a href="./xenograft.html">Xenograft</a></li>
-                <li><a href="./xenograft.html#collagen">Collagen Membrane</a></li>
-              </ul>
-            </div>
-            <div class="mega-images">
-              <img src="./assets/imgs/g-1.jpg" />
-              <img src="./assets/imgs/g-2.jpg" />
-            </div>
-          </div>
-        </li>
-
-        <!-- ================= Robotic ================= -->
-        <li class="has-mega mega-robotic">
-          Robotic Navigation<i class="fa-solid fa-angle-down"></i>
-          <div class="mega-menu">
-            <div class="mega-images">
-              <img src="./assets/imgs/r-1.jpg" />
-              <img src="./assets/imgs/3.0.png" />
-            </div>
-            <div class="mega-column">
-              <h4>Navident</h4>
-              <ul>
-                <li><a href="https://marksbiotech.com/navident-3.0">Navident 3.0</a></li>
-                <li><a href="https://marksbiotech.com/navident-4.0/">Navident 4.0 EVO</a></li>
-              </ul>
-            </div>
-          </div>
-        </li>
-
-
-        <li><a href="https://marksbiotech.com/micronmapper/">Photogrammetry</a></li>
-
-
-        <li class="has-mega mega-resources">
-          Resources<i class="fa-solid fa-angle-down"></i>
-          <div class="mega-menu">
-            <div class="mega-column">
-              <ul>
-                <li><a href="./events.html">Education</a></li>
-                <li><a href="./blog.html">Blogs</a></li>
-                <li><a href="./careers.html">Careers</a></li>
-                <li><a href="./scientific-evidence.html">Scientific Evidence</a></li>
-                
-
-
-              </ul>
-            </div>
-
-          </div>
-        </li>
-        <li><a href="./about.html">About Us</a></li>
-      </ul>
-
-    </div>
-  </header>
-
+    </header>
 
     <section class="course-hero">
-  <div class="course-container">
+      <div class="course-container">
+        <!-- LEFT CONTENT -->
+        <div class="course-left">
+          <span class="course-tag">WORKSHOP</span>
 
-    <!-- LEFT CONTENT -->
-    <div class="course-left">
-      <span class="course-tag">WORKSHOP</span>
+          <h2>
+            Navident Advanced Surgical & Prosthetic Workshop – Chennai 2025
+          </h2>
 
-      <h2>
-        Navident Advanced Surgical & Prosthetic Workshop – Chennai 2025
-      </h2>
+          <h3>Future of Dentistry – Robotics, AI & Dynamic Navigation</h3>
 
-      <h3>Future of Dentistry – Robotics, AI & Dynamic Navigation</h3>
+          <p>
+            A comprehensive hands-on workshop focused on dynamic navigation,
+            implantology precision, AI integration, prosthetic workflows and
+            live surgical demonstrations using Navident technology.
+          </p>
+        </div>
 
-      <p>
-        A comprehensive hands-on workshop focused on dynamic navigation,
-        implantology precision, AI integration, prosthetic workflows and
-        live surgical demonstrations using Navident technology.
-      </p>
-    </div>
-
-    <!-- RIGHT IMAGE -->
-    <div class="course-right">
-      <img src="./assets/event/11.png" alt="Navident Workshop">
-    </div>
-
-  </div>
-</section>
-
-
-  
-
-
-
-
-<section class="event-gallery-section event-gallery-section--slider">
-  <div class="event-gallery-container">
-    <div class="gallery-title-wrap">
-      <h2 class="gallery-heading">Event Gallery</h2>
-    </div>
-
-    <div class="event-gallery-video">
-      <div class="event-gallery-video-frame">
-        <iframe width="315" height="576" src="https://www.youtube.com/embed/AHCVQ0rtb9c" title="Workshop Successfully Concluded #DigitalDentistry #DentalInnovation #Navident" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- RIGHT IMAGE -->
+        <div class="course-right">
+          <img src="./assets/event/11.png" alt="Navident Workshop" />
+        </div>
       </div>
-    </div>
+    </section>
 
+    <section class="event-gallery-section event-gallery-section--slider">
+      <div class="event-gallery-container">
+        <div class="gallery-title-wrap">
+          <h2 class="gallery-heading">Event Gallery</h2>
+        </div>
 
-    <div class="event-gallery-carousel" data-event-gallery>
-      <button class="gallery-nav-btn" type="button" data-gallery-prev aria-label="Show previous images">
-        <i class="fa-solid fa-arrow-left"></i>
-      </button>
+        <div class="event-gallery-video">
+          <div class="event-gallery-video-frame">
+            <iframe
+              width="315"
+              height="576"
+              src="https://www.youtube.com/embed/AHCVQ0rtb9c"
+              title="Workshop Successfully Concluded #DigitalDentistry #DentalInnovation #Navident"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
 
-      <div class="event-gallery-window" data-gallery-window>
-        <div class="event-gallery-track">
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/C0003T01.JPG" alt="">
-        </button>
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/C0008T01.JPG" alt="">
-        </button>
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/C0010T01.JPG" alt="">
-        </button>
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/C0013T01.JPG" alt="">
-        </button>
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/C0015T01.JPG" alt="">
-        </button>
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/C0033T01.JPG" alt="">
-        </button>
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/C0058T01.JPG" alt="">
-        </button>
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/C0089T01.JPG" alt="">
-        </button>
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/C0093T01.JPG" alt="">
-        </button>
-        <button class="gallery-slide" type="button" data-gallery-image>
-          <img src="./assets/event/C0103T01.JPG" alt="">
-        </button>
+        <div class="event-gallery-carousel" data-event-gallery>
+          <button
+            class="gallery-nav-btn"
+            type="button"
+            data-gallery-prev
+            aria-label="Show previous images"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+
+          <div class="event-gallery-window" data-gallery-window>
+            <div class="event-gallery-track">
+              <button class="gallery-slide" type="button" data-gallery-image>
+                <img src="./assets/event/C0003T01.JPG" alt="" />
+              </button>
+              <button class="gallery-slide" type="button" data-gallery-image>
+                <img src="./assets/event/C0008T01.JPG" alt="" />
+              </button>
+              <button class="gallery-slide" type="button" data-gallery-image>
+                <img src="./assets/event/C0010T01.JPG" alt="" />
+              </button>
+              <button class="gallery-slide" type="button" data-gallery-image>
+                <img src="./assets/event/C0013T01.JPG" alt="" />
+              </button>
+              <button class="gallery-slide" type="button" data-gallery-image>
+                <img src="./assets/event/C0015T01.JPG" alt="" />
+              </button>
+              <button class="gallery-slide" type="button" data-gallery-image>
+                <img src="./assets/event/C0033T01.JPG" alt="" />
+              </button>
+              <button class="gallery-slide" type="button" data-gallery-image>
+                <img src="./assets/event/C0058T01.JPG" alt="" />
+              </button>
+              <button class="gallery-slide" type="button" data-gallery-image>
+                <img src="./assets/event/C0089T01.JPG" alt="" />
+              </button>
+              <button class="gallery-slide" type="button" data-gallery-image>
+                <img src="./assets/event/C0093T01.JPG" alt="" />
+              </button>
+              <button class="gallery-slide" type="button" data-gallery-image>
+                <img src="./assets/event/C0103T01.JPG" alt="" />
+              </button>
+            </div>
+          </div>
+
+          <button
+            class="gallery-nav-btn"
+            type="button"
+            data-gallery-next
+            aria-label="Show next images"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="course-intro">
+      <div class="course-wrap">
+        <!-- LEFT SIDE -->
+        <aside class="course-side">
+          <h4>TAGS</h4>
+          <ul class="left-tag">
+            <li><a href="./events.html">EVENTS</a></li>
+            <li><a href="./events.html">UPCOMING EVENTS</a></li>
+            <li><a href="./events.html">PAST EVENTS</a></li>
+          </ul>
+
+          <h4>Share</h4>
+          <div class="share">
+            <a href="https://www.facebook.com/profile.php?id=100057220428403#"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              href="#https://api.whatsapp.com/send?phone=%2B919819893250&fbclid=IwY2xjawPoEE5leHRuA2FlbQIxMABicmlkETF6RGc1bGQ4MkNKQWFJZk92c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHp2k4EqPl-RmwWcQOpyXPFBwZ3hiBsmaGeaDHKGKfc-xCPP1c-quzaeBwZvZ_aem_T58P-OzKvAzVUFaIDa5-NQ"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a href="https://www.instagram.com/marks.biotechinc/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.youtube.com/channel/UCxWtOTeE4P1x1AaXL_Dlvpw"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </aside>
+
+        <!-- CENTER CONTENT -->
+        <div class="course-main">
+          <h1>NAVIDENT Advanced Surgical & Prosthetic Workshop 2025</h1>
+
+          <h3>
+            Future of Dentistry – Precision, Navigation & Digital Integration
+          </h3>
+
+          <p>
+            The NAVIDENT Advanced Surgical & Prosthetic Workshop was
+            successfully conducted on 5th June 2025 at Acharya Foundation,
+            Nungambakkam, Chennai. The program brought together implantologists,
+            oral surgeons, prosthodontists, and restorative clinicians for an
+            in-depth exploration of dynamic navigation and digitally guided
+            implant workflows.
+          </p>
+
+          <p>
+            Organized in collaboration with ClaroNav Dental Canada and Marks
+            Biotech, the workshop focused on bridging advanced technology with
+            everyday clinical implant practice.
+          </p>
+
+          <h3>Event Overview</h3>
+
+          <p>
+            This full-day scientific program (9:30 AM – 6:30 PM) was designed to
+            provide structured clinical insights into navigation-assisted
+            implantology and prosthetic integration.
+          </p>
+
+          <p>
+            The workshop emphasized precision-driven treatment planning,
+            real-time surgical guidance, and the integration of AI-supported
+            digital workflows to enhance surgical accuracy and long-term
+            restorative success.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="event-details">
+      <div class="event-wrapper">
+        <aside class="event-sidebar"></aside>
+
+        <div class="event-content">
+          <h3>Scientific & Clinical Focus Areas</h3>
+
+          <p><strong>Dynamic Navigation in Implant Dentistry</strong></p>
+          <p>
+            Participants were introduced to the NAVIDENT Dynamic Navigation
+            System, covering principles of real-time 3D drill tracking,
+            calibration and accuracy protocols, surgical flexibility compared to
+            static guides, and enhanced angulation control in anatomically
+            sensitive zones.
+          </p>
+
+          <p><strong>Surgical & Prosthetic Workflow Integration</strong></p>
+          <p>
+            The program highlighted how prosthetically driven planning improves
+            implant positioning and long-term outcomes. Discussions included
+            digital case planning, guided full-arch rehabilitation, managing
+            complex implant scenarios, and precision-based decision-making in
+            surgical procedures.
+          </p>
+
+          <p><strong>AI & Robotics-Assisted Concepts</strong></p>
+          <p>
+            Sessions explored the evolving role of intelligent software and
+            robotics-assisted workflows in modern dentistry, focusing on
+            predictability, safety, and minimally invasive execution.
+          </p>
+
+          <h3>Live Demonstrations & Practical Learning</h3>
+
+          <p>
+            A key highlight of the workshop was the live navigation workflow
+            demonstration, where participants observed:
+          </p>
+
+          <p>• Digital treatment planning using NAVIDENT software</p>
+          <p>• Step-by-step surgical workflow integration</p>
+          <p>• Real-time drill tracking during implant placement</p>
+          <p>• Clinical accuracy verification protocols</p>
+
+          <p>
+            The hands-on exposure provided clinicians with practical clarity on
+            adopting navigation technology in routine practice.
+          </p>
+
+          <h3>Clinical Engagement</h3>
+
+          <p>
+            The workshop saw active participation and in-depth discussions on:
+          </p>
+
+          <p>• Static vs dynamic guided surgery</p>
+          <p>• Full-arch precision workflows</p>
+          <p>• Risk reduction in complex anatomical cases</p>
+          <p>• Digital integration in modern implant practice</p>
+
+          <p>
+            The interaction reflected the growing clinical shift toward
+            technology-driven implant dentistry in India.
+          </p>
+
+          <h3>Educational Impact</h3>
+
+          <p>
+            The NAVIDENT Advanced Surgical & Prosthetic Workshop 2025 served as
+            a focused academic platform for clinicians seeking to elevate
+            surgical precision and prosthetic predictability through digital
+            navigation.
+          </p>
+
+          <p>
+            By combining theoretical foundations, live workflow demonstrations,
+            and practical discussions, the program strengthened clinical
+            confidence in adopting navigation-assisted implant protocols.
+          </p>
+
+          <h3>Event Details</h3>
+
+          <p><strong>Date:</strong> 5th June 2025</p>
+          <p><strong>Time:</strong> 9:30 AM – 6:30 PM</p>
+          <p>
+            <strong>Venue:</strong> Acharya Foundation,<br />
+            7 Thirumurthy Nagar,<br />
+            6th Street, Nungambakkam, Chennai
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="about-footer">
+      <!-- TOP -->
+      <div class="about-footer-top">
+        <div class="about-footer-title">
+          <p>We are here to support You</p>
+          <h2>Connect with us</h2>
+        </div>
+
+        <div class="about-subscribe-box">
+          <form action="" id="form1">
+            <input type="email" name="email" placeholder="Enter your mail id" />
+            <button class="subsc" type="submit">Subscribe</button>
+          </form>
         </div>
       </div>
 
-      <button class="gallery-nav-btn" type="button" data-gallery-next aria-label="Show next images">
-        <i class="fa-solid fa-arrow-right"></i>
-      </button>
-    </div>
-  </div>
-</section>
-    
-<section class="course-intro">
-  <div class="course-wrap">
+      <hr />
 
-    <!-- LEFT SIDE -->
-     <aside class="course-side">
-      <h4>TAGS</h4>
-      <ul class="left-tag">
-        <li><a href="./events.html">EVENTS</a></li>
-        <li><a href="./events.html">UPCOMING EVENTS</a></li>
-        <li><a href="./events.html">PAST EVENTS</a></li>
-      </ul>
+      <!-- BOTTOM -->
+      <div class="footer-content">
+        <!-- QUICK LINKS -->
+        <div class="footer-col">
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="./index.html">Highlights</a></li>
+            <li><a href="./about.html">About us</a></li>
 
-      <h4>Share</h4>
-      <div class="share">
-        <a href="https://www.facebook.com/profile.php?id=100057220428403#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#https://api.whatsapp.com/send?phone=%2B919819893250&fbclid=IwY2xjawPoEE5leHRuA2FlbQIxMABicmlkETF6RGc1bGQ4MkNKQWFJZk92c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHp2k4EqPl-RmwWcQOpyXPFBwZ3hiBsmaGeaDHKGKfc-xCPP1c-quzaeBwZvZ_aem_T58P-OzKvAzVUFaIDa5-NQ"><i class="fa-brands fa-whatsapp"></i></a>
-        <a href="https://www.instagram.com/marks.biotechinc/"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.youtube.com/channel/UCxWtOTeE4P1x1AaXL_Dlvpw"><i class="fa-brands fa-youtube"></i></a>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./events.html">Event</a></li>
+            <li><a href="./careers.html">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- PRODUCTS -->
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li>
+              <a href="https://b-and-b-india.netlify.app/uniqueimplant"
+                >B&B Dental Implants Italy</a
+              >
+            </li>
+            <li>
+              <a href="https://b-and-b-india.netlify.app/surgicalkit"
+                >B&B SURGICAL KITS</a
+              >
+            </li>
+            <li>
+              <a href="https://b-and-b-india.netlify.app/digitalsurgicalguide"
+                >Computer Guided Surgery</a
+              >
+            </li>
+            <li><a href="./allograft.html">Rocky Mountain Allograft</a></li>
+            <li><a href="./xenograft.html">NovoBona Xenograft</a></li>
+            <li><a href="./xenograft.html#collagen">T-Collagen Membrane</a></li>
+            <li>
+              <a href="./tissue.html">Tissue Adhesive</a>
+            </li>
+            <li>
+              <a href="https://marksbiotech.com/navident-3.0">Navident 3.0</a>
+            </li>
+            <li>
+              <a href="https://marksbiotech.com/navident-4.0/"
+                >Navident 4.0 EVO</a
+              >
+            </li>
+            <li>
+              <a href="https://marksbiotech.com/micronmapper/">MicronMapper</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ADDRESS -->
+        <div class="footer-col address">
+          <h4>Address</h4>
+
+          <p class="he-red">Operation and Communication Address</p>
+          <p>
+            84, 1st floor, Thirupathy Nagar,<br />
+            Mainroad, 1st Cross street, <br />
+            Valasaravakkam, Chennai, India -600087.
+          </p>
+
+          <p class="he-red">Registered Office Address</p>
+          <p>
+            104/5, 6th Street, S-1, 2nd floor, The Brown CLS Bulding, Radha
+            Avenue, Valasaravakam, Chennai, India -600087.
+          </p>
+        </div>
+
+        <!-- LOGO + MAP -->
+        <div class="footer-col logo-map">
+          <img
+            src="assets/imgs/marks-biotech-logo 1.png"
+            alt="Marks Biotech Logo"
+            class="logo"
+          />
+          <p class="contact">📞 +91 44 485 93250</p>
+          <p class="contact">📞 +91 9819893250 ,+91 9840320250</p>
+          <p class="contact"><span>✉ </span>info@marksbiotech.com</p>
+          <div class="map-box">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.861000188089!2d80.1749978!3d13.044518400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261bb26e13173%3A0x58681e3956ff7dbb!2sMarks%20Biotech%20Inc!5e0!3m2!1sen!2sin!4v1769035781529!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
       </div>
-    </aside>
+    </footer>
+    <div class="floating-container">
+      <!-- EVENT BOX -->
+      <div class="event-box">
+        <h3 id="eventName"></h3>
 
-    <!-- CENTER CONTENT -->
-    <div class="course-main">
+        <div class="event-details">
+          <p id="eventDate"></p>
+          <p id="eventTime"></p>
+          <p id="eventLocation"></p>
+        </div>
 
-      <h1>NAVIDENT Advanced Surgical & Prosthetic Workshop 2025</h1>
-
-      <h3>
-        Future of Dentistry – Precision, Navigation & Digital Integration
-      </h3>
-
-      <p>
-        The NAVIDENT Advanced Surgical & Prosthetic Workshop was successfully
-        conducted on 5th June 2025 at Acharya Foundation, Nungambakkam,
-        Chennai. The program brought together implantologists, oral surgeons,
-        prosthodontists, and restorative clinicians for an in-depth exploration of
-        dynamic navigation and digitally guided implant workflows.
-      </p>
-
-      <p>
-        Organized in collaboration with ClaroNav Dental Canada and Marks Biotech,
-        the workshop focused on bridging advanced technology with everyday
-        clinical implant practice.
-      </p>
-
-      <h3>Event Overview</h3>
-
-      <p>
-        This full-day scientific program (9:30 AM – 6:30 PM) was designed to
-        provide structured clinical insights into navigation-assisted implantology
-        and prosthetic integration.
-      </p>
-
-      <p>
-        The workshop emphasized precision-driven treatment planning, real-time
-        surgical guidance, and the integration of AI-supported digital workflows
-        to enhance surgical accuracy and long-term restorative success.
-      </p>
-
-    </div>
-  </div>
-</section>
-
-
-<section class="event-details">
-  <div class="event-wrapper">
-
-    <aside class="event-sidebar"></aside>
-
-    <div class="event-content">
-
-      <h3>Scientific & Clinical Focus Areas</h3>
-
-      <p><strong>Dynamic Navigation in Implant Dentistry</strong></p>
-      <p>
-        Participants were introduced to the NAVIDENT Dynamic Navigation System,
-        covering principles of real-time 3D drill tracking, calibration and accuracy
-        protocols, surgical flexibility compared to static guides, and enhanced
-        angulation control in anatomically sensitive zones.
-      </p>
-
-      <p><strong>Surgical & Prosthetic Workflow Integration</strong></p>
-      <p>
-        The program highlighted how prosthetically driven planning improves implant
-        positioning and long-term outcomes. Discussions included digital case
-        planning, guided full-arch rehabilitation, managing complex implant
-        scenarios, and precision-based decision-making in surgical procedures.
-      </p>
-
-      <p><strong>AI & Robotics-Assisted Concepts</strong></p>
-      <p>
-        Sessions explored the evolving role of intelligent software and robotics-assisted
-        workflows in modern dentistry, focusing on predictability, safety, and
-        minimally invasive execution.
-      </p>
-
-      <h3>Live Demonstrations & Practical Learning</h3>
-
-      <p>
-        A key highlight of the workshop was the live navigation workflow
-        demonstration, where participants observed:
-      </p>
-
-      <p>• Digital treatment planning using NAVIDENT software</p>
-      <p>• Step-by-step surgical workflow integration</p>
-      <p>• Real-time drill tracking during implant placement</p>
-      <p>• Clinical accuracy verification protocols</p>
-
-      <p>
-        The hands-on exposure provided clinicians with practical clarity on
-        adopting navigation technology in routine practice.
-      </p>
-
-      <h3>Clinical Engagement</h3>
-
-      <p>
-        The workshop saw active participation and in-depth discussions on:
-      </p>
-
-      <p>• Static vs dynamic guided surgery</p>
-      <p>• Full-arch precision workflows</p>
-      <p>• Risk reduction in complex anatomical cases</p>
-      <p>• Digital integration in modern implant practice</p>
-
-      <p>
-        The interaction reflected the growing clinical shift toward
-        technology-driven implant dentistry in India.
-      </p>
-
-      <h3>Educational Impact</h3>
-
-      <p>
-        The NAVIDENT Advanced Surgical & Prosthetic Workshop 2025 served
-        as a focused academic platform for clinicians seeking to elevate surgical
-        precision and prosthetic predictability through digital navigation.
-      </p>
-
-      <p>
-        By combining theoretical foundations, live workflow demonstrations,
-        and practical discussions, the program strengthened clinical confidence
-        in adopting navigation-assisted implant protocols.
-      </p>
-
-      <h3>Event Details</h3>
-
-      <p><strong>Date:</strong> 5th June 2025</p>
-      <p><strong>Time:</strong> 9:30 AM – 6:30 PM</p>
-      <p>
-        <strong>Venue:</strong> Acharya Foundation,<br>
-        7 Thirumurthy Nagar,<br>
-        6th Street, Nungambakkam, Chennai
-      </p>
-
-    </div>
-
-  </div>
-</section>
-
-
- 
-
-
-
-     <footer class="about-footer">
-    <!-- TOP -->
-    <div class="about-footer-top">
-      <div class="about-footer-title">
-        <p>We are here to support You</p>
-        <h2>Connect with us</h2>
+        <div class="floating-btn-con">
+          <a href="" class="view-floating-img">View Details</a>
+          <button id="openFormBtn">Register Now</button>
+        </div>
+        <div class="float-event-close">
+          <button id="closeEventBtn">✖</button>
+        </div>
       </div>
 
-      <div class="about-subscribe-box">
-        <form action="" id="form1">
-        <input type="email" name="email" placeholder="Enter your mail id" />
-        <button class="subsc" type="submit">Subscribe</button></form>
+      <!-- WHATSAPP BUTTON -->
+      <a
+        href="https://wa.me/919819893250"
+        id="whatsappBtn"
+        class="whatsapp-btn"
+      >
+        <span class="wave"></span>
+        <span class="wave delay"></span>
+
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" />
+      </a>
+
+      <div id="eventToggleBtn" class="event-toggle-btn">Upcoming Events</div>
+    </div>
+    <div id="eventImagePopup" class="popup">
+      <div class="popup-content popup-image" style="max-width: 600px">
+        <button id="closeImagePopup" class="close-btn">✖</button>
+        <img
+          id="eventPopupImg"
+          src=""
+          style="width: 100%; border-radius: 10px"
+        />
       </div>
     </div>
+    <!-- POPUP FORM -->
+    <div id="popupForm" class="popup">
+      <div class="popup-content">
+        <button id="closeForm" class="close-btn">✖</button>
 
-    <hr />
+        <h2>Register</h2>
 
-    <!-- BOTTOM -->
-    <div class="footer-content">
-      <!-- QUICK LINKS -->
-      <div class="footer-col">
-        <h4>Quick links</h4>
-        <ul>
-          <li><a href="./index.html">Highlights</a></li>
-          <li><a href="./about.html">About us</a></li>
-          
-          <li><a href="https://marksbiotech.com/micronmapper/">MicronMapper</a></li>
-          
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./events.html">Event</a></li>
-          <li><a href="./careers.html">Careers</a></li>
-          
-        </ul>
-      </div>
+        <form id="leadForm">
+          <input name="name" placeholder="Full Name *" required />
 
-      <!-- PRODUCTS -->
-      <div class="footer-col">
-        <h4>Products</h4>
-        <ul>
-          <li><a href="https://b-and-b-india.netlify.app/uniqueimplant">Dental implants</a></li>
-          <li><a href="https://b-and-b-india.netlify.app/surgicalkit">Free hand Surgical</a></li>
-          <li><a href="https://b-and-b-india.netlify.app/digitalsurgicalguide">Computer Guided Surgery</a></li>
-          <li><a href="./allograft.html">Allograft</a></li>
-          <li><a href="./xenograft.html">Xenograft</a></li>
-          <li><a href="https://marksbiotech.com/navident-3.0">Navident 3.0</a></li>
-          <li><a href="https://marksbiotech.com/navident-4.0/">Navident 4.0 EVO</a></li>
-          <li><a href=".https://marksbiotech.com/micronmapper/">Photogrammetry</a></li>
-          
-          
-        </ul>
-      </div>
+          <select name="title">
+            <option>Dr.</option>
+          </select>
 
-      <!-- ADDRESS -->
-      <div class="footer-col address">
-        <h4>Address</h4>
+          <input name="email" type="email" placeholder="Email *" required />
+          <input name="mobile" placeholder="Mobile Number *" required />
 
-        <p class="he-red">Operation and Communication Address</p>
-        <p>
-          84, 1st floor, Thirupathy Nagar,<br />
-          Mainroad, 1st Cross street, <br />
-          Valasaravakkam, Chennai-600087.
-        </p>
+          <select name="speciality">
+            <option>BDS</option>
+            <option>MDS</option>
+          </select>
 
-        <p class="he-red">Registered Office Address</p>
-        <p>
-          104/5, 6th street, s-1, 2nd floor, The Brown CLS Bulding, Ratha
-          Avenue, Valasaravakam, Chennai-600087.
-        </p>
+          <input name="specialityOther" placeholder="Specify Specialty" />
 
+          <select name="category">
+            <option>Private Practice</option>
+            <option>Students</option>
+          </select>
 
-      </div>
+          <input name="city" placeholder="City *" required />
 
-      <!-- LOGO + MAP -->
-      <div class="footer-col logo-map">
-
-        <img src="assets/imgs/marks-biotech-logo 1.png" alt="Marks Biotech Logo" class="logo" />
-        <p class="contact">📞 +91 44 485 93250</p>
-        <p class="contact">📞 +91 9819893250 ,+91 9840320250</p>
-        <p class="contact"><span>✉ </span>info@marksbiotech.com</p>
-        <div class="map-box"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.861000188089!2d80.1749978!3d13.044518400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261bb26e13173%3A0x58681e3956ff7dbb!2sMarks%20Biotech%20Inc!5e0!3m2!1sen!2sin!4v1769035781529!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </div>
-     </footer>
 
     <script src="./event-gallery.js"></script>
     <script src="./script2.js"></script>
   </body>
 </html>
-
-
