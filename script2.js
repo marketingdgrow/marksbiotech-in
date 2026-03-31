@@ -153,7 +153,11 @@ document.addEventListener("click", function (e) {
       setCol3State(false);
     }
 
-    if (navMenu && navMenu.classList.contains("active") && !e.target.closest(".site-header")) {
+    if (
+      navMenu &&
+      navMenu.classList.contains("active") &&
+      !e.target.closest(".site-header")
+    ) {
       setMobileMenuState(false);
     }
   } else if (!e.target.closest(".has-mega") && col3) {
@@ -226,7 +230,6 @@ gsap.from(".hero-image", {
 // ======================================
 
 window.addEventListener("DOMContentLoaded", function () {
-
   const container = document.querySelector(".over-stack-container");
   if (!container) return;
 
@@ -241,7 +244,7 @@ window.addEventListener("DOMContentLoaded", function () {
   const lastClone = slides[slides.length - 1].cloneNode(true);
 
   track.appendChild(lastClone);
-  slides.forEach(slide => track.appendChild(slide));
+  slides.forEach((slide) => track.appendChild(slide));
   track.appendChild(firstClone);
 
   container.appendChild(track);
@@ -315,10 +318,7 @@ window.addEventListener("DOMContentLoaded", function () {
   container.addEventListener("mouseleave", () => {
     auto = setInterval(nextSlide, 2000);
   });
-
 });
-
-
 
 // ======================================
 // SECTION 1 SCROLL REVEAL
@@ -353,7 +353,8 @@ gsap.from(".section-right h2, .section-right p", {
 // ======================================
 const cardex = Array.from(document.querySelectorAll(".section-4 .ex-card"));
 if (cardex.length) {
-  let activeCard = document.querySelector(".section-4 .ex-card.active") || cardex[0];
+  let activeCard =
+    document.querySelector(".section-4 .ex-card.active") || cardex[0];
   let accordionResizeFrame = null;
   let mobilePointerState = null;
   let suppressMobileClickUntil = 0;
@@ -367,7 +368,10 @@ if (cardex.length) {
   }
 
   function isInteractiveTarget(event) {
-    return event.target instanceof Element && Boolean(event.target.closest("a, button"));
+    return (
+      event.target instanceof Element &&
+      Boolean(event.target.closest("a, button"))
+    );
   }
 
   function getAccordionConfig() {
@@ -420,19 +424,17 @@ if (cardex.length) {
   }
 
   function toggleAccordionCard(card) {
+    // SAME CARD CLICK → DO NOTHING (keep open)
+    if (card === activeCard) return;
 
-  // SAME CARD CLICK → DO NOTHING (keep open)
-  if (card === activeCard) return;
+    // CLOSE OLD
+    if (activeCard) {
+      animateAccordionCard(activeCard, false);
+    }
 
-  // CLOSE OLD
-  if (activeCard) {
-    animateAccordionCard(activeCard, false);
-  }
-
-  // OPEN NEW
-  animateAccordionCard(card, true);
-  activeCard = card;
-
+    // OPEN NEW
+    animateAccordionCard(card, true);
+    activeCard = card;
 
     if (activeCard) {
       animateAccordionCard(activeCard, false);
@@ -442,11 +444,9 @@ if (cardex.length) {
     activeCard = card;
   }
 
-
-
-
   function animateAccordionCard(card, isActive) {
-    const { property, collapsed, expanded, closeDuration, openDuration } = getAccordionConfig();
+    const { property, collapsed, expanded, closeDuration, openDuration } =
+      getAccordionConfig();
 
     gsap.killTweensOf(card);
     card.classList.toggle("active", isActive);
@@ -468,8 +468,6 @@ if (cardex.length) {
   syncAccordionState();
 
   cardex.forEach((card) => {
-
-
     // card.addEventListener("click", (event) => {
     //   if (isInteractiveTarget(event)) return;
 
@@ -487,16 +485,14 @@ if (cardex.length) {
     // });
 
     card.addEventListener("click", (event) => {
-  if (isInteractiveTarget(event)) return;
+      if (isInteractiveTarget(event)) return;
 
-  // ❌ Mobile la click completely ignore
-  if (isMobileAccordion()) return;
+      // ❌ Mobile la click completely ignore
+      if (isMobileAccordion()) return;
 
-  // Desktop only
-  toggleAccordionCard(card);
-});
-
-
+      // Desktop only
+      toggleAccordionCard(card);
+    });
 
     card.addEventListener(
       "pointerdown",
@@ -511,14 +507,18 @@ if (cardex.length) {
           moved: false,
         };
       },
-      { passive: true }
+      { passive: true },
     );
 
     card.addEventListener(
       "pointermove",
       (event) => {
         if (!isMobileAccordion() || !mobilePointerState) return;
-        if (mobilePointerState.card !== card || mobilePointerState.pointerId !== event.pointerId) return;
+        if (
+          mobilePointerState.card !== card ||
+          mobilePointerState.pointerId !== event.pointerId
+        )
+          return;
 
         const movedX = Math.abs(event.clientX - mobilePointerState.startX);
         const movedY = Math.abs(event.clientY - mobilePointerState.startY);
@@ -526,33 +526,33 @@ if (cardex.length) {
           mobilePointerState.moved = true;
         }
       },
-      { passive: true }
+      { passive: true },
     );
 
-    card.addEventListener("pointercancel", resetMobilePointerState, { passive: true });
+    card.addEventListener("pointercancel", resetMobilePointerState, {
+      passive: true,
+    });
 
     card.addEventListener(
-  "pointerup",
-  (event) => {
-    if (!isMobileAccordion()) return;
+      "pointerup",
+      (event) => {
+        if (!isMobileAccordion()) return;
 
-    if (!mobilePointerState) return;
-    if (mobilePointerState.card !== card) return;
+        if (!mobilePointerState) return;
+        if (mobilePointerState.card !== card) return;
 
-    const moved = mobilePointerState.moved;
-    resetMobilePointerState();
+        const moved = mobilePointerState.moved;
+        resetMobilePointerState();
 
-    if (moved) return;
+        if (moved) return;
 
-    event.preventDefault();
+        event.preventDefault();
 
-    // 🔥 TOGGLE SAME CARD
-    toggleAccordionCard(card);
-  },
-  { passive: false }
-);
-
-
+        // 🔥 TOGGLE SAME CARD
+        toggleAccordionCard(card);
+      },
+      { passive: false },
+    );
 
     card.addEventListener("pointerleave", () => {
       if (!isMobileAccordion()) return;
@@ -581,10 +581,6 @@ if (cardex.length) {
 
 // ----------  xenograft -------
 
-
-
-
- 
 // ======================================
 // ABOUT TEAM CARDS (HOVER + CLICK TOGGLE)
 // ======================================
@@ -620,13 +616,19 @@ if (teamCards.length) {
 const roomSliderSection = document.querySelector(".room-slider-section");
 
 if (roomSliderSection) {
-  const roomSlides = Array.from(roomSliderSection.querySelectorAll(".room-slide"));
-  const roomTabs = Array.from(roomSliderSection.querySelectorAll(".room-slider-tab"));
+  const roomSlides = Array.from(
+    roomSliderSection.querySelectorAll(".room-slide"),
+  );
+  const roomTabs = Array.from(
+    roomSliderSection.querySelectorAll(".room-slider-tab"),
+  );
   const dotsWrap = roomSliderSection.querySelector(".room-slider-dots");
   const stage = roomSliderSection.querySelector(".room-slider-stage");
 
   if (roomSlides.length > 0 && dotsWrap && stage) {
-    let activeIndex = roomSlides.findIndex((slide) => slide.classList.contains("is-active"));
+    let activeIndex = roomSlides.findIndex((slide) =>
+      slide.classList.contains("is-active"),
+    );
     let autoTimer = null;
     let touchStartX = 0;
     let touchEndX = 0;
@@ -644,7 +646,7 @@ if (roomSliderSection) {
     function getRelativePosition(index) {
       const total = roomSlides.length;
       const rawOffset = index - activeIndex;
-      const wrappedOffset = ((rawOffset + total) % total + total) % total;
+      const wrappedOffset = (((rawOffset + total) % total) + total) % total;
       return wrappedOffset > total / 2 ? wrappedOffset - total : wrappedOffset;
     }
 
@@ -667,7 +669,13 @@ if (roomSliderSection) {
 
       roomSlides.forEach((slide, index) => {
         const rel = getRelativePosition(index);
-        slide.classList.remove("is-active", "is-prev", "is-next", "is-far-left", "is-far-right");
+        slide.classList.remove(
+          "is-active",
+          "is-prev",
+          "is-next",
+          "is-far-left",
+          "is-far-right",
+        );
 
         if (rel === 0) {
           slide.classList.add("is-active");
@@ -762,7 +770,7 @@ if (roomSliderSection) {
         touchStartX = event.touches[0].clientX;
         touchEndX = touchStartX;
       },
-      { passive: true }
+      { passive: true },
     );
 
     stage.addEventListener(
@@ -771,7 +779,7 @@ if (roomSliderSection) {
         if (!event.touches.length) return;
         touchEndX = event.touches[0].clientX;
       },
-      { passive: true }
+      { passive: true },
     );
 
     stage.addEventListener(
@@ -786,7 +794,7 @@ if (roomSliderSection) {
         }
         restartAuto();
       },
-      { passive: true }
+      { passive: true },
     );
 
     buildDots();
@@ -795,35 +803,30 @@ if (roomSliderSection) {
   }
 }
 
+document
+  .querySelectorAll(".nav-main-menu > li.has-mega > a")
+  .forEach((link) => {
+    link.addEventListener("click", function (e) {
+      // tablet + mobile only
+      if (window.innerWidth <= 1024) {
+        e.preventDefault();
 
+        const parent = this.parentElement;
 
+        // close others (optional)
+        document
+          .querySelectorAll(".nav-main-menu > li.has-mega")
+          .forEach((item) => {
+            if (item !== parent) {
+              item.classList.remove("open");
+            }
+          });
 
-document.querySelectorAll('.nav-main-menu > li.has-mega > a').forEach(link => {
-  link.addEventListener('click', function (e) {
-
-    // tablet + mobile only
-    if (window.innerWidth <= 1024) {
-      e.preventDefault();
-
-      const parent = this.parentElement;
-
-      // close others (optional)
-      document.querySelectorAll('.nav-main-menu > li.has-mega').forEach(item => {
-        if (item !== parent) {
-          item.classList.remove('open');
-        }
-      });
-
-      // toggle current
-      parent.classList.toggle('open');
-    }
+        // toggle current
+        parent.classList.toggle("open");
+      }
+    });
   });
-});
-
-
-
-
-
 
 // const form = document.getElementById("jobForm");
 
@@ -855,9 +858,6 @@ document.querySelectorAll('.nav-main-menu > li.has-mega > a').forEach(link => {
 //   }
 // });
 
-
-
-
 // const form = document.getElementById("jobForm");
 
 // form.addEventListener("submit", async (e) => {
@@ -885,7 +885,6 @@ document.querySelectorAll('.nav-main-menu > li.has-mega > a').forEach(link => {
 //     alert("Something went wrong ❌");
 //   }
 // });
-
 
 // document.addEventListener("DOMContentLoaded", () => {
 //   const form = document.querySelector("#form");
@@ -922,53 +921,48 @@ document.querySelectorAll('.nav-main-menu > li.has-mega > a').forEach(link => {
 //   }
 // });
 
+const form = document.querySelector("#form");
 
+if (form) {
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // 🚨 stop page refresh
 
+    // Get form values
+    const formData = new FormData(form);
 
- const form = document.querySelector("#form");
+    // Optional: simple validation
+    const name = formData.get("name");
+    const email = formData.get("email");
 
-  if (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault(); // 🚨 stop page refresh
+    if (!name || !email) {
+      alert("Please fill all required fields");
+      return;
+    }
 
-      // Get form values
-      const formData = new FormData(form);
+    console.log("Submitting form...");
 
-      // Optional: simple validation
-      const name = formData.get("name");
-      const email = formData.get("email");
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbwlHY-kEGbcc5eRMymhXD1JrrXfig_myDIRGRgmEZiYTtakqodipyBpHI3ihweR4GiWGg/exec";
 
-      if (!name || !email) {
-        alert("Please fill all required fields");
-        return;
-      }
+    fetch(scriptURL, {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => response.text())
+      .then((data) => {
+        console.log("Success:", data);
+        alert("Form submitted successfully!");
 
-      console.log("Submitting form...");
-
-      const scriptURL = "https://script.google.com/macros/s/AKfycbwlHY-kEGbcc5eRMymhXD1JrrXfig_myDIRGRgmEZiYTtakqodipyBpHI3ihweR4GiWGg/exec";
-
-      fetch(scriptURL, {
-        method: "POST",
-        body: formData,
+        form.reset(); // clear form
       })
-        .then((response) => response.text())
-        .then((data) => {
-          console.log("Success:", data);
-          alert("Form submitted successfully!");
-
-          form.reset(); // clear form
-        })
-        .catch((error) => {
-          console.error("Error:", error);
-          alert("Something went wrong!");
-        });
-    });
-  } else {
-    console.warn("Form #careerForm not found");
-  }
-
-
-
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("Something went wrong!");
+      });
+  });
+} else {
+  console.warn("Form #careerForm not found");
+}
 
 const subForm = document.getElementById("form1");
 
@@ -977,13 +971,16 @@ subForm.addEventListener("submit", async (e) => {
 
   const email = subForm.querySelector("input").value;
 
-  const response = await fetch("https://script.google.com/macros/s/AKfycbwLdDBvdJyKUWr0Z_-m17aabIDsJxXZmpGQxXZXEWiwDMIw4qrQfk2ckULtloj9eu0/exec", {
-    method: "POST",
-    body: JSON.stringify({
-      type: "subscribe",
-      email: email
-    }),
-  });
+  const response = await fetch(
+    "https://script.google.com/macros/s/AKfycbwLdDBvdJyKUWr0Z_-m17aabIDsJxXZmpGQxXZXEWiwDMIw4qrQfk2ckULtloj9eu0/exec",
+    {
+      method: "POST",
+      body: JSON.stringify({
+        type: "subscribe",
+        email: email,
+      }),
+    },
+  );
 
   const result = await response.json();
 
@@ -994,10 +991,6 @@ subForm.addEventListener("submit", async (e) => {
     alert("Error ❌");
   }
 });
-
-
-
-
 
 //   document.addEventListener("DOMContentLoaded", () => {
 //   const form = document.querySelector("#form");
@@ -1033,3 +1026,52 @@ subForm.addEventListener("submit", async (e) => {
 //       });
 //   });
 // });
+
+// ===== EVENT DATA (EDIT HERE ONLY) =====
+const eventData = {
+  name: "FULL ARCH DENTAL IMPLANTS PROSTHETIC WORKSHOP - MASTER CLASS",
+  date: "April 19th, 2026",
+  time: "08:30 AM ",
+  location: "Pune",
+};
+
+// ===== LOAD EVENT =====
+document.getElementById("eventName").innerText = eventData.name;
+document.getElementById("eventDate").innerText = eventData.date;
+document.getElementById("eventTime").innerText = eventData.time;
+document.getElementById("eventLocation").innerText = eventData.location;
+
+// ===== POPUP CONTROL =====
+const popup = document.getElementById("popupForm");
+const openBtn = document.getElementById("openFormBtn");
+const closeBtn = document.getElementById("closeForm");
+
+openBtn.onclick = () => (popup.style.display = "flex");
+closeBtn.onclick = () => (popup.style.display = "none");
+
+window.onclick = (e) => {
+  if (e.target === popup) popup.style.display = "none";
+};
+
+// ===== GOOGLE SHEETS SUBMIT =====
+const scriptURL = "YOUR_GOOGLE_SCRIPT_URL";
+
+document.getElementById("leadForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(e.target);
+  const data = Object.fromEntries(formData.entries());
+
+  try {
+    await fetch(scriptURL, {
+      method: "POST",
+      body: JSON.stringify(data),
+    });
+
+    alert("Form submitted successfully!");
+    e.target.reset();
+    popup.style.display = "none";
+  } catch (error) {
+    alert("Submission failed!");
+  }
+});
